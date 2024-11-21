@@ -1,23 +1,22 @@
 import { VerifiableCredential } from '@vckit/core-types';
-import { IService, ITraceabilityEvent, ITransactionEventContext } from '../types/index.js';
-import { issueVC } from '../vckit.service.js';
-import { getStorageServiceLink } from '../storage.service.js';
+import { IService, ITraceabilityEvent, ITraceabilityEventContext } from '../types/index.js';
+import { decodeEnvelopedVC, issueVC } from '../vckit.service.js';
+import { uploadData } from '../storage.service.js';
 import { constructIdentifierString, generateUUID } from '../utils/helpers.js';
 import { LinkType, getLinkResolverIdentifier, registerLinkResolver } from '../linkResolver.service.js';
-import { validateTransactionEventContext } from '../validateContext.js';
-import JSONPointer from 'jsonpointer';
+import { validateTraceabilityEventContext } from '../validateContext.js';
 import { deleteValuesFromLocalStorageByKeyPath } from './helpers.js';
 
 export const processTransactionEvent: IService = async (
   transactionEvent: ITraceabilityEvent,
-  context: ITransactionEventContext,
+  context: ITraceabilityEventContext,
 ): Promise<any> => {
-  const validationResult = validateTransactionEventContext(context);
+  const validationResult = validateTraceabilityEventContext(context);
   if (!validationResult.ok) {
     throw new Error(validationResult.value);
   }
 
-  const { vckit, epcisTransactionEvent, dlr, storage, identifierKeyPath, localStorageParams } = context;
+  const { vckit, traceabilityEvent, dlr, storage, identifierKeyPath, localStorageParams } = context;
   const transactionIdentifier = constructIdentifierString(transactionEvent.data, identifierKeyPath);
   if (!transactionIdentifier) {
     throw new Error('Identifier not found');
@@ -25,26 +24,31 @@ export const processTransactionEvent: IService = async (
 
   const { identifier, qualifierPath } = getLinkResolverIdentifier(transactionIdentifier);
 
+  const credentialId = generateUUID();
+
   const vc: VerifiableCredential = await issueVC({
     credentialSubject: transactionEvent.data,
     vcKitAPIUrl: vckit.vckitAPIUrl,
+    headers: vckit.headers,
     issuer: vckit.issuer,
-    context: epcisTransactionEvent.context,
-    type: epcisTransactionEvent.type,
+    context: traceabilityEvent.context,
+    type: traceabilityEvent.type,
     restOfVC: {
-      render: epcisTransactionEvent.renderTemplate,
+      id: `urn:uuid:${credentialId}`,
+      render: traceabilityEvent.renderTemplate,
     },
   });
 
-  const vcUrl = await getStorageServiceLink(storage, vc, `${identifier}/${generateUUID()}`);
+  const decodedEnvelopedVC = decodeEnvelopedVC(vc);
+  const vcUrl = await uploadData(storage, vc, credentialId);
 
   const linkResolver = await registerLinkResolver(
     vcUrl,
-    epcisTransactionEvent.dlrIdentificationKeyType,
+    traceabilityEvent.dlrIdentificationKeyType,
     identifier,
-    epcisTransactionEvent.dlrLinkTitle,
+    traceabilityEvent.dlrLinkTitle,
     LinkType.epcisLinkType,
-    epcisTransactionEvent.dlrVerificationPage,
+    traceabilityEvent.dlrVerificationPage,
     dlr.dlrAPIUrl,
     dlr.dlrAPIKey,
     dlr.namespace,
@@ -58,5 +62,5 @@ export const processTransactionEvent: IService = async (
     localStorageParams.keyPath,
   );
 
-  return { vc, linkResolver };
+  return { vc, decodedEnvelopedVC, linkResolver };
 };

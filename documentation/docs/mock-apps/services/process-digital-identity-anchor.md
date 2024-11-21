@@ -40,12 +40,15 @@ P-->>C: Return digital identity anchor VC and resolver URL
   "parameters": [
     {
       "vckit": {
-        "vckitAPIUrl": "https://api.vckit.example.com",
-        "issuer": "did:example:123456789abcdefghi"
+        "vckitAPIUrl": "http://localhost:3332/v2",
+        "issuer": "did:web:uncefact.github.io:project-vckit:test-and-development",
+        "headers": {
+          "Authorization": "Bearer test123"
+        }
       },
       "digitalIdentityAnchor": {
         "context": ["https://www.w3.org/2018/credentials/v1", "https://gs1.org/voc/"],
-        "type": ["VerifiableCredential", "DigitalIdentityAnchor"],
+        "type": ["DigitalIdentityAnchor"],
         "renderTemplate": [
           {
             "template": "<div><h2>DigitalIdentityAnchor</h2></div>",
@@ -57,10 +60,16 @@ P-->>C: Return digital identity anchor VC and resolver URL
         "dlrVerificationPage": "https://verify.example.com"
       },
       "storage": {
-        "url": "https://storage.example.com/upload",
+        "url": "http://localhost:3334/v1/documents",
         "params": {
-          "bucket": "bucket-name",
-          "resultPath": "/url"
+          "resultPath": "/uri",
+          "bucket": "verifiable-credentials"
+        },
+        "options": {
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json"
+          }
         }
       },
       "dlr": {
@@ -80,7 +89,7 @@ P-->>C: Return digital identity anchor VC and resolver URL
 | Property              | Required | Description                                                                                                                         | Type                                                            |
 | --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | vckit                 | Yes      | Configuration for the VCKit service                                                                                                 | [VCKit](/docs/mock-apps/common/vckit)                           |
-| digitalIdentityAnchor | Yes      | Configuration for the Digital Identity Anchor Event                                                                                 | [Credential](/docs/mock-apps/common/credential)                 |
+| digitalIdentityAnchor | Yes      | Configuration for the Digital Identity Anchor                                                                                       | [Credential](/docs/mock-apps/common/credential)                 |
 | storage               | Yes      | Configuration for storage service                                                                                                   | [Storage](/docs/mock-apps/common/storage)                       |
 | dlr                   | Yes      | Configuration for the Digital Link Resolver                                                                                         | [IDR](/docs/mock-apps/common/idr)                               |
 | identifierKeyPath     | Yes      | JSON path to the identifier in the credential subject or the object for function and arguments of JSON path to construct identifier | [IdentifierKeyPath](/docs/mock-apps/common/identifier-key-path) |

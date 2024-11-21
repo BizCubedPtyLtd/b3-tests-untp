@@ -1,12 +1,12 @@
 import { W3CVerifiableCredential } from '@vckit/core-types';
-import { IService, IDppContext } from './types/index.js';
+import { IDppContext, IService } from './types/index.js';
 import { constructIdentifierString, generateUUID } from './utils/helpers.js';
 
-import { getStorageServiceLink } from './storage.service.js';
-import { issueVC } from './vckit.service.js';
-import { LinkType, getLinkResolverIdentifier, registerLinkResolver } from './linkResolver.service.js';
+import { uploadData } from './storage.service.js';
+import { decodeEnvelopedVC, issueVC } from './vckit.service.js';
 import { validateContextDPP } from './validateContext.js';
 import { deleteItemFromLocalStorage } from './features/localStorage.service.js';
+import { LinkType, getLinkResolverIdentifier, registerLinkResolver } from './linkResolver.service.js';
 
 /**
  * Process DPP, issue VC, upload to storage and register link resolver
@@ -25,20 +25,26 @@ export const processDPP: IService = async (data: any, context: IDppContext): Pro
 
     const { identifier, qualifierPath } = getLinkResolverIdentifier(objectIdentifier);
 
+    const credentialId = generateUUID();
     const vckitContext = context.vckit;
     const dppContext = context.dpp;
-    const restOfVC = { render: dppContext?.renderTemplate ?? [] };
+
+    const restOfVC = { id: `urn:uuid:${credentialId}`, render: dppContext?.renderTemplate ?? [] };
+
     const vc: W3CVerifiableCredential = await issueVC({
       context: dppContext.context,
       credentialSubject,
       issuer: vckitContext.issuer,
       type: [...dppContext.type],
       vcKitAPIUrl: vckitContext.vckitAPIUrl,
+      headers: vckitContext.headers,
       restOfVC,
     });
 
+    const decodedEnvelopedVC = decodeEnvelopedVC(vc);
+
     const storageContext = context.storage;
-    const vcUrl = await getStorageServiceLink(storageContext, vc, `${identifier}/${qualifierPath}`);
+    const vcUrl = await uploadData(storageContext, vc, credentialId);
 
     const linkResolverContext = context.dlr;
     const linkResolver = await registerLinkResolver(
@@ -59,7 +65,7 @@ export const processDPP: IService = async (data: any, context: IDppContext): Pro
       deleteItemFromLocalStorage(context.localStorageParams);
     }
 
-    return { vc, linkResolver };
+    return { vc, decodedEnvelopedVC, linkResolver };
   } catch (error: any) {
     throw new Error(error.message ?? 'Error processing DPP');
   }

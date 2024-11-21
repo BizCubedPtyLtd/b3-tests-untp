@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Renderer, WebRenderingTemplate2022 } from '@vckit/renderer';
-import { VerifiableCredential } from '@vckit/core-types';
+import { UnsignedCredential, VerifiableCredential } from '@vckit/core-types';
 import { Box, CircularProgress } from '@mui/material';
 import { convertBase64ToString } from '../../utils';
 
 /**
  * CredentialRender component is used to render the credential
  */
-const CredentialRender = ({ credential }: { credential: VerifiableCredential }) => {
+const CredentialRender = ({ credential }: { credential: VerifiableCredential | UnsignedCredential }) => {
   const [documents, setDocuments] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -54,18 +54,21 @@ const CredentialRender = ({ credential }: { credential: VerifiableCredential }) 
       >
         {documents.length !== 0
           ? documents.map((doc, i) => (
-              <div
-                style={{
-                  margin: '0 auto',
-                  width: '100%',
-                  maxWidth: '400px',
-                  height: '100%',
-                  minHeight: '100vh',
-                  overflow: 'hidden',
-                }}
-                key={i}
-                dangerouslySetInnerHTML={{ __html: doc }}
-              ></div>
+              <>
+                <div
+                  style={{
+                    contain: 'content', // isolate the content
+                    margin: '0 auto',
+                    height: '100%',
+                    minHeight: '100vh',
+                    overflowY: 'scroll',
+                    width: '100%',
+                    textAlign: 'left',
+                  }}
+                  key={i}
+                  dangerouslySetInnerHTML={{ __html: doc }}
+                ></div>
+              </>
             ))
           : ''}
       </Box>

@@ -1,9 +1,9 @@
 import { VerifiableCredential } from '@vckit/core-types';
 import { registerLinkResolver, LinkType, getLinkResolverIdentifier } from './linkResolver.service.js';
-import { getStorageServiceLink } from './storage.service.js';
+import { uploadData } from './storage.service.js';
 import { IService } from './types/IService.js';
 import { constructIdentifierString, generateUUID } from './utils/helpers.js';
-import { issueVC } from './vckit.service.js';
+import { decodeEnvelopedVC, issueVC } from './vckit.service.js';
 import { ITraceabilityEvent, IDigitalIdentityAnchorContext } from './types/index.js';
 import { validateDigitalIdentityAnchorContext } from './validateContext.js';
 
@@ -33,18 +33,23 @@ export const processDigitalIdentityAnchor: IService = async (
 
   const { identifier, qualifierPath } = getLinkResolverIdentifier(identifierString);
 
+  const credentialId = generateUUID();
+
   const vc: VerifiableCredential = await issueVC({
     credentialSubject: digitalIdentityAnchorData.data,
     vcKitAPIUrl: vckit.vckitAPIUrl,
+    headers: vckit.headers,
     issuer: vckit.issuer,
     context: digitalIdentityAnchor.context,
     type: digitalIdentityAnchor.type,
     restOfVC: {
+      id: `urn:uuid:${credentialId}`,
       render: digitalIdentityAnchor.renderTemplate,
     },
   });
 
-  const vcUrl = await getStorageServiceLink(storage, vc, `${identifier}/${generateUUID()}`);
+  const decodedEnvelopedVC = decodeEnvelopedVC(vc);
+  const vcUrl = await uploadData(storage, vc, credentialId);
 
   const linkResolver = await registerLinkResolver(
     vcUrl,
@@ -60,5 +65,5 @@ export const processDigitalIdentityAnchor: IService = async (
     LinkType.certificationLinkType,
   );
 
-  return { vc, linkResolver };
+  return { vc, decodedEnvelopedVC, linkResolver };
 };

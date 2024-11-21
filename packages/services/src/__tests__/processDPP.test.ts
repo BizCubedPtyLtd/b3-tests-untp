@@ -1,16 +1,17 @@
 import { processDPP } from '../processDPP.service';
-import { issueVC, contextDefault } from '../vckit.service';
-import { getStorageServiceLink } from '../storage.service';
+import { issueVC, contextDefault, decodeEnvelopedVC } from '../vckit.service';
+import { uploadData } from '../storage.service';
 import { registerLinkResolver, IdentificationKeyType, LinkType } from '../linkResolver.service';
 import { contextDPP, dataDPP } from './mocks/constants';
 
 jest.mock('../vckit.service', () => ({
   issueVC: jest.fn(),
+  decodeEnvelopedVC: jest.fn(),
   contextDefault: ['https://www.w3.org/2018/credentials/v1', 'https://w3id.org/vc-revocation-list-2020/v1'],
 }));
 
 jest.mock('../storage.service', () => ({
-  getStorageServiceLink: jest.fn(),
+  uploadData: jest.fn(),
 }));
 
 jest.mock('../linkResolver.service', () => ({
@@ -24,9 +25,8 @@ jest.mock('../linkResolver.service', () => ({
     verificationLinkType: 'gs1:verificationService',
     certificationLinkType: 'gs1:certificationInfo',
     epcisLinkType: 'gs1:epcis',
-  }
+  },
 }));
-
 
 describe('processDPP', () => {
   describe('successful case', () => {
@@ -49,6 +49,10 @@ describe('processDPP', () => {
 
         return Promise.resolve(expectVCResult);
       });
+
+      (decodeEnvelopedVC as jest.Mock).mockReturnValue({
+        credentialSubject: { id: 'https://example.com/123' },
+      });
     });
 
     afterEach(() => {
@@ -56,7 +60,7 @@ describe('processDPP', () => {
     });
 
     it('should call process DPP', async () => {
-      (getStorageServiceLink as jest.Mock).mockImplementation(({ url, _data, path }) => {
+      (uploadData as jest.Mock).mockImplementation(({ url, _data, path }) => {
         return `${url}/${dataDPP.data.herd.identifier}`;
       });
 
@@ -70,13 +74,6 @@ describe('processDPP', () => {
           dlrAPIUrl: string,
           dlrAPIKey,
         ) => {
-          console.log({
-            url,
-            linkTitle,
-            verificationPage,
-            dlrAPIKey,
-            identificationKey
-          });
           return `${dlrAPIUrl}/${identificationKeyType}/${identificationKey}?linkType=all`;
         },
       );
@@ -84,9 +81,18 @@ describe('processDPP', () => {
       const vc = await processDPP(dataDPP, contextDPP);
       expect(vc).toEqual({
         vc: expectVCResult,
-        linkResolver: contextDPP.dpp.dlrVerificationPage + '/' + contextDPP.dpp.dlrIdentificationKeyType + '/' + dataDPP.data.herd.identifier + '?linkType=all',
+        decodedEnvelopedVC: {
+          credentialSubject: { id: 'https://example.com/123' },
+        },
+        linkResolver:
+          contextDPP.dpp.dlrVerificationPage +
+          '/' +
+          contextDPP.dpp.dlrIdentificationKeyType +
+          '/' +
+          dataDPP.data.herd.identifier +
+          '?linkType=all',
       });
-      expect(getStorageServiceLink).toHaveBeenCalled();
+      expect(uploadData).toHaveBeenCalled();
       expect(registerLinkResolver).toHaveBeenCalled();
 
       const dppContext = contextDPP.dpp;
@@ -100,9 +106,58 @@ describe('processDPP', () => {
         dppContext.dlrVerificationPage,
         dlrContext.dlrAPIUrl,
         dlrContext.dlrAPIKey,
+        dlrContext.namespace,
         dataDPP.qualifierPath,
         LinkType.certificationLinkType,
       );
+    });
+
+    it('should process DPP with custom verifiable credential service headers', async () => {
+      const customHeaders = { 'X-Custom-Header': 'test-value' };
+      const contextWithHeaders = {
+        ...contextDPP,
+        vckit: {
+          ...contextDPP.vckit,
+          headers: customHeaders,
+        },
+      };
+
+      (uploadData as jest.Mock).mockImplementation(({ url, _data, path }) => {
+        return `${url}/${dataDPP.data.herd.identifier}`;
+      });
+
+      (registerLinkResolver as jest.Mock).mockImplementation(
+        (
+          url,
+          identificationKeyType: IdentificationKeyType,
+          identificationKey: string,
+          linkTitle,
+          verificationPage,
+          dlrAPIUrl: string,
+          dlrAPIKey,
+        ) => {
+          return `${dlrAPIUrl}/${identificationKeyType}/${identificationKey}?linkType=all`;
+        },
+      );
+
+      const vc = await processDPP(dataDPP, contextWithHeaders);
+
+      expect(vc).toEqual({
+        vc: expectVCResult,
+        decodedEnvelopedVC: {
+          credentialSubject: { id: 'https://example.com/123' },
+        },
+        linkResolver: expect.any(String),
+      });
+
+      expect(issueVC).toHaveBeenCalledWith(
+        expect.objectContaining({
+          headers: customHeaders,
+        }),
+      );
+
+      expect(uploadData).toHaveBeenCalled();
+      expect(registerLinkResolver).toHaveBeenCalled();
     });
   });
 
@@ -131,7 +186,6 @@ describe('processDPP', () => {
       try {
         await processDPP(dataDPP, newContext);
       } catch (error: any) {
-        console.log(error.message);
         expect(error.message).not.toBeNull();
       }
     });

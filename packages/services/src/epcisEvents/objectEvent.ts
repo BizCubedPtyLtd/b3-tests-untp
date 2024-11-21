@@ -1,11 +1,11 @@
 import { VerifiableCredential } from '@vckit/core-types';
 import { registerLinkResolver, LinkType, getLinkResolverIdentifier } from '../linkResolver.service.js';
-import { getStorageServiceLink } from '../storage.service.js';
+import { uploadData } from '../storage.service.js';
 import { IService } from '../types/IService.js';
 import { constructIdentifierString, generateUUID } from '../utils/helpers.js';
-import { issueVC } from '../vckit.service.js';
-import { ITraceabilityEvent, IObjectEventContext } from '../types/index.js';
-import { validateObjectEventContext } from '../validateContext.js';
+import { decodeEnvelopedVC, issueVC } from '../vckit.service.js';
+import { ITraceabilityEvent, ITraceabilityEventContext } from '../types/index.js';
+import { validateTraceabilityEventContext } from '../validateContext.js';
 
 /**
  * Processes an object event by issuing a verifiable credential, storing it in a storage service and registering a link resolver.
@@ -15,16 +15,16 @@ import { validateObjectEventContext } from '../validateContext.js';
  */
 export const processObjectEvent: IService = async (
   objectEvent: ITraceabilityEvent,
-  context: IObjectEventContext,
+  context: ITraceabilityEventContext,
 ): Promise<any> => {
-  const validationResult = validateObjectEventContext(context);
+  const validationResult = validateTraceabilityEventContext(context);
   if (!validationResult.ok) throw new Error(validationResult.value);
 
   if (!objectEvent.data) {
     throw new Error('Object event data not found');
   }
 
-  const { vckit, epcisObjectEvent, dlr, storage, identifierKeyPath } = context;
+  const { vckit, traceabilityEvent, dlr, storage, identifierKeyPath } = context;
 
   const objectIdentifier = constructIdentifierString(objectEvent.data, identifierKeyPath);
   if (!objectIdentifier) {
@@ -34,30 +34,31 @@ export const processObjectEvent: IService = async (
   const { identifier: objectEventIdentifier, qualifierPath: objectEventQualifierPath } =
     getLinkResolverIdentifier(objectIdentifier);
 
+  const credentialId = generateUUID();
+
   const objectEventVc: VerifiableCredential = await issueVC({
     credentialSubject: objectEvent.data,
     vcKitAPIUrl: vckit.vckitAPIUrl,
+    headers: vckit.headers,
     issuer: vckit.issuer,
-    context: epcisObjectEvent.context,
-    type: epcisObjectEvent.type,
+    context: traceabilityEvent.context,
+    type: traceabilityEvent.type,
     restOfVC: {
-      render: epcisObjectEvent.renderTemplate,
+      id: `urn:uuid:${credentialId}`,
+      render: traceabilityEvent.renderTemplate,
     },
   });
 
-  const objectEventVcUrl = await getStorageServiceLink(
-    storage,
-    objectEventVc,
-    `${objectEventIdentifier}/${generateUUID()}`,
-  );
+  const decodedEnvelopedVC = decodeEnvelopedVC(objectEventVc);
+  const objectEventVcUrl = await uploadData(storage, objectEventVc, credentialId);
 
   const objectEventLinkResolver = await registerLinkResolver(
     objectEventVcUrl,
-    epcisObjectEvent.dlrIdentificationKeyType,
+    traceabilityEvent.dlrIdentificationKeyType,
     objectEventIdentifier,
-    epcisObjectEvent.dlrLinkTitle,
+    traceabilityEvent.dlrLinkTitle,
     LinkType.epcisLinkType,
-    epcisObjectEvent.dlrVerificationPage,
+    traceabilityEvent.dlrVerificationPage,
     dlr.dlrAPIUrl,
     dlr.dlrAPIKey,
     dlr.namespace,
@@ -65,5 +66,5 @@ export const processObjectEvent: IService = async (
     LinkType.epcisLinkType,
   );
 
-  return { vc: objectEventVc, linkResolver: objectEventLinkResolver };
+  return { vc: objectEventVc, decodedEnvelopedVC, linkResolver: objectEventLinkResolver };
 };

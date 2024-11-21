@@ -1,87 +1,91 @@
-import { decryptString } from '@govtechsg/oa-encryption';
+import { decryptCredential } from '@mock-app/services';
 import chai from 'chai';
-import * as config from '../../config';
+import config from '../../config';
 import { reportRow, setupMatrix } from '../../helpers';
 import { request } from '../../httpService';
 import { isURLEncoded, parseQRLink } from './helper';
+import { computeHash } from '@mock-app/services';
+import jwt from 'jsonwebtoken';
 
 const expect = chai.expect;
 
 describe('QR Link Verification', function () {
-  const qrLink = config.default.testSuites.QrLinkEncrypted.url;
-  const method = config.default.testSuites.QrLinkEncrypted.method;
+  const { url: qrLink, method, headers } = config.testSuites.QrLinkEncrypted;
   const parsedLink = parseQRLink(qrLink);
 
-  setupMatrix.call(this, [config.default.implementationName], 'Implementer');
+  setupMatrix.call(this, [config.implementationName], 'Implementer');
 
-  reportRow('QR link MUST be URL encoded', config.default.implementationName, function () {
+  reportRow('QR link MUST be URL encoded', config.implementationName, function () {
     const data = isURLEncoded(qrLink);
     data.should.be.true;
   });
 
-  reportRow('Verification page link MUST exist and be a string', config.default.implementationName, function () {
+  reportRow('Verification page link MUST exist and be a string', config.implementationName, function () {
     expect(parsedLink.verify_app_address).to.be.a('string');
   });
 
-  reportRow('Payload MUST exist and be an object', config.default.implementationName, function () {
+  reportRow('Payload MUST exist and be an object', config.implementationName, function () {
     expect(parsedLink.q.payload).to.be.an('object');
   });
 
-  reportRow('URI MUST exist and be a string', config.default.implementationName, function () {
+  reportRow('URI MUST exist and be a string', config.implementationName, function () {
     expect(parsedLink.q.payload.uri).to.be.a('string');
   });
 
-  reportRow('URI MUST be resolvable', config.default.implementationName, async function () {
+  reportRow('URI MUST be resolvable', config.implementationName, async function () {
     const { data } = await request({
       url: parsedLink.q.payload.uri,
       method,
+      headers,
     });
 
     data.should.be.an('object');
   });
 
-  reportRow('Hash MUST exist and be a string', config.default.implementationName, function () {
+  reportRow('Hash MUST exist and be a string', config.implementationName, function () {
     expect(parsedLink.q.payload.hash).to.be.a('string');
   });
 
-  reportRow('Hash MUST match the credential hash', config.default.implementationName, async function () {
-    // TODO: Implement this test case with hash comparison
-    // const res = await request({
-    //   url: parsedLink.q.payload.uri,
-    //   method: 'GET',
-    // });
-    // const stringifyVC = decryptString({
-    //   ...res.document,
-    //   key: parsedLink.q.payload.key,
-    //   type: 'OPEN-ATTESTATION-TYPE-1',
-    // });
-    // const vc = JSON.parse(stringifyVC);
-    // const credentialHash = computeEntryHash(vc);
-    // expect(parsedLink.q.payload.hash).to.equal(credentialHash);
-  });
-
-  reportRow('Key exist and be a string', config.default.implementationName, function () {
-    expect(parsedLink.q.payload.key).to.be.a('string');
-  });
-
-  reportRow('Key MUST decrypt the encrypted credential', config.default.implementationName, async function () {
+  reportRow('Hash MUST match the credential hash', config.implementationName, async function () {
     const { data } = await request({
       url: parsedLink.q.payload.uri,
       method,
+      headers,
     });
 
-    const stringifyVC = decryptString({
-      ...data.document,
+    const stringifyVC = decryptCredential({
+      ...data,
       key: parsedLink.q.payload.key,
-      type: 'OPEN-ATTESTATION-TYPE-1',
+    });
+
+    const vc = JSON.parse(stringifyVC);
+    const credentialHash = computeHash(vc);
+    expect(parsedLink.q.payload.hash).to.equal(credentialHash);
+  });
+
+  reportRow('Key exist and be a string', config.implementationName, function () {
+    expect(parsedLink.q.payload.key).to.be.a('string');
+  });
+
+  reportRow('Key MUST decrypt the encrypted credential', config.implementationName, async function () {
+    const { data } = await request({
+      url: parsedLink.q.payload.uri,
+      method,
+      headers,
+    });
+
+    const stringifyVC = decryptCredential({
+      ...data,
+      key: parsedLink.q.payload.key,
     });
 
     const vc = JSON.parse(stringifyVC);
 
-    expect(vc).to.be.an('object');
-    vc.should.have.property('issuer');
-    vc.should.have.property('credentialStatus');
-    vc.should.have.property('credentialSubject');
-    vc.should.have.property('proof');
+    // Handle both JWT and regular JSON VC formats
+    const vcData = vc.id?.startsWith('data:application/vc-ld+jwt,') ? jwt.decode(vc.id.split(',')[1]) : vc;
+
+    expect(vcData).to.be.an('object');
+    vcData.should.have.property('issuer');
+    vcData.should.have.property('credentialSubject');
   });
 });

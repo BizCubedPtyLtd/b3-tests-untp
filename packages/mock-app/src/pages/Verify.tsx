@@ -1,15 +1,14 @@
-import React, { useState, useCallback, useEffect } from 'react';
-import { decryptString } from '@govtechsg/oa-encryption';
-import { IVerifyResult, VerifiableCredential } from '@vckit/core-types';
-import { useLocation } from 'react-router-dom';
-import { computeEntryHash } from '@veramo/utils';
 import { Status } from '@mock-app/components';
-import { publicAPI, privateAPI } from '@mock-app/services';
+import { computeHash, decryptCredential, publicAPI, verifyVC } from '@mock-app/services';
+import { IVerifyResult, VerifiableCredential } from '@vckit/core-types';
 import * as jose from 'jose';
-import { MessageText } from '../components/MessageText';
-import { LoadingWithText } from '../components/LoadingWithText';
+import _ from 'lodash';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { BackButton } from '../components/BackButton';
 import Credential from '../components/Credential/Credential';
+import { LoadingWithText } from '../components/LoadingWithText';
+import { MessageText } from '../components/MessageText';
 import appConfig from '../constants/app-config.json';
 
 enum PassportStatus {
@@ -56,30 +55,39 @@ const Verify = () => {
       const { payload } = JSON.parse(payloadQuery);
       const { uri, key, hash } = payload;
       const encryptedCredential = await publicAPI.get(uri);
-      if (encryptedCredential?.credentialSubject) {
-        return setCredential(encryptedCredential);
-      }
 
+      const verifyHash = (credential: VerifiableCredential) => {
+        if (hash) {
+          const computedHash = computeHash(credential);
+          if (computedHash !== hash) return displayErrorUI(['Hash invalid']);
+        }
+
+        return setCredential(credential);
+      };
+
+      const { cipherText, iv, tag, type } = encryptedCredential;
+
+      let credentialObject;
       if (
-        encryptedCredential?.type?.includes('EnvelopedVerifiableCredential') &&
-        encryptedCredential?.id?.startsWith('data:application/')
+        'cipherText' in encryptedCredential &&
+        'iv' in encryptedCredential &&
+        'tag' in encryptedCredential &&
+        'type' in encryptedCredential
       ) {
-        return setCredential(encryptedCredential);
+        const credentialJsonString = decryptCredential({
+          cipherText,
+          key,
+          iv,
+          tag,
+          type,
+        });
+
+        credentialObject = JSON.parse(credentialJsonString);
+      } else {
+        credentialObject = _.cloneDeep(encryptedCredential);
       }
 
-      const credentialJsonString = decryptString({
-        ...encryptedCredential,
-        key,
-        type: 'OPEN-ATTESTATION-TYPE-1',
-      });
-
-      const credentialObject = JSON.parse(credentialJsonString);
-      const credentialHash = computeEntryHash(credentialObject);
-      if (credentialHash !== hash) {
-        return displayErrorUI();
-      }
-
-      setCredential(credentialObject);
+      return verifyHash(credentialObject);
     } catch (error) {
       displayErrorUI();
     }
@@ -92,20 +100,14 @@ const Verify = () => {
     setErrorMessages(errorMessages);
     setCurrentScreen(screen);
   };
-
+  // TODO: Move this function to the vckit service
   const verifyCredential = async (verifiableCredential: VerifiableCredential) => {
     try {
-      const verifyCredentialParams = {
-        credential: verifiableCredential,
-        fetchRemoteContexts: true,
-        policies: {
-          credentialStatus: true,
-        },
-      };
-
       const verifyServiceUrl = appConfig.defaultVerificationServiceLink.href;
-      privateAPI.setBearerTokenAuthorizationHeaders(appConfig.defaultVerificationServiceLink.apiKey ?? '');
-      const verifiedCredentialResult = await privateAPI.post<IVerifyResult>(verifyServiceUrl, verifyCredentialParams);
+      const verifyServiceHeaders = appConfig.defaultVerificationServiceLink.headers;
+
+      const verifiedCredentialResult = await verifyVC(verifiableCredential, verifyServiceUrl, verifyServiceHeaders);
+
       showVerifiedCredentialResult(verifiedCredentialResult);
     } catch (error) {
       displayErrorUI();
@@ -160,7 +162,7 @@ const Verify = () => {
 
         return (
           <BackButton>
-            <Credential credential={customCredential ?? credential} />
+            <Credential credential={credential} decodedEnvelopedVC={customCredential} />
           </BackButton>
         );
       default:

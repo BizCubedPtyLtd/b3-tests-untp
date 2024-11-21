@@ -42,12 +42,15 @@ P-->>C: Return VC and resolver URL
   "parameters": [
     {
       "vckit": {
-        "vckitAPIUrl": "https://api.vckit.example.com",
-        "issuer": "did:example:123456789abcdefghi"
+        "vckitAPIUrl": "http://localhost:3332/v2",
+        "issuer": "did:web:uncefact.github.io:project-vckit:test-and-development",
+        "headers": {
+          "Authorization": "Bearer test123"
+        }
       },
-      "epcisTransactionEvent": {
+      "traceabilityEvent": {
         "context": ["https://www.w3.org/2018/credentials/v1", "https://gs1.org/voc/"],
-        "type": ["VerifiableCredential", "EPCISTransactionEvent"],
+        "type": ["DigitalTraceabilityEvent"],
         "renderTemplate": [
           {
             "type": "html",
@@ -59,9 +62,16 @@ P-->>C: Return VC and resolver URL
         "dlrVerificationPage": "https://verify.example.com"
       },
       "storage": {
-        "url": "https://storage.example.com/upload",
+        "url": "http://localhost:3334/v1/documents",
         "params": {
-          "resultPath": "/url"
+          "resultPath": "/uri",
+          "bucket": "verifiable-credentials"
+        },
+        "options": {
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json"
+          }
         }
       },
       "dlr": {
@@ -70,7 +80,7 @@ P-->>C: Return VC and resolver URL
         "namespace": "gs1",
         "linkRegisterPath": "/api/resolver"
       },
-      "identifierKeyPath": "/transactionId",
+      "identifierKeyPath": "/0/transactionId",
       "localStorageParams": {
         "storageKey": "transactionEvents",
         "keyPath": "/transactionId"
@@ -82,11 +92,11 @@ P-->>C: Return VC and resolver URL
 
 ## Definitions
 
-| Property              | Required | Description                                                                                                                         | Type                                                            |
-| --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| vckit                 | Yes      | Configuration for the VCKit service                                                                                                 | [VCKit](/docs/mock-apps/common/vckit)                           |
-| epcisTransactionEvent | Yes      | Configuration for the EPCIS Transaction Event                                                                                       | [Credential](/docs/mock-apps/common/credential)                 |
-| storage               | Yes      | Configuration for storage service                                                                                                   | [Storage](/docs/mock-apps/common/storage)                       |
-| dlr                   | Yes      | Configuration for the Digital Link Resolver                                                                                         | [IDR](/docs/mock-apps/common/idr)                               |
-| identifierKeyPath     | Yes      | JSON path to the identifier in the credential subject or the object for function and arguments of JSON path to construct identifier | [IdentifierKeyPath](/docs/mock-apps/common/identifier-key-path) |
-| localStorageParams    | Yes      | Configuration for local storage management                                                                                          | [LocalStorage](/docs/mock-apps/common/local-storage)            |
+| Property           | Required | Description                                                                                                                         | Type                                                            |
+| ------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| vckit              | Yes      | Configuration for the VCKit service                                                                                                 | [VCKit](/docs/mock-apps/common/vckit)                           |
+| traceabilityEvent  | Yes      | Configuration for the EPCIS Transaction Event                                                                                       | [Credential](/docs/mock-apps/common/credential)                 |
+| storage            | Yes      | Configuration for storage service                                                                                                   | [Storage](/docs/mock-apps/common/storage)                       |
+| dlr                | Yes      | Configuration for the Digital Link Resolver                                                                                         | [IDR](/docs/mock-apps/common/idr)                               |
+| identifierKeyPath  | Yes      | JSON path to the identifier in the credential subject or the object for function and arguments of JSON path to construct identifier | [IdentifierKeyPath](/docs/mock-apps/common/identifier-key-path) |
+| localStorageParams | Yes      | Configuration for local storage management                                                                                          | [LocalStorage](/docs/mock-apps/common/local-storage)            |

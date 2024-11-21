@@ -42,6 +42,8 @@ export const contextTransformationEvent = {
   dlr: {
     dlrAPIUrl: 'http://localhost',
     dlrAPIKey: '5555555555555',
+    namespace: 'gs1',
+    linkRegisterPath: '/api/resolver',
   },
   storage: {
     url: 'https://storage.example.com',
@@ -141,6 +143,8 @@ export const contextDPP = {
   dlr: {
     dlrAPIUrl: 'http://dlr.example.com',
     dlrAPIKey: '1234',
+    namespace: 'gs1',
+    linkRegisterPath: '/api/resolver',
   },
   storage: {
     url: 'https://storage.example.com',
@@ -168,7 +172,7 @@ export const transactionEventMock = {
   transactionEventDLRMock: `https://example-dlr.com/nlisid/9988776600000?linkType=all`,
   transactionVCMock: {
     '@context': ['https://example.sh/TransactionEvent.jsonld'],
-    type: ['VerifiableCredential', 'TransactionEventCredential'],
+    type: ['DigitalTraceabilityEvent'],
     issuer: 'did:web:example.com',
     credentialSubject: {
       sourceParty: { partyID: `https://beef-steak-shop.com/info.json`, name: 'Beef Steak Shop' },
@@ -192,7 +196,7 @@ export const aggregationEventMock = {
   aggregationEventDLRMock: `https://example.com/gtin/9988776600000.json`,
   aggregationVCMock: {
     '@context': ['https://example.sh/AggregationEvent.jsonld'],
-    type: ['VerifiableCredential', 'AggregationEventCredential'],
+    type: ['AggregationEventCredential'],
     issuer: 'did:web:example.com',
     credentialSubject: {
       parentItem: {
@@ -205,14 +209,14 @@ export const aggregationEventMock = {
   },
 };
 
-export const objectEventContext = {
+export const traceabilityEventContext = {
   vckit: {
     vckitAPIUrl: 'https://api.vckit.example.com',
     issuer: 'did:example:123456789abcdefghi',
   },
-  epcisObjectEvent: {
+  traceabilityEvent: {
     context: ['https://www.w3.org/2018/credentials/v1', 'https://gs1.org/voc/'],
-    type: ['VerifiableCredential', 'ObjectEventCredential'],
+    type: ['ObjectEventCredential'],
     renderTemplate: [
       {
         template: '<div><h2>Object Event</h2></div>',
@@ -235,26 +239,7 @@ export const objectEventContext = {
     namespace: 'gs1',
     linkRegisterPath: '/api/resolver',
   },
-  identifierKeyPath: '/id',
-  dpp: {
-    dlrIdentificationKeyType: 'gtin',
-    dlrLinkTitle: 'Product DPP',
-    dlrVerificationPage: 'https://verify.example.com',
-  },
-  dppCredential: {
-    mappingFields: [
-      {
-        sourcePath: '/linkResolver',
-        destinationPath: '/traceabilityInformation/0/eventReference',
-      },
-    ],
-    dummyFields: [
-      {
-        path: '/traceabilityInformation/0/eventType',
-        data: 'object',
-      },
-    ],
-  },
+  identifierKeyPath: '/0/id',
 };
 
 export const digitalIdentityAnchorContext = {
@@ -273,6 +258,64 @@ export const digitalIdentityAnchorContext = {
   dlr: {
     dlrAPIUrl: 'http://dlr.example.com',
     dlrAPIKey: '1234',
+    namespace: 'gs1',
+    linkRegisterPath: '/api/resolver',
+  },
+  storage: {
+    url: 'https://storage.example.com',
+    params: {
+      resultPath: '',
+    },
+  },
+  identifierKeyPath: '/id',
+};
+
+export const digitalFacilityRecordContext = {
+  vckit: {
+    vckitAPIUrl: 'https://vckit.example.com',
+    issuer: 'did:web:example.com',
+  },
+  digitalFacilityRecord: {
+    context: ['https://www.w3.org/2018/credentials/v1'],
+    renderTemplate: [{ template: '<p>Render dpp template</p>', '@type': 'WebRenderingTemplate2022' }],
+    type: ['DigitalFacilityRecord'],
+    dlrLinkTitle: 'DigitalFacilityRecord',
+    dlrIdentificationKeyType: 'gln',
+    dlrVerificationPage: 'https://web.example.com/verify',
+  },
+  dlr: {
+    dlrAPIUrl: 'http://dlr.example.com',
+    dlrAPIKey: '1234',
+    namespace: 'gs1',
+    linkRegisterPath: '/api/resolver',
+  },
+  storage: {
+    url: 'https://storage.example.com',
+    params: {
+      resultPath: '',
+    },
+  },
+  identifierKeyPath: '/id',
+};
+
+export const digitalConformityCredentialContext = {
+  vckit: {
+    vckitAPIUrl: 'https://vckit.example.com',
+    issuer: 'did:web:example.com',
+  },
+  digitalConformityCredential: {
+    context: ['https://www.w3.org/2018/credentials/v1'],
+    renderTemplate: [{ template: '<p>Render dcc template</p>', '@type': 'WebRenderingTemplate2022' }],
+    type: ['DigitalConformityCredential'],
+    dlrLinkTitle: 'DigitalConformityCredential',
+    dlrIdentificationKeyType: 'gtin',
+    dlrVerificationPage: 'https://web.example.com/verify',
+  },
+  dlr: {
+    dlrAPIUrl: 'http://dlr.example.com',
+    dlrAPIKey: '1234',
+    namespace: 'gs1',
+    linkRegisterPath: '/api/resolver',
   },
   storage: {
     url: 'https://storage.example.com',
