@@ -1618,8 +1618,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.cadcu.pyx.io/v1",
-                    "issuer": "did:web:vckit.cadcu.pyx.io"
+                    "vckitAPIUrl": "${VCKIT_PROTOCOL}://${VCKIT_API_DOMAIN}/v1",
+                    "issuer": "${VCKIT_DID}"
                   },
                   "dpp": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dpp/0.5.0/"],
@@ -1633,15 +1633,15 @@
                     "dlrLinkTitle": "Steel Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://www.cadcu.pyx.io/verify"
+                    "dlrVerificationPage": "${APP_PROTOCOL}://${APP_DOMAIN}/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://idr.cadcu.pyx.io",
-                    "dlrAPIKey": "test123",
+                    "dlrAPIUrl": "${IDR_APP_ENDPOINT}",
+                    "dlrAPIKey": "${IDR_API_KEY}",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://vcs.cadcu.pyx.io/v1/documents",
+                    "url": "${VCS_PROTOCOL}://${VCS_DOMAIN}:${VCS_PORT}/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -2043,40 +2043,12 @@
                           "data": "https://example.com/warehouse"
                         },
                         {
-                          "path": "/sourceParty",
-                          "data": {
-                            "id": "did:web:api.acrs.pyx.io:top-line-steel",
-                            "name": "Canadian Copper Mine",
-                            "identifiers": [
-                              {
-                                "scheme": "https://example.com/scheme/source",
-                                "identifierValue": "SRC123456",
-                                "binding": {
-                                  "type": "w3c_vc",
-                                  "assuranceLevel": "3rdParty",
-                                  "reference": "https://example.com/source_evidence"
-                                }
-                              }
-                            ]
-                          }
+                          "path": "/sourcePartyId",
+                          "data": "https://abr.business.gov.au/ABN/View?abn=90664869327"
                         },
                         {
-                          "path": "/destinationParty",
-                          "data": {
-                            "id": "did:web:api.acrs.pyx.io:steel-processor",
-                            "name": "Steel Processor",
-                            "identifiers": [
-                              {
-                                "scheme": "https://example.com/scheme/destination",
-                                "identifierValue": "DST7891011",
-                                "binding": {
-                                  "type": "w3c_vc",
-                                  "assuranceLevel": "3rdParty",
-                                  "reference": "https://example.com/destination_evidence"
-                                }
-                              }
-                            ]
-                          }
+                          "path": "/destinationPartyId",
+                          "data": "https://abr.business.gov.au/ABN/View?abn=90664869327"
                         }
                       ],
                       "generationFields": [
@@ -2109,11 +2081,11 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.cadcu.pyx.io/v1",
-                    "issuer": "did:web:vckit.cadcu.pyx.io"
+                    "vckitAPIUrl": "${VCKIT_PROTOCOL}://${VCKIT_API_DOMAIN}/v1",
+                    "issuer": "${VCKIT_DID}"
                   },
                   "epcisTransactionEvent": {
-                    "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/transaction-event-ld.json"],
+                    "context": ["https://test.uncefact.org/vocabulary/untp/dte/0.5.0/"],
                     "renderTemplate": [
                       {
                         "template": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Transaction Event</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link href=\"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\" rel=\"stylesheet\"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Lato,sans-serif}footer{min-height:60px}.container{text-align:initial;background:#fafafa;min-width:290px;max-width:390px;margin:0 auto;display:flex;flex-direction:column;gap:32px}.blue-bottom-line{text-decoration:none;color:#000;border-bottom:2px #94c4f5 solid;width:fit-content;justify-content:flex-start;align-items:flex-start;gap:10px;display:inline-flex}.header{color:rgba(255,255,255,1);min-height:350px;background:#1f5a95;flex-direction:column;justify-content:flex-start;align-items:center;gap:32px;display:flex}.trace-header{min-height:94px;padding:16px;width:100%;background:#006eb5;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;display:flex}.trace-header p{width:300px;font-size:16px;font-weight:400;line-height:22px;word-wrap:break-word}.trace-header h1{align-self:stretch;font-size:30px;min-height:32px;flex-direction:column;justify-content:flex-end;align-items:flex-start;display:flex}.event-issued-header{width:100%;min-height:250px;padding:0 16px;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:4px;display:flex}.event-issued-by{flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:4px;display:flex}.event-issued-by p{align-items:flex-start;font-weight:300;font-size:14px;line-height:15.26px}.event-issued-by h2{font-size:20px;font-weight:500;line-height:21.8px;word-wrap:break-word}.event-issued-items{flex-direction:column;justify-content:flex-start;align-items:flex-start;display:flex;align-self:stretch}.event-issued-item{align-self:stretch;padding-top:10px;padding-bottom:12px;border-bottom:1px #b5d5f5 solid;justify-content:flex-start;align-items:flex-start;gap:16px;display:inline-flex}.event-issued-item:last-child{border-bottom:none}.event-issued-item-title{width:130px;color:#fff;font-size:16px;font-weight:300;line-height:17.44px;word-wrap:break-word}.event-issued-item-value{font-size:16px;font-weight:400;line-height:17.44px;word-wrap:break-word;color:#fff}.event-issued-item-values{display:flex;flex-direction:column;gap:8px}.event-description{padding:0 16px;flex-direction:column;justify-content:flex-start;align-items:flex-start;display:flex;gap:12px}.event-description-item{padding:10px 0;display:flex;gap:16px;justify-content:flex-start;align-items:center}.event-description h3{color:#000;font-size:18px;font-weight:700;line-height:19.62px;word-wrap:break-word}.event-description-item-title{color:#55606e;font-size:16px;font-weight:400;line-height:17.44px;word-wrap:break-word;width:130px}.event-description-item-value{color:#232e3d;font-size:16px;font-weight:500;line-height:17.44px;display:flex;flex:1 1 0;flex-direction:column;gap:6px}.event-description-bottom-line{width:100%;border-bottom:1px #d4d6d8 solid;word-break:break-all}.event-list{align-self:stretch;padding:0 16px;flex-direction:column;justify-content:flex-start;align-items:center;gap:12px;display:flex}.event-list>h3{align-self:baseline;color:#000;font-size:18px;font-weight:700;line-height:19.62px;word-wrap:break-word}.event-item{width:100%;padding:16px 18px 16px 16px;background:#fff;border-radius:4px;border:1px #d4d6d8 solid;word-break:break-all;flex-direction:column;display:flex;justify-content:space-between;align-items:flex-start;gap:4px}.event-item p{color:#55606e;font-size:14px;font-weight:400;line-height:19.25px;word-wrap:break-word}.event-item-space-between{width:100%;display:grid;grid-template-columns:3fr 1.5fr}.event-item-load-left{justify-self:end;grid-column:2}.sustainability-claims{color:#000;font-size:14px;font-weight:400;display:flex;gap:4px}.sustainability-claims div{padding:2px 3px;background:#edeff0;font-size:14px;font-weight:400;line-height:19.25px;word-wrap:break-word}.event-item-nav,.event-item-nav:link{cursor:pointer;text-decoration:none;color:#000;display:flex;justify-content:flex-end;align-items:center;gap:5px}.event-item-description{color:#55606e;font-size:14px;font-weight:400;line-height:19.25px;word-wrap:break-word}.sensor{padding:0 16px;flex-direction:column;justify-content:flex-start;align-items:flex-start;display:flex;gap:12px}.sensor-item{padding:10px 0;display:flex;gap:16px;justify-content:flex-start;align-items:center}.sensor h3{color:#000;font-size:18px;font-weight:700;line-height:19.62px;word-wrap:break-word}.sensor-item-title{align-self:baseline;color:#55606e;font-size:16px;font-weight:400;line-height:17.44px;word-wrap:break-word;width:130px}.sensor-item-value{color:#232e3d;font-size:16px;font-weight:500;line-height:17.44px;word-wrap:break-word;display:flex;flex:1 1 0;flex-direction:column;gap:6px}.sensor-bottom-line{width:100%;border-bottom:1px #d4d6d8 solid}.tag{padding-left:8px;padding-right:8px;padding-top:4px;padding-bottom:4px;border-radius:8px;overflow:hidden;justify-content:center;align-items:center;color:#000;font-size:14px;font-weight:600;width:fit-content;display:flex;gap:10px}.vc-tag{background:#b8ecb6}.other-evidence-tag{background:#b5d5f5}.indicator{padding-right:12px;background:rgba(181,213,245,.5);border-radius:4px;overflow:hidden;border:1px #1f5a95 solid;justify-content:center;align-items:center;gap:8px;display:inline-flex}.indicator-icon{min-width:30px;min-height:30px;position:relative;border-top-left-radius:2px;border-top-right-radius:2px}.indicator>p{color:#1f5a95;font-size:16px;font-weight:600;line-height:17.44px;word-wrap:break-word}</style></head><body><div class=\"container\"><div class=\"header\"><div class=\"trace-header\"><p>TRACEABILITY EVENT</p><h1>Transaction</h1></div><div class=\"event-issued-header\"><div class=\"event-issued-by\"><p>EVENT ISSUED BY</p><h2>{{issuer.name}}</h2></div><div class=\"event-issued-items\">{{#each issuer.identifiers}}<div class=\"event-issued-item\"><div class=\"event-issued-item-title\">Industry</div><div class=\"event-issued-item-value\">Needs to be replaced...</div></div><div class=\"event-issued-item\"><div class=\"event-issued-item-title\">Business identifier</div><a href=\"#\" class=\"event-issued-item-value blue-bottom-line\">Needs to be replaced...</a></div><div class=\"event-issued-item\"><div class=\"event-issued-item-title\">Location</div><div class=\"event-issued-item-values\"><a href=\"#\" class=\"event-issued-item-value blue-bottom-line\">Needs to be replaced...</a></div></div><div class=\"event-issued-item\"><div class=\"event-issued-item-title\">Identity verification</div><div class=\"event-issued-item-values\"><a href=\"{{scheme}}\" class=\"event-issued-item-value blue-bottom-line\">{{identiferValue}}</a><div class=\"event-issued-item-value tag vc-tag\"><div>Verifiable credential</div><svg width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4.23081 22C3.29064 22 2.49149 21.6792 1.83337 21.0375C1.17525 20.3958 0.846191 19.6167 0.846191 18.7V15.4H4.23081V0L5.92311 1.65L7.61542 0L9.30773 1.65L11 0L12.6923 1.65L14.3847 0L16.077 1.65L17.7693 0L19.4616 1.65L21.1539 0V18.7C21.1539 19.6167 20.8248 20.3958 20.1667 21.0375C19.5086 21.6792 18.7094 22 17.7693 22H4.23081ZM17.7693 19.8C18.0889 19.8 18.3571 19.6944 18.5737 19.4832C18.7903 19.272 18.8982 19.0109 18.8975 18.7V3.3H6.48722V15.4H16.6411V18.7C16.6411 19.0117 16.7494 19.2731 16.966 19.4843C17.1826 19.6955 17.4504 19.8007 17.7693 19.8ZM7.61542 7.7V5.5H14.3847V7.7H7.61542ZM7.61542 11V8.8H14.3847V11H7.61542ZM16.6411 7.7C16.3214 7.7 16.0536 7.5944 15.8378 7.3832C15.6219 7.172 15.5136 6.91093 15.5129 6.6C15.5121 6.28907 15.6204 6.028 15.8378 5.8168C16.0551 5.6056 16.3229 5.5 16.6411 5.5C16.9592 5.5 17.2274 5.6056 17.4455 5.8168C17.6636 6.028 17.7715 6.28907 17.7693 6.6C17.767 6.91093 17.6587 7.17237 17.4443 7.3843C17.23 7.59623 16.9622 7.70147 16.6411 7.7ZM16.6411 11C16.3214 11 16.0536 10.8944 15.8378 10.6832C15.6219 10.472 15.5136 10.2109 15.5129 9.9C15.5121 9.58907 15.6204 9.328 15.8378 9.1168C16.0551 8.9056 16.3229 8.8 16.6411 8.8C16.9592 8.8 17.2274 8.9056 17.4455 9.1168C17.6636 9.328 17.7715 9.58907 17.7693 9.9C17.767 10.2109 17.6587 10.4724 17.4443 10.6843C17.23 10.8962 16.9622 11.0015 16.6411 11ZM4.23081 19.8H14.3847V17.6H3.1026V18.7C3.1026 19.0117 3.21091 19.2731 3.42752 19.4843C3.64414 19.6955 3.9119 19.8007 4.23081 19.8Z\" fill=\"black\"/></svg></div></div></div>{{/each}}</div></div></div><div class=\"event-description\"><h3>Event description</h3><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Event ID</div><div class=\"event-description-item-value\">{{credentialSubject.eventID}}</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Event type</div><div class=\"event-description-item-value\">Needs to be replaced...</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Description</div><div class=\"event-description-item-value\">Needs to be replaced...</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Time and date</div><div class=\"event-description-item-value\">{{credentialSubject.eventTime}}</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Lifecycle action</div><div class=\"event-description-item-value\">{{credentialSubject.action}}</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Product disposition</div><div class=\"event-description-item-value\">{{credentialSubject.disposition}}</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Business step</div><div class=\"event-description-item-value\">{{credentialSubject.bizStep}}</div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Location</div><div class=\"event-description-item-value\"><a href=\"{{credentialSubject.bizLocation}}\" class=\"blue-bottom-line\">{{credentialSubject.bizLocation}}</a></div></div><div class=\"event-description-item event-description-bottom-line\"><div class=\"event-description-item-title\">Transaction document</div><div class=\"event-description-item-value\"><a href=\"{{credentialSubject.referenceDocument.documentURL}}\" class=\"blue-bottom-line\">{{credentialSubject.referenceDocument.identifier}}</a></div></div></div><div class=\"event-list\"><h3>Transaction</h3><div class=\"event-item\"><div class=\"event-item-space-between\"><h4>{{credentialSubject.sourceParty.name}}</h4><a href=\"{{credentialSubject.sourceParty.identifiers.0.binding.reference}}\" class=\"event-item-nav event-item-load-left\"><p>SOURCE</p><svg width=\"10\" height=\"15\" viewBox=\"0 0 10 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 1L7.66667 7.49842M7.66667 7.49842L1 14M7.66667 7.49842H7\" stroke=\"#4F95DD\" stroke-width=\"2\"/></svg></a></div><p>{{credentialSubject.sourceParty.identifiers.0.identifierValue}}</p></div><div class=\"indicator\"><div class=\"indicator-icon\"><svg width=\"31\" height=\"30\" viewBox=\"0 0 31 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.5 0H0.5V30H30.5V0ZM15.8838 8H14.1162V18.6061L9.25505 13.7449L8 15L15 22L22 15L20.7449 13.7449L15.8838 18.6061V8Z\" fill=\"#1F5A95\"/></svg></div><p>Transferred</p></div><div class=\"event-item\"><div class=\"event-item-space-between\"><h4>{{credentialSubject.destinationParty.name}}</h4><a href=\"{{credentialSubject.destinationParty.partyID}}\" class=\"event-item-nav event-item-load-left\"><p>DESTINATION</p><svg width=\"10\" height=\"15\" viewBox=\"0 0 10 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 1L7.66667 7.49842M7.66667 7.49842L1 14M7.66667 7.49842H7\" stroke=\"#4F95DD\" stroke-width=\"2\"/></svg></a></div><p>{{credentialSubject.destinationParty.partyID}}</p></div></div><div class=\"event-list\"><h3>Object list</h3>{{#each credentialSubject.epcList}}<div class=\"event-item\"><h4>{{name}}</h4><p>{{itemID}}</p><p>Product class name</p><div class=\"event-item-space-between\"><div class=\"sustainability-claims\"><div>Sustainability 0%</div><div>Confidence 0%</div></div><a href=\"{{itemID}}\" class=\"event-item-nav\"><div>View</div><svg width=\"10\" height=\"15\" viewBox=\"0 0 10 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 1L7.66667 7.49842M7.66667 7.49842L1 14M7.66667 7.49842H7\" stroke=\"#4F95DD\" stroke-width=\"2\"/></svg></a></div></div>{{/each}}<div class=\"sensor\"><h3>Sensor</h3>{{#each credentialSubject.sensorElementList}}<div class=\"sensor-item sensor-bottom-line\"><div class=\"sensor-item-title\">{{sensorMetadata.device.name}}</div><div class=\"sensor-item-value\">{{#each sensorReport}}<p>{{time}}</p><a href=\"{{type}}\" class=\"blue-bottom-line\">Data type</a><p>{{value}} {{uom}}</p>{{/each}}<a href=\"{{sensorIntegrityProof}}\" class=\"blue-bottom-line\">{{sensorIntegrityProof}}</a><div class=\"event-issued-item-value tag other-evidence-tag\"><div>Other evidence</div><svg width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4.23081 22C3.29064 22 2.49149 21.6792 1.83337 21.0375C1.17525 20.3958 0.846191 19.6167 0.846191 18.7V15.4H4.23081V0L5.92311 1.65L7.61542 0L9.30773 1.65L11 0L12.6923 1.65L14.3847 0L16.077 1.65L17.7693 0L19.4616 1.65L21.1539 0V18.7C21.1539 19.6167 20.8248 20.3958 20.1667 21.0375C19.5086 21.6792 18.7094 22 17.7693 22H4.23081ZM17.7693 19.8C18.0889 19.8 18.3571 19.6944 18.5737 19.4832C18.7903 19.272 18.8982 19.0109 18.8975 18.7V3.3H6.48722V15.4H16.6411V18.7C16.6411 19.0117 16.7494 19.2731 16.966 19.4843C17.1826 19.6955 17.4504 19.8007 17.7693 19.8ZM7.61542 7.7V5.5H14.3847V7.7H7.61542ZM7.61542 11V8.8H14.3847V11H7.61542ZM16.6411 7.7C16.3214 7.7 16.0536 7.5944 15.8378 7.3832C15.6219 7.172 15.5136 6.91093 15.5129 6.6C15.5121 6.28907 15.6204 6.028 15.8378 5.8168C16.0551 5.6056 16.3229 5.5 16.6411 5.5C16.9592 5.5 17.2274 5.6056 17.4455 5.8168C17.6636 6.028 17.7715 6.28907 17.7693 6.6C17.767 6.91093 17.6587 7.17237 17.4443 7.3843C17.23 7.59623 16.9622 7.70147 16.6411 7.7ZM16.6411 11C16.3214 11 16.0536 10.8944 15.8378 10.6832C15.6219 10.472 15.5136 10.2109 15.5129 9.9C15.5121 9.58907 15.6204 9.328 15.8378 9.1168C16.0551 8.9056 16.3229 8.8 16.6411 8.8C16.9592 8.8 17.2274 8.9056 17.4455 9.1168C17.6636 9.328 17.7715 9.58907 17.7693 9.9C17.767 10.2109 17.6587 10.4724 17.4443 10.6843C17.23 10.8962 16.9622 11.0015 16.6411 11ZM4.23081 19.8H14.3847V17.6H3.1026V18.7C3.1026 19.0117 3.21091 19.2731 3.42752 19.4843C3.64414 19.6955 3.9119 19.8007 4.23081 19.8Z\" fill=\"black\"/></svg></div></div></div>{{/each}}</div><footer></footer></body></html>",
@@ -2124,15 +2096,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://www.cadcu.pyx.io/verify"
+                    "dlrVerificationPage": "${APP_PROTOCOL}://${APP_DOMAIN}/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://idr.cadcu.pyx.io",
-                    "dlrAPIKey": "test123",
+                    "dlrAPIUrl": "${IDR_APP_ENDPOINT}",
+                    "dlrAPIKey": "${IDR_API_KEY}",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://vcs.cadcu.pyx.io/v1/documents",
+                    "url": "${VCS_PROTOCOL}://${VCS_DOMAIN}:${VCS_PORT}/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -2156,15 +2128,15 @@
   ],
   "identifyProvider": {
     "type": "gs1",
-    "url": "https://mock-gs1-idr.cadcu.pyx.io",
+    "url": "${GS1_APP_ENDPOINT}",
     "namespace": "gs1"
   },
   "defaultVerificationServiceLink": {
     "title": "Default Verification Service",
     "context": "Default Verification Service",
     "type": "application/json",
-    "href": "https://vckit.cadcu.pyx.io/agent/routeVerificationCredential",
+    "href": "${VCKIT_PROTOCOL}://${VCKIT_API_DOMAIN}/agent/routeVerificationCredential",
     "hreflang": ["en"],
-    "apiKey": "test123"
+    "apiKey": "${VCKIT_API_KEY}"
   }
 }
