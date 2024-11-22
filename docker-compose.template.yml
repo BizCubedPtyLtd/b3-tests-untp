@@ -1,11 +1,13 @@
 version: '3.8'
 services:
   documentation:
-    image: ghcr.io/jballment/b3-untp-mock-app-docs:latest
+    build:
+      context: ./documentation
+      dockerfile: Dockerfile
     ports:
-      - 3002:3002
+      - ${PYX_ENV_DOCS_PORT}:3002
     environment:
-      - PORT=3002
+      - PORT=${PYX_ENV_DOCS_PORT}
       - DOCS_URL=http://0.0.0.0
       - DOCS_BASE_URL=/
     volumes:
@@ -14,13 +16,17 @@ services:
     restart: always
 
   mock-app:
-    image: ghcr.io/jballment/cadcu-untp-mock-app:latest 
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - CONFIG_FILE=./app-config.json
     ports:
-      - 3003:80
+      - ${PYX_ENV_APP_PORT}:80
     restart: always
 
   vckit-api:
-    image: ghcr.io/uncefact/project-vckit:sha-2adb515@sha256:e109a76f66f6d7763c0addde3a0fb1eee10ade21e2966a67c88348d37eb8db70
+    image: ghcr.io/uncefact/project-vckit:sha-8a1a7ea@sha256:21414e4cdfd6b045f57667408256d4951c1d14d0648151ededf3107716b67b5f
     environment:
       - DATABASE_HOST=${VCKIT_DATABASE_HOST}
       - DATABASE_TYPE=${VCKIT_DATABASE_TYPE}
@@ -34,15 +40,13 @@ services:
       - API_DOMAIN=${VCKIT_API_DOMAIN}
       - API_KEY=${VCKIT_API_KEY}
     ports:
-      - 3332:${VCKIT_INTERNAL_PORT}
+      - ${VCKIT_INTERNAL_PORT}:3332
     depends_on:
       - db
     restart: always
 
   db:
     image: postgres:16-alpine
-    ports:
-      - 5432:5432
     environment:
       - POSTGRES_USER=${VCKIT_DATABASE_USERNAME}
       - POSTGRES_PASSWORD=${VCKIT_DATABASE_PASSWORD}
@@ -52,9 +56,9 @@ services:
     restart: always
 
   storage-service:
-    image: ghcr.io/uncefact/project-identity-resolver:sha-40264dd@sha256:aa3edd2f142f0edabfa9c7b1e16b6a69835913cc1fc345f3e478c7801c0eb060
+    image: ghcr.io/uncefact/project-identity-resolver:sha-e87d4fc@sha256:54ee7f3adaab9650052b99dbe19b3f5bbd2aa2fe7588410c5f66d1941e3752ce
     ports:
-      - 3334:${VCS_PORT}
+      - ${VCS_PORT}:3334
     environment:
       - API_VERSION=${VCS_API_VERSION}
       - PROTOCOL=${VCS_PROTOCOL}
@@ -68,7 +72,7 @@ services:
 
   identity-resolver-service:
     # Replace with local or deployed image
-    image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
+    image: ghcr.io/pyx-industries/pyx-identity-resolver:sha-fa017fb-local@sha256:cd514863bdaf65ab1b47b8e71669a0245b041c861285a83fa7cf0a65789d4e58
     ports:
       - '${IDR_PORT}:${IDR_PORT}'
     environment:
@@ -93,9 +97,6 @@ services:
   identity-resolver-service-object-store:
     image: quay.io/minio/minio:RELEASE.2024-08-17T01-24-54Z-cpuv1
     command: server /data --console-address ":9090"
-    ports:
-      - '${IDR_MINIO_PORT}:9000'
-      - '9090:9090'
     environment:
       - MINIO_ROOT_USER=${IDR_MINIO_ACCESS_KEY}
       - MINIO_ROOT_PASSWORD=${IDR_MINIO_SECRET_KEY}
@@ -105,7 +106,7 @@ services:
 
   mock-global-gs1-resolver:
     # Replace with local or deployed image
-    image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
+    image: ghcr.io/pyx-industries/pyx-identity-resolver:sha-fa017fb-local@sha256:cd514863bdaf65ab1b47b8e71669a0245b041c861285a83fa7cf0a65789d4e58
     ports:
       - '${GS1_PORT}:${GS1_PORT}'
     environment:
@@ -130,9 +131,6 @@ services:
   mock-global-gs1-resolver-object-store:
     image: quay.io/minio/minio:RELEASE.2024-08-17T01-24-54Z-cpuv1
     command: server /data --console-address ":9091"
-    ports:
-      - '${GS1_MINIO_PORT}:9000'
-      - '9091:9090'
     environment:
       - MINIO_ROOT_USER=${GS1_MINIO_ACCESS_KEY}
       - MINIO_ROOT_PASSWORD=${GS1_MINIO_SECRET_KEY}
@@ -140,33 +138,33 @@ services:
       - ./minio_data/mock-global-gs1-resolver-object-store:/data
     restart: always
 
-  # seeding-data:
-  #   image: alpine:3.20.3
-  #   environment:
-  #     # IDR service environment variables
-  #     - IDR_SERVICE_HOST=identity-resolver-service
-  #     - IDR_SERVICE_PORT=3000
-  #     - IDR_SERVICE_API_KEY=test123
+  seeding-data:
+    image: alpine:3.20.3
+    environment:
+      # IDR service environment variables
+      - IDR_SERVICE_HOST=identity-resolver-service
+      - IDR_SERVICE_PORT=3000
+      - IDR_SERVICE_API_KEY=test123
 
-  #     # Mock GS1 service environment variables
-  #     - IDR_SERVICE_DOMAIN=https://idr.cadcu.pyx.io
-  #     - MOCK_GS1_SERVICE_HOST=mock-global-gs1-resolver
-  #     - MOCK_GS1_SERVICE_PORT=3001
-  #     - MOCK_GS1_SERVICE_API_KEY=test456
-  #   command:
-  #     - /bin/sh
-  #     - -c
-  #     - |
-  #       if [ "$SEEDING" = "true" ]; then
-  #         apk add curl jq && \
-  #         ./seeding/idr-data.sh
-  #         ./seeding/mock-gs1-data.sh
-  #       fi
-  #   volumes:
-  #     - ./seeding:/seeding
-  #   depends_on:
-  #     - identity-resolver-service
-  #     - mock-global-gs1-resolver
+      # Mock GS1 service environment variables
+      - IDR_SERVICE_DOMAIN=https://idr.cadcu.pyx.io
+      - MOCK_GS1_SERVICE_HOST=mock-global-gs1-resolver
+      - MOCK_GS1_SERVICE_PORT=3001
+      - MOCK_GS1_SERVICE_API_KEY=test456
+    command:
+      - /bin/sh
+      - -c
+      - |
+        if [ "$SEEDING" = "true" ]; then
+          apk add curl jq && \
+          ./seeding/idr-data.sh
+          ./seeding/mock-gs1-data.sh
+        fi
+    volumes:
+      - ./seeding:/seeding
+    depends_on:
+      - identity-resolver-service
+      - mock-global-gs1-resolver
 
 volumes:
   vckit-data:
