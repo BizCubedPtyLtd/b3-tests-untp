@@ -158,7 +158,10 @@ const constructCredentialObject = ({ context, type, issuer, credentialSubject, .
       issuer: issuer,
       credentialSubject,
       ...restOfVC,
-    }
+    },
+    options: {
+      proofFormat: PROOF_FORMAT,
+    },
   };
 };
 
