@@ -169,535 +169,239 @@
                         "url": "https://jargon.sh/user/unece/DigitalProductPassport/v/working/artefacts/jsonSchemas/Product.json?class=Product"
                       },
                       "data": {
-                        "type": ["Product"],
-                        "id": "https://example.com/01/09359502000034/21/123456",
+                        "type": [
+                          "Product"
+                        ],
+                        "id": "http://localhost:3000/01/09359502000034/21/10001",
                         "name": "Copper Concentrate",
-                        "registeredId": "095201234",
+                        "registeredId": "09359502000034",
                         "idScheme": {
-                          "type": ["IdentifierScheme"],
+                          "type": [
+                            "IdentifierScheme"
+                          ],
                           "id": "https://id.gs1.org/01/",
                           "name": "Global Trade Identification Number (GTIN)"
                         },
-                        "serialNumber": "12345678",
-                        "batchNumber": "6789",
-                        "productImage": {
-                          "type": ["Link"],
-                          "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
-                          "linkName": "EV Battery 300Ah Image"
-                        },
-                        "description": "The EcoCharge EC-5000 Lithium-Ion Battery is a high-capacity, 5000mAh battery designed for performance and sustainability. Manufactured with responsibly sourced materials and a 95% recyclability rate, it reduces lifecycle emissions through eco-friendly production and verified recycling programs.",
+                        "batchNumber": "20241111",
+                        "description": "Concentrated Copper Solution followin seperation from Copper Ore.",
                         "productCategory": [
                           {
-                            "type": ["Classification"],
-                            "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                            "code": "46410",
-                            "name": "Primary cells",
-                            "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                            "schemeName": "UN Central Product Classification (CPC)"
-                          },
-                          {
-                            "type": ["Classification"],
-                            "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                            "code": "46410",
-                            "name": "Primary batteries",
+                            "type": [
+                              "Classification"
+                            ],
+                            "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/14210",
+                            "code": "14210",
+                            "name": "Copper ores and concentrates",
                             "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
                             "schemeName": "UN Central Product Classification (CPC)"
                           }
                         ],
-                        "furtherInformation": [
-                          {
-                            "type": ["Link"],
-                            "linkURL": "https://example-company.com/product-information/1234567",
-                            "linkName": "Name of document that is further information"
-                          },
-                          {
-                            "type": ["Link"],
-                            "linkURL": "https://example-company.com/product-information/1234567",
-                            "linkName": "Name of additional document that is further information"
+                        "producedByParty":{
+                          "type": [
+                            "Identifier"
+                          ],
+                          "id": "https://replace.com/dcc-or-dia-from-orgbook",
+                          "name": "TEST Copper Mine",
+                          "registeredId": "119632693",
+                          "idScheme": {
+                            "type": [
+                              "IdentifierScheme"
+                            ],
+                            "id": "https://replace.com/dcc-or-dia-from-orgbook",
+                            "name": "Business Number"
                           }
-                        ],
-                        "producedByParty": {
-                          "type": ["Identifier"],
-                          "id": "https://id.example-company.com/party/6789",
-                          "name": "Example Manufacturing Co."
                         },
                         "producedAtFacility": {
-                          "type": ["Identifier"],
-                          "id": "https://id.example-company.com/facility/123",
-                          "name": "Green Acres Battery Factory"
-                        },
-                        "dimensions": {
-                          "type": ["Dimension"],
-                          "weight": { "value": 10, "unit": "kg" },
-                          "length": { "value": 90, "unit": "mm" },
-                          "width": { "value": 60, "unit": "mm" },
-                          "height": { "value": 10, "unit": "mm" },
-                          "volume": { "value": 7.5, "unit": "L" }
-                        },
-                        "characteristic": {
-                          "Battery status": "Recycled",
-                          "Battery cell type": "Prismatic",
-                          "Number of cells per battery": "180",
-                          "Total energy": "100kwh"
-                        },
-                        "productionDate": "15 August 2024",
-                        "countryOfProduction": "Australia",
-                        "granularityLevel": "item",
-                        "dueDiligenceDeclaration": {
-                          "type": ["Link"],
-                          "linkURL": "https://example-company.com/due-diligence/1234567",
-                          "linkName": "Due Diligence Declaration"
-                        },
-                        "materialsProvenance": [
-                          {
-                            "type": ["Material"],
-                            "name": "Material",
-                            "originCountry": "AU",
-                            "materialType": {
-                              "type": ["Classification"],
-                              "id": "https://unfc.org/material-type/Lithium",
-                              "name": "Lithium"
-                            },
-                            "massFraction": 20,
-                            "massAmount": { "value": 1.0, "unit": "kg" },
-                            "recycledAmount": 0,
-                            "hazardous": false
-                          },
-                          {
-                            "type": ["Material"],
-                            "name": "Material",
-                            "originCountry": "AU",
-                            "materialType": {
-                              "type": ["Classification"],
-                              "id": "https://unfc.org/material-type/Lithium",
-                              "name": "Lithium"
-                            },
-                            "massFraction": 20,
-                            "massAmount": { "value": 1.0, "unit": "kg" },
-                            "recycledAmount": 10,
-                            "hazardous": true,
-                            "materialSafetyInformation": {
-                              "type": ["Link"],
-                              "linkURL": "https://example.com/safety-info/lithium-spodumene.pdf",
-                              "linkName": "Material Safety Data Sheet",
-                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/safetyData"
-                            }
-                          },
-                          {
-                            "type": ["Material"],
-                            "name": "Material",
-                            "originCountry": "AU",
-                            "materialType": {
-                              "type": ["Classification"],
-                              "id": "https://unfc.org/material-type/Lithium",
-                              "name": "Lithium"
-                            },
-                            "massFraction": 20,
-                            "massAmount": { "value": 1.0, "unit": "kg" },
-                            "recycledAmount": 0,
-                            "hazardous": false
-                          },
-                          {
-                            "type": ["Material"],
-                            "name": "Material",
-                            "originCountry": "AU",
-                            "materialType": {
-                              "type": ["Classification"],
-                              "id": "https://unfc.org/material-type/Lithium",
-                              "name": "Lithium"
-                            },
-                            "massFraction": 20,
-                            "massAmount": { "value": 1.0, "unit": "kg" },
-                            "recycledAmount": 0,
-                            "hazardous": false
+                          "type": [
+                            "Identifier"
+                          ],
+                          "id": "https://replace.com/dcc-or-dia-from-orgbook",
+                          "name": "TEST Copper Mine",
+                          "registeredId": "119632693",
+                          "idScheme": {
+                            "type": [
+                              "IdentifierScheme"
+                            ],
+                            "id": "https://replace.com/dcc-or-dia-from-orgbook",
+                            "name": "Business Number"
                           }
-                        ],
+                        },
+                        "productionDate": "2024-11-11",
+                        "countryOfProduction": "CA",
+                        "granularityLevel": "batch",
                         "conformityClaim": [
                           {
-                            "type": ["Claim", "Declaration"],
-                            "assessmentDate": "2024-04-25",
-                            "declaredValue": [
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              },
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              }
+                            "type": [
+                              "Claim",
+                              "Declaration"
                             ],
-                            "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                            "referenceStandard": {
-                              "type": ["Standard"],
-                              "id": "https://www.iso.org/standard/60857.html",
-                              "name": "Standard",
-                              "issuingParty": {
-                                "type": ["Identifier"],
-                                "id": "https://iso.org/issuing-party/123",
-                                "name": "International Organization"
-                              },
-                              "issueDate": "2023-12-05"
-                            },
-                            "referenceRegulation": {
-                              "type": ["Regulation"],
-                              "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                              "name": "National Greenhouse",
-                              "jurisdictionCountry": "Australia",
-                              "administeredBy": {
-                                "type": ["Identifier"],
-                                "id": "https://gov.au/admin-body/12345",
-                                "name": "Australian Government"
-                              },
-                              "effectiveDate": "2024-03-20"
-                            },
+                            "assessmentDate": "2024-11-11",
+                            "id": "https://coppermark.org/wp-content/uploads/2023/10/RRA-v3.0-Criteria-Guide_2023.pdf",
                             "assessmentCriteria": [
                               {
-                                "type": ["Criterion"],
-                                "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                                "name": "Battery Assembly Guidelines",
-                                "thresholdValues": [
-                                  {
-                                    "type": ["Metric"],
-                                    "metricName": "Minimum compressive strength",
-                                    "metricValue": { "value": 500, "unit": "MPA" }
-                                  }
-                                ]
+                                "type": [
+                                  "Criterion"
+                                ],
+                                "id": "https://coppermark.org/wp-content/uploads/2023/10/RRA-v3.0-Criteria-Guide_2023.pdf",
+                                "name": "RISK READINESS ASSESSMENT CRITERIA GUIDE"
                               }
                             ],
                             "conformance": true,
-                            "conformityTopic": "environment.energy",
+                            "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "type": ["SecureLink", "Link"],
-                              "linkURL": "https://example-certifier.com/evidence/1234567.json",
-                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                              "hashMethod": "SHA-256",
-                              "linkName": "Declaration link name",
+                              "linkURL": "https://replace.com/dcc-coppermark-mine",
+                              "linkName": "Copper Concentrate Produced at CopperMark Certified Facility",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
                               "encryptionMethod": "AES"
                             }
                           },
                           {
-                            "type": ["Claim", "Declaration"],
-                            "assessmentDate": "2024-04-25",
-                            "declaredValue": [
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              },
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              }
+                            "type": [
+                              "Claim",
+                              "Declaration"
                             ],
-                            "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                            "referenceStandard": {
-                              "type": ["Standard"],
-                              "id": "https://www.iso.org/standard/60857.html",
-                              "name": "Standard",
-                              "issuingParty": {
-                                "type": ["Identifier"],
-                                "id": "https://iso.org/issuing-party/123",
-                                "name": "International Organization"
-                              },
-                              "issueDate": "2023-12-05"
-                            },
-                            "referenceRegulation": {
-                              "type": ["Regulation"],
-                              "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                              "name": "National Greenhouse",
-                              "jurisdictionCountry": "Australia",
-                              "administeredBy": {
-                                "type": ["Identifier"],
-                                "id": "https://gov.au/admin-body/12345",
-                                "name": "Australian Government"
-                              },
-                              "effectiveDate": "2024-03-20"
-                            },
+                            "assessmentDate": "2024-11-11",
+                            "id": "https://mining.ca/wp-content/uploads/dlm_uploads/2024/05/FINAL-2020-Protocol-Biodiversity.pdf",
                             "assessmentCriteria": [
                               {
-                                "type": ["Criterion"],
-                                "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                                "name": "Battery Assembly Guidelines",
-                                "thresholdValues": [
-                                  {
-                                    "type": ["Metric"],
-                                    "metricName": "Minimum compressive strength",
-                                    "metricValue": { "value": 500, "unit": "MPA" }
-                                  }
-                                ]
+                                "type": [
+                                  "Criterion"
+                                ],
+                                "id": "https://mining.ca/wp-content/uploads/dlm_uploads/2024/05/FINAL-2020-Protocol-Biodiversity.pdf",
+                                "name": "Biodiversity Conservation Management Protocol"
                               }
                             ],
-                            "conformance": false,
-                            "conformityTopic": "environment.energy",
+                            "conformance": true,
+                            "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "type": ["SecureLink", "Link"],
-                              "linkURL": "https://example-certifier.com/evidence/1234567.json",
-                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                              "hashMethod": "SHA-256",
-                              "linkName": "Declaration link name",
+                              "linkURL": "https://replace.com/dcc-coppermark-mine",
+                              "linkName": "Copper Concentrate Produced at Towards Sustainable Mining (TSM) Certified Facility",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
                               "encryptionMethod": "AES"
                             }
                           },
                           {
-                            "type": ["Claim", "Declaration"],
-                            "assessmentDate": "2024-04-25",
-                            "declaredValue": [
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              },
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              }
+                            "type": [
+                              "Claim",
+                              "Declaration"
                             ],
-                            "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                            "referenceStandard": {
-                              "type": ["Standard"],
-                              "id": "https://www.iso.org/standard/60857.html",
-                              "name": "Standard",
-                              "issuingParty": {
-                                "type": ["Identifier"],
-                                "id": "https://iso.org/issuing-party/123",
-                                "name": "International Organization"
-                              },
-                              "issueDate": "2023-12-05"
-                            },
-                            "referenceRegulation": {
-                              "type": ["Regulation"],
-                              "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                              "name": "National Greenhouse",
-                              "jurisdictionCountry": "Australia",
-                              "administeredBy": {
-                                "type": ["Identifier"],
-                                "id": "https://gov.au/admin-body/12345",
-                                "name": "Australian Government"
-                              },
-                              "effectiveDate": "2024-03-20"
-                            },
+                            "assessmentDate": "2024-11-11",
+                            "id": "https://www.nist.gov/programs-projects/measurements-standards-and-reference-materials-industrial-commodities",
                             "assessmentCriteria": [
                               {
-                                "type": ["Criterion"],
-                                "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                                "name": "Battery Assembly Guidelines",
-                                "thresholdValues": [
-                                  {
-                                    "type": ["Metric"],
-                                    "metricName": "Minimum compressive strength",
-                                    "metricValue": { "value": 500, "unit": "MPA" }
-                                  }
-                                ]
+                                "type": [
+                                  "Criterion"
+                                ],
+                                "id": "https://www.nist.gov/programs-projects/measurements-standards-and-reference-materials-industrial-commodities",
+                                "name": "Copper Concentrate Purity"
                               }
                             ],
-                            "conformance": false,
-                            "conformityTopic": "environment.energy",
+                            "declaredValues": [
+                              {
+                                "metricName": "Copper Concentrate Analysis",
+                                "metricValue": {
+                                  "value": 28.4,
+                                  "unit": "Percent by Weight"
+                                }
+                              }
+                            ],
+                            "conformance": true,
+                            "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "type": ["SecureLink", "Link"],
-                              "linkURL": "https://example-certifier.com/evidence/1234567.json",
-                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                              "hashMethod": "SHA-256",
-                              "linkName": "Declaration link name",
+                              "linkURL": "https://replace.com/pdf_TEST_lab_report",
+                              "linkName": "Copper Concentrate Purity",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
                               "encryptionMethod": "AES"
                             }
                           },
                           {
-                            "type": ["Claim", "Declaration"],
-                            "assessmentDate": "2024-04-25",
-                            "declaredValue": [
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              },
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              }
+                            "type": [
+                              "Claim",
+                              "Declaration"
                             ],
-                            "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                            "referenceStandard": {
-                              "type": ["Standard"],
-                              "id": "https://www.iso.org/standard/60857.html",
-                              "name": "Standard",
-                              "issuingParty": {
-                                "type": ["Identifier"],
-                                "id": "https://iso.org/issuing-party/123",
-                                "name": "International Organization"
-                              },
-                              "issueDate": "2023-12-05"
-                            },
-                            "referenceRegulation": {
-                              "type": ["Regulation"],
-                              "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                              "name": "National Greenhouse",
-                              "jurisdictionCountry": "Australia",
-                              "administeredBy": {
-                                "type": ["Identifier"],
-                                "id": "https://gov.au/admin-body/12345",
-                                "name": "Australian Government"
-                              },
-                              "effectiveDate": "2024-03-20"
-                            },
+                            "assessmentDate": "2024-11-11",
+                            "id": "https://replace.com/git_document",
                             "assessmentCriteria": [
                               {
-                                "type": ["Criterion"],
-                                "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                                "name": "Battery Assembly Guidelines",
-                                "thresholdValues": [
-                                  {
-                                    "type": ["Metric"],
-                                    "metricName": "Minimum compressive strength",
-                                    "metricValue": { "value": 500, "unit": "MPA" }
-                                  }
-                                ]
+                                "type": [
+                                  "Criterion"
+                                ],
+                                "id": "https://replace.com/git_document",
+                                "name": "Country Of Origin"
                               }
                             ],
-                            "conformance": false,
-                            "conformityTopic": "environment.energy",
+                            "conformance": true,
+                            "conformityTopic": "governance.transparency",
                             "conformityEvidence": {
-                              "type": ["SecureLink", "Link"],
-                              "linkURL": "https://example-certifier.com/evidence/1234567.json",
-                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                              "hashMethod": "SHA-256",
-                              "linkName": "Declaration link name",
+                              "linkURL": "https://replace.com/dte-transformation-event",
+                              "linkName": "100% Canadian Copper",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
                               "encryptionMethod": "AES"
                             }
                           },
                           {
-                            "type": ["Claim", "Declaration"],
-                            "assessmentDate": "2024-04-25",
-                            "declaredValue": [
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              },
-                              {
-                                "type": ["Metric"],
-                                "metricName": "GHG emissions intensity",
-                                "metricValue": { "value": 1.5, "unit": "kg" },
-                                "score": "1.2",
-                                "accuracy": 0.8
-                              }
+                            "type": [
+                              "Claim",
+                              "Declaration"
                             ],
-                            "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                            "referenceStandard": {
-                              "type": ["Standard"],
-                              "id": "https://www.iso.org/standard/60857.html",
-                              "name": "Standard",
-                              "issuingParty": {
-                                "type": ["Identifier"],
-                                "id": "https://iso.org/issuing-party/123",
-                                "name": "International Organization"
-                              },
-                              "issueDate": "2023-12-05"
-                            },
-                            "referenceRegulation": {
-                              "type": ["Regulation"],
-                              "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                              "name": "National Greenhouse",
-                              "jurisdictionCountry": "Australia",
-                              "administeredBy": {
-                                "type": ["Identifier"],
-                                "id": "https://gov.au/admin-body/12345",
-                                "name": "Australian Government"
-                              },
-                              "effectiveDate": "2024-03-20"
-                            },
+                            "assessmentDate": "2024-11-11",
+                            "id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
                             "assessmentCriteria": [
                               {
-                                "type": ["Criterion"],
-                                "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                                "name": "Battery Assembly Guidelines",
-                                "thresholdValues": [
-                                  {
-                                    "type": ["Metric"],
-                                    "metricName": "Minimum compressive strength",
-                                    "metricValue": { "value": 500, "unit": "MPA" }
-                                  }
-                                ]
+                                "type": [
+                                  "Criterion"
+                                ],
+                                "id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
+                                "name": "Mines Act Permit"
                               }
                             ],
-                            "conformance": false,
-                            "conformityTopic": "environment.energy",
+                            "conformance": true,
+                            "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "type": ["SecureLink", "Link"],
-                              "linkURL": "https://example-certifier.com/evidence/1234567.json",
-                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                              "hashMethod": "SHA-256",
-                              "linkName": "Declaration link name",
+                              "linkURL": "https://replace.com/dcc-mines-act-permit-mine",
+                              "linkName": "Copper Concentrate Produced at a Facility Permitted to mine in British Colombia",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
                               "encryptionMethod": "AES"
                             }
                           }
                         ],
-                        "circularityScorecard": {
-                          "type": ["CircularityPerformance"],
-                          "recyclingInformation": {
-                            "type": ["Link"],
-                            "linkURL": "https://example-company.com/recycling/1234567",
-                            "linkName": "Recycling Information"
-                          },
-                          "repairInformation": {
-                            "type": ["Link"],
-                            "linkURL": "https://example-company.com/repair/1234567",
-                            "linkName": "Repair Instructions"
-                          },
-                          "recyclableContent": 67,
-                          "recycledContent": 86,
-                          "utilityFactor": 1.2,
-                          "materialCircularityIndicator": 0.67
-                        },
                         "emissionsScorecard": {
-                          "type": ["EmissionsPerformance"],
-                          "carbonFootprint": 12.5,
-                          "declaredUnit": "kg",
+                          "carbonFootprint": 8.44,
+                          "declaredUnit": "kgCO2e",
                           "operationalScope": "CradleToGate",
-                          "primarySourcedRatio": 75,
+                          "primarySourcedRatio": 0.6,
                           "reportingStandard": {
-                            "type": ["Standard"],
-                            "id": "https://www.ifrs.org/standards/issb/s2",
-                            "name": "WBSCD Pathfinder framework - V.2.0",
+                            "type": [
+                              "Standard"
+                            ],
+                            "id": "https://www.iso.org/standard/71206.html",
+                            "name": "ISO 14067:2018 Greenhouse gases — Carbon footprint of products — Requirements and guidelines for quantification",
                             "issuingParty": {
-                              "type": ["Identifier"],
-                              "id": "https://id.ifrs.org/issuing-party/123",
-                              "name": "International Financial Reporting Standards Foundation",
+                              "type": [
+                                "Identifier"
+                              ],
+                              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+                              "name": "TEST Carbon Footprint-Certifier",
                               "registeredId": "90664869327",
                               "idScheme": {
-                                "type": ["IdentifierScheme"],
-                                "id": "https://id.ifrs.org/issuing-party/",
-                                "name": "IFRS Issuing Party"
+                                "type": [
+                                  "IdentifierScheme"
+                                ],
+                                "id": "https://id.gs1.org/01/",
+                                "name": "Global Trade Identification Number (GTIN)"
                               }
                             },
-                            "issueDate": "2024-04-25"
+                            "issueDate": "2023-12-05"
                           }
                         },
                         "traceabilityInformation": {
@@ -705,7 +409,7 @@
                           "verifiedRatio": 0.5,
                           "traceabilityEvent": [
                             {
-                              "linkURL": "https://files.example-certifier.com/1234567.json",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/00001?linkType=gs1:traceability",
                               "linkName": "Transformation Event",
                               "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                               "hashDigest": "6239119",
