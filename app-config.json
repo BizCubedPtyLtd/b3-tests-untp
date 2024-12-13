@@ -215,9 +215,9 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "https://replace.com/dcc-or-dia-from-orgbook",
+                          "id": "http://localhost:3000/414/9359502000034",
                           "name": "TEST Copper Mine",
-                          "registeredId": "119632693",
+                          "registeredId": "9359502000034",
                           "idScheme": {
                             "type": [
                               "IdentifierScheme"
@@ -249,7 +249,7 @@
                             "conformance": true,
                             "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "linkURL": "https://replace.com/dcc-coppermark-mine",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/32001?linkType=gs1:certificationInfo",
                               "linkName": "Copper Concentrate Produced at CopperMark Certified Facility",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                               "hashDigest": "6239119",
@@ -366,7 +366,7 @@
                             "conformance": true,
                             "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
-                              "linkURL": "https://replace.com/dcc-mines-act-permit-mine",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/33001?linkType=gs1:certificationInfo",
                               "linkName": "Copper Concentrate Produced at a Facility Permitted to mine in British Colombia",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                               "hashDigest": "6239119",
@@ -1364,7 +1364,7 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "https://id.gs1.org/01/09506000140445/21/20241111",
+                          "id": "http://localhost:3000/414/9359502000041",
                           "name": "Copper Smelter A",
                           "registeredId": "9506000140445",
                           "idScheme": {
