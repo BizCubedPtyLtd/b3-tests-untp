@@ -44,7 +44,7 @@
                 },
                 "data": {
                   "type": ["TransformationEvent", "Event"],
-                  "id": "https://events.sample.com/01/09359502000034/21/00001",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/21/20001",
                   "processType": "Ore Mined",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -54,7 +54,7 @@
                   "outputEPCList": [
                     {
                       "type": ["Item"],
-                      "id": "http://localhost:3000/gs1/01/09359502000034/21/123456?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000034/21/10001?linkType=gs1:sustainabilityInfo",
                       "name": "Copper Concentrate"
                     }
                   ],
@@ -409,7 +409,7 @@
                           "verifiedRatio": 0.5,
                           "traceabilityEvent": [
                             {
-                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/00001?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/20001?linkType=gs1:traceability",
                               "linkName": "Transformation Event",
                               "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                               "hashDigest": "6239119",
@@ -1203,7 +1203,7 @@
                         },
                         {
                           "path": "/outputEPCList/0/id",
-                          "data": "http://localhost:3000/gs1/gtin/09359502000041/21/1234578?linkType=gs1:sustainabilityInfo"
+                          "data": "http://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:sustainabilityInfo"
                         },
                         {
                           "path": "/outputEPCList/0/name",
@@ -2302,7 +2302,7 @@
               "name": "LocalStorageLoader",
               "type": "EntryData",
               "props": {
-                "storageKey": "smelter_transaction_event",
+                "storageKey": "smelter_transformation_event",
                 "nestedComponents": [
                   {
                     "name": "JsonForm",
@@ -2366,7 +2366,7 @@
                         },
                         {
                           "path": "/outputEPCList/0/id",
-                          "data": "http://localhost:3000/gs1/gtin/09359502000058/21/1234578?linkType=gs1:sustainabilityInfo"
+                          "data": "http://localhost:3000/gs1/gtin/09359502000058/21/10001?linkType=gs1:sustainabilityInfo"
                         },
                         {
                           "path": "/outputEPCList/0/name",
@@ -2482,7 +2482,7 @@
                       },
                       "data": {
                         "type": ["Product"],
-                        "id": "https://example.com/01/09359502000058/21/1234578",
+                        "id": "https://example.com/01/09359502000058/21/10001",
                         "name": "Battery",
                         "registeredId": "095201234",
                         "idScheme": {
@@ -3017,7 +3017,7 @@
                           "verifiedRatio": 0.5,
                           "traceabilityEvent": [
                             {
-                              "linkURL": "http://localhost:3000/gs1/01/09359502000058/21/00001?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000058/21/20001?linkType=gs1:traceability",
                               "linkName": "Transformation Event",
                               "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                               "hashDigest": "6239119",
