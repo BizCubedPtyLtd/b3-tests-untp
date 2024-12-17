@@ -2482,7 +2482,7 @@
                       },
                       "data": {
                         "type": ["Product"],
-                        "id": "https://example.com/01/09359502000058/21/10001",
+                        "id": "http://localhost:3000/gs1/01/09359502000058/21/10001",
                         "name": "Battery",
                         "registeredId": "095201234",
                         "idScheme": {
