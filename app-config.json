@@ -8689,21 +8689,23 @@
                 },
                 "data": {
                   "type": [
-                    "RegisteredIdentity",
-                    "Identifier"
+                      "RegisteredIdentity",
+                      "Identifier"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000034/21/34001",
                   "name": "TEST COPPER MINE",
-                  "registeredId": "800096356",
+                  "entityId": "https://orgbook.gov.bc.ca/entity/BC00001/type/registration.registries.ca",
+                  "registeredId": "BC00001",
+                  "businessNumber": "00000001",
                   "idScheme": {
-                    "type": [
-                      "IdentifierScheme"
-                    ],
-                    "id": "https://www.bcregistry.gov.bc.ca/",
-                    "name": "BC Registry"
+                      "type": [
+                          "IdentifierScheme"
+                      ],
+                      "id": "https://www.bcregistry.gov.bc.ca/",
+                      "name": "BC Registry"
                   },
                   "registerType": "Business"
-                },
+              },
                 "style": {},
                 "className": "",
                 "constructData": {
@@ -8796,10 +8798,10 @@
                       "Identifier"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/21/34001",
-                  "name": "TEST COPPER MINE",
-                  "entityId": "https://orgbook.gov.bc.ca/entity/BC0827622/type/registration.registries.ca",
-                  "registeredId": "BC0827622",
-                  "businessNumber": "800096356",
+                  "name": "TEST COPPER SMELTER",
+                  "entityId": "https://orgbook.gov.bc.ca/entity/BC00002/type/registration.registries.ca",
+                  "registeredId": "BC00002",
+                  "businessNumber": "00000002",
                   "idScheme": {
                       "type": [
                           "IdentifierScheme"
@@ -8901,10 +8903,10 @@
                       "Identifier"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000058/21/34001",
-                  "name": "TEST Battery Manufacturer",
-                  "entityId": "https://orgbook.gov.bc.ca/entity/BC0827622/type/registration.registries.ca",
-                  "registeredId": "BC0827622",
-                  "businessNumber": "800096356",
+                  "name": "TEST BATTERY MANUFACTURER",
+                  "entityId": "https://orgbook.gov.bc.ca/entity/BC00003/type/registration.registries.ca",
+                  "registeredId": "BC00003",
+                  "businessNumber": "00000003",
                   "idScheme": {
                       "type": [
                           "IdentifierScheme"
