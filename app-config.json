@@ -372,7 +372,7 @@
                             "conformityTopic": "governance.compliance",
                             "conformityEvidence": {
                               "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/33001?linkType=gs1:certificationInfo",
-                              "linkName": "Copper Concentrate Produced at a Facility Permitted to mine in British Colombia",
+                              "linkName": "Copper Concentrate produced at a Facility the holds an active Mines Permit",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                               "hashDigest": "6239119",
                               "hashMethod": "SHA-256",
@@ -922,7 +922,7 @@
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
                         "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/33001?linkType=gs1:certificationInfo",
-                        "linkName": "Facility Permitted to mine in British Colombia",
+                        "linkName": "Facility permitted to operate in BC under Mines Act",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
