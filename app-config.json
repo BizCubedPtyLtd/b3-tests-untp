@@ -227,6 +227,11 @@
                           }
                         },
                         "productionDate": "2024-11-11",
+                        "productImage": {
+                          "linkURL": "http://localhost:3003/mine02.png",
+                          "linkName": "Copper Mine",
+                          "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
+                        },
                         "countryOfProduction": "CA",
                         "granularityLevel": "batch",
                         "conformityClaim": [
@@ -1261,6 +1266,11 @@
                           }
                         },
                         "productionDate": "2024-11-11",
+                        "productImage": {
+                          "linkURL": "http://localhost:3003/cathode01.png",
+                          "linkName": "Copper Cathodes",
+                          "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
+                        },                                            
                         "countryOfProduction": "CA",
                         "granularityLevel": "batch",
                         "conformityClaim": [
@@ -2073,9 +2083,9 @@
                         "serialNumber": "12345678",
                         "batchNumber": "6789",
                         "productImage": {
-                          "linkURL": "https://files.example-certifier.com/1234567.json",
-                          "linkName": "GBA rule book conformity certificate",
-                          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+                          "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
+                          "linkName": "EV Battery 300Ah Image",
+                          "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                         },
                         "description": "400Ah 24v LiFePO4 battery",
                         "productCategory": [
