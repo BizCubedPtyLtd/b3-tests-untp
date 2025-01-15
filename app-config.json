@@ -46,7 +46,7 @@
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000010/21/10001?linkType=gs1:sustainabilityInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/67890",
                   "name": "Steel",
                   "registeredId": "09359502000010",
                   "idScheme": {
@@ -134,14 +134,8 @@
                       "unit": "CMT"
                     }
                   },
-                  "characteristic": {
-                    "Battery status": "Recycled",
-                    "Battery cell type": "Prismatic",
-                    "Number of cells per battery": "180",
-                    "Total energy": "100kwh"
-                  },
                   "productionDate": "2024-05-20",
-                  "countryOfProduction": "Australia",
+                  "countryOfProduction": "AU",
                   "granularityLevel": "item",
                   "dueDiligenceDeclaration": {
                     "type": [
@@ -179,19 +173,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": [
-                            "Metric"
-                          ],
-                          "metricName": "Structural Steel Certification",
-                          "metricValue": {
-                            "value": 0,
-                            "unit": "kg"
-                          }
-                        }
-                      ],
-                      "id": "## Add extension of attestation ID",
+                      "id": "https://example.org/standards/environment",
                       "referenceStandard": {
                         "type": [
                           "Standard"
@@ -202,37 +184,11 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "## Add issuing party, e.g https://iso.org/issuing-party/123",
-                          "name": "## Add issuing party name, eg International Organization"
+                          "id": "https://iso.org/issuing-party/123",
+                          "name": "Steel Certifier"
                         },
                         "issueDate": "2024-04-25"
                       },
-                      "referenceRegulation": {
-                        "type": [
-                          "Regulation"
-                        ],
-                        "id": "https://example.org/benchmarks/environment",
-                        "name": "## Add name of the regulation, e.g. Benchmark Environmental Standard",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": [
-                            "Identifier"
-                          ],
-                          "id": "## Add issuing party ID, e.g. https://gov.au/admin-body/12345",
-                          "name": "## Add issuing party name, e.g. Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://example.org/standards/environment/criteria",
-                          "name": "## Add criteria name, e.g. Standard Environment Criteria",
-                          "thresholdValues": []
-                        }
-                      ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
@@ -240,9 +196,9 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "http://localhost:3003/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22http%3A%2F%2Flocalhost%3A3334%2Fv1%2Fverifiable-credentials%2F1f596c64-fd93-4a50-85d1-3e07c6019b23.json%22%2C%22hash%22%3A%224b40937a7fc603f748277431cb1e84a7d5f9c4806efdf3692176257c3b0ccfb5%22%7D%7D",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
-                        "linkName": "Traceability Scheme Certification",
+                        "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "encryptionMethod": "AES"
                       }
@@ -263,36 +219,6 @@
                       "type": [
                         "Link"
                       ]
-                    }
-                  },
-                  "emissionsScorecard": {
-                    "type": [
-                      "EmissionsPerformance"
-                    ],
-                    "carbonFootprint": 0,
-                    "declaredUnit": "kg",
-                    "operationalScope": "None",
-                    "primarySourcedRatio": 0,
-                    "reportingStandard": {
-                      "type": [
-                        "Standard"
-                      ],
-                      "id": "https://www.ifrs.org/standards/issb/s2",
-                      "name": "WBSCD Pathfinder framework - V.2.0",
-                      "issuingParty": {
-                        "type": [
-                          "Identifier"
-                        ],
-                        "id": "## Add Emissions Certification body ID if required",
-                        "name": "## Add body name, e.g. International Financial Reporting Standards Foundation",
-                        "registeredId": "90664869327",
-                        "idScheme": {
-                          "type": [
-                            "IdentifierScheme"
-                          ]
-                        }
-                      },
-                      "issueDate": "2024-04-25"
                     }
                   },
                   "traceabilityInformation": {
@@ -348,7 +274,7 @@
                       }
                     ],
                     "type": ["DigitalProductPassport"],
-                    "dlrLinkTitle": "Cherries Product Passport",
+                    "dlrLinkTitle": "Steel Rod Product Passport",
                     "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
@@ -388,7 +314,7 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps",
+                  "storageKey": "top_line_dpps",
                   "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/id"
                 }
               ]
@@ -433,7 +359,7 @@
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000041/21/10001?linkType=gs1:sustainabilityInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/54321",
                   "name": "Steel",
                   "registeredId": "09359502000041",
                   "idScheme": {
@@ -444,6 +370,7 @@
                     "name": "Global Trade Identification Number (GTIN)"
                   },
                   "batchNumber": "54321",
+                  "serialNumber": "445566",
                   "productImage": {
                     "type": [
                       "Link"
@@ -521,14 +448,8 @@
                       "unit": "CMT"
                     }
                   },
-                  "characteristic": {
-                    "Battery status": "Recycled",
-                    "Battery cell type": "Prismatic",
-                    "Number of cells per battery": "180",
-                    "Total energy": "100kwh"
-                  },
                   "productionDate": "2024-06-01",
-                  "countryOfProduction": "Australia",
+                  "countryOfProduction": "AU",
                   "granularityLevel": "batch",
                   "dueDiligenceDeclaration": {
                     "type": [
@@ -566,19 +487,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": [
-                            "Metric"
-                          ],
-                          "metricName": "Structural Steel Certification",
-                          "metricValue": {
-                            "value": 0,
-                            "unit": "kg"
-                          }
-                        }
-                      ],
-                      "id": "## Add declaration ID",
+                      "id": "https://example.org/standards/environment",
                       "referenceStandard": {
                         "type": [
                           "Standard"
@@ -589,37 +498,11 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "## Add issuing party, e.g https://iso.org/issuing-party/123",
-                          "name": "## Add issuing party name, eg International Organization"
+                          "id": "https://iso.org/issuing-party/123",
+                          "name": "Steel Certifier"
                         },
                         "issueDate": "2024-04-25"
                       },
-                      "referenceRegulation": {
-                        "type": [
-                          "Regulation"
-                        ],
-                        "id": "https://example.org/benchmarks/environment",
-                        "name": "## Add name of the regulation, e.g. Benchmark Environmental Standard",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": [
-                            "Identifier"
-                          ],
-                          "id": "## Add issuing party ID, e.g. https://gov.au/admin-body/12345",
-                          "name": "## Add issuing party name, e.g. Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://example.org/standards/environment/criteria",
-                          "name": "## Add criteria name, e.g. Standard Environment Criteria",
-                          "thresholdValues": []
-                        }
-                      ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
@@ -627,62 +510,17 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "http://localhost:3003/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22http%3A%2F%2Flocalhost%3A3334%2Fv1%2Fverifiable-credentials%2F5c742286-d4ae-4c0e-96bc-162453105463.json%22%2C%22hash%22%3A%22a26df3392f4392fa25c8bbdb1ecd055e6a67704ce870a5d2c8cdec3bf219ef9f%22%7D%7D",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
-                        "linkName": "Traceability Scheme Certification",
+                        "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "encryptionMethod": "AES"
                       }
                     }
                   ],
-                  "circularityScorecard": {
-                    "type": [
-                      "CircularityPerformance"
-                    ],
-                    "recyclingInformation": {
-                      "type": [
-                        "Link"
-                      ],
-                      "linkURL": "https://example.org/recycling/steel_model_y",
-                      "linkName": "Recycling Information"
-                    },
-                    "repairInformation": {
-                      "type": [
-                        "Link"
-                      ]
-                    }
-                  },
-                  "emissionsScorecard": {
-                    "type": [
-                      "EmissionsPerformance"
-                    ],
-                    "carbonFootprint": 0,
-                    "declaredUnit": "kg",
-                    "operationalScope": "None",
-                    "primarySourcedRatio": 0,
-                    "reportingStandard": {
-                      "type": [
-                        "Standard"
-                      ],
-                      "issuingParty": {
-                        "type": [
-                          "Identifier"
-                        ],
-                        "id": "## Add Emissions Certification body ID if required",
-                        "name": "## Add body name, e.g. International Financial Reporting Standards Foundation",
-                        "idScheme": {
-                          "type": [
-                            "IdentifierScheme"
-                          ]
-                        }
-                      },
-                      "issueDate": "2024-04-25"
-                    }
-                  },
                   "traceabilityInformation": {
                     "traceabilityEvent": []
-                  },
-                  "serialNumber": "445566"
+                  }
                 },
                 "constructData": {
                   "mappingFields": [],
@@ -733,7 +571,7 @@
                       }
                     ],
                     "type": ["DigitalProductPassport"],
-                    "dlrLinkTitle": "Cherries Product Passport",
+                    "dlrLinkTitle": "Quality Steel Product Passport",
                     "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
@@ -773,7 +611,7 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps",
+                  "storageKey": "quality_dpps",
                   "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/id"
                 }
               ]
@@ -818,9 +656,9 @@
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000099/21/10001?linkType=gs1:sustainabilityInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/DST7891011",
                   "name": "Pile Cage",
-                  "registeredId": "09359502000099",
+                  "registeredId": "09359502000034",
                   "idScheme": {
                     "type": [
                       "IdentifierScheme"
@@ -829,6 +667,7 @@
                     "name": "Global Trade Identification Number (GTIN)"
                   },
                   "batchNumber": "DST7891011",
+                  "serialNumber": "998877",
                   "productImage": {
                     "type": [
                       "Link"
@@ -855,7 +694,7 @@
                         "Link"
                       ],
                       "linkURL": "https://example.com/products/PileCage",
-                      "linkName": "## Add Name of document that is further information"
+                      "linkName": "Pile Cage Product Info"
                     }
                   ],
                   "producedByParty": {
@@ -908,13 +747,8 @@
                     }
                   },      
                   "productionDate": "2024-05-15",
-                  "countryOfProduction": "Australia",
+                  "countryOfProduction": "AU",
                   "granularityLevel": "batch",
-                  "dueDiligenceDeclaration": {
-                    "type": [
-                      "Link"
-                    ]
-                  },
                   "materialsProvenance": [
                     {
                       "type": [
@@ -945,19 +779,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": [
-                            "Metric"
-                          ],
-                          "metricName": "Structural Steel Certification",
-                          "metricValue": {
-                            "value": 0,
-                            "unit": "kg"
-                          }
-                        }
-                      ],
-                      "id": "## Add declaration ID",
+                      "id": "https://steel-industry.org/standards/sustainability",
                       "referenceStandard": {
                         "type": [
                           "Standard"
@@ -968,37 +790,11 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "## Add issuing party, e.g https://iso.org/issuing-party/123",
-                          "name": "## Add issuing party name, eg International Organization"
+                          "id": "https://iso.org/issuing-party/123",
+                          "name": "Steel Certifier"
                         },
                         "issueDate": "2024-04-25"
                       },
-                      "referenceRegulation": {
-                        "type": [
-                          "Regulation"
-                        ],
-                        "id": "https://steel-industry.org/benchmarks/sustainability",
-                        "name": "## Add name of the regulation, e.g. Benchmark Environmental Standard",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": [
-                            "Identifier"
-                          ],
-                          "id": "## Add issuing party ID, e.g. https://gov.au/admin-body/12345",
-                          "name": "## Add issuing party name, e.g. Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://steel-industry.org/standards/sustainability/criteria",
-                          "name": "## Add criteria name, e.g. Standard Environment Criteria",
-                          "thresholdValues": []
-                        }
-                      ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
@@ -1006,7 +802,7 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "http://localhost:3003/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22http%3A%2F%2Flocalhost%3A3334%2Fv1%2Fverifiable-credentials%2Fa16739ff-443f-4d45-b3cd-ebc0e901eb58.json%22%2C%22hash%22%3A%22a8e799de6524070855af130b7609a3de8517712a1bc5e7270e7f23f9b01b1575%22%7D%7D",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
                         "linkName": "Traceability Scheme Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
@@ -1014,50 +810,6 @@
                       }
                     }
                   ],
-                  "circularityScorecard": {
-                    "type": [
-                      "CircularityPerformance"
-                    ],
-                    "recyclingInformation": {
-                      "type": [
-                        "Link"
-                      ],
-                      "linkURL": "https://example.com/recycling/steelbeam-x200",
-                      "linkName": "Recycling Information"
-                    },
-                    "repairInformation": {
-                      "type": [
-                        "Link"
-                      ]
-                    }
-                  },
-                  "emissionsScorecard": {
-                    "type": [
-                      "EmissionsPerformance"
-                    ],
-                    "carbonFootprint": 0,
-                    "declaredUnit": "kg",
-                    "operationalScope": "None",
-                    "primarySourcedRatio": 0,
-                    "reportingStandard": {
-                      "type": [
-                        "Standard"
-                      ],
-                      "issuingParty": {
-                        "type": [
-                          "Identifier"
-                        ],
-                        "id": "## Add Emissions Certification body ID if required",
-                        "name": "## Add body name, e.g. International Financial Reporting Standards Foundation",
-                        "idScheme": {
-                          "type": [
-                            "IdentifierScheme"
-                          ]
-                        }
-                      },
-                      "issueDate": "2024-04-25"
-                    }
-                  },
                   "traceabilityInformation": {
                     "traceabilityEvent": [
                       {
@@ -1066,14 +818,13 @@
                           "Link"
                         ],
                         "linkName": "Transformation Event",
-                        "linkURL": "http://localhost:3003/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22http%3A%2F%2Flocalhost%3A3334%2Fv1%2Fverifiable-credentials%2F7b1cc491-c649-4cfb-a44a-7c4b4202322d.json%22%2C%22hash%22%3A%221e751446fa3c4e8577bf7d1e6b1f07a5669c941eaa79496e2926d279b22a6edf%22%7D%7D",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:traceability",
                         "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                         "hashMethod": "SHA-256",
                         "encryptionMethod": "AES"
                       }
                     ]
-                  },
-                  "serialNumber": "998877"
+                  }
                 },
                 "constructData": {
                   "mappingFields": [],
@@ -1195,7 +946,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000099/21/20001?linkType=gs1:traceability",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/DST7891011",
                   "processType": "Pile cage",
                   "eventTime": "2025-01-03T00:01:00.000+11:00",
                   "action": "observe",
@@ -1208,8 +959,8 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3003/gs1/01/09359502000099/21/10001?linkType=gs1:sustainabilityInfo",
-                      "name": "Steel Processor DST7891011"
+                      "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:certificationInfo",
+                      "name": "Pile Cage"
                     }
                   ],
                   "inputEPCList": [
@@ -1217,15 +968,15 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3003/gs1/01/09359502000041/21/10001?linkType=gs1:sustainabilityInfo",
-                      "name": "Quality Steel SRC123456"
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:sustainabilityInfo",
+                      "name": "Steel Coil"
                     },
                     {
                       "type": [
                         "Item"
                       ],
-                      "name": "Top Line Steel SRC123456",
-                      "id": "http://localhost:3003/gs1/01/09359502000010/21/10001?linkType=gs1:sustainabilityInfo"
+                      "name": "Steel Rods",
+                      "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo"
                     }
                   ],
                   "inputQuantityList": [],
@@ -1338,7 +1089,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000010/21/31001?linkType=gs1:certificationInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/67890",
                   "name": "Traceability Certification Scheme",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -1356,7 +1107,7 @@
                         "IdentifierScheme"
                       ],
                       "id": "https://abr.business.gov.au/FAQ/ABNBasics",
-                      "name": "##Basic ABN Schema"
+                      "name": "Australian Business Number"
                     },
                     "description": "TOPLINE STEEL PTY LTD"
                   },
@@ -1384,7 +1135,7 @@
                             "IdentifierScheme"
                           ],
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e CERTIFICATION AUTHORITY ABN"
+                          "name": "Australian Business Number"
                         }
                       },
                       "endorsementEvidence": {
@@ -1437,7 +1188,7 @@
                           "IdentifierScheme"
                         ],
                         "id": "https://abr.business.gov.au",
-                        "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                        "name": "Australian Business Number"
                       }
                     },
                     "issueDate": "2023-12-05",
@@ -1476,7 +1227,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2001-01-01"
@@ -1500,7 +1251,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -1523,8 +1274,8 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://example.com/01/09359502000010",
-                          "name": "Steel",
+                          "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
+                          "name": "Steel Rods",
                           "batchNumber": "67890"
                         }
                       ],
@@ -1606,11 +1357,11 @@
                         "name": "Auditor Name",
                         "registeredId": "90664869327",
                         "idScheme": {
-                          "type": [
-                            "IdentifierScheme"
-                          ],
-                          "id": "https://id.gs1.org/01/",
-                          "name": "Global Trade Identification Number (GTIN)"
+                            "type": [
+                              "IdentifierScheme"
+                            ],
+                            "id": "https://abr.business.gov.au",
+                            "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -1630,7 +1381,7 @@
                           "name": "STANDARDS AUSTRALIA LIMITED",
                           "registeredId": "85087326690",
                           "idScheme": {
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN",
+                            "name": "Australian Business Number",
                             "id": "https://abr.business.gov.au"
                           }
                         },
@@ -1646,7 +1397,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -1662,7 +1413,15 @@
                       ],
                       "conformityTopic": "governance.compliance",
                       "conformance": true,
-                      "assessedProduct": [],
+                      "assessedProduct": [{
+                        "type": [
+                          "Product"
+                        ],
+                        "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
+                        "name": "Steel Rods",
+                        "batchNumber": "67890"
+                      }
+                    ],
                       "assessedOrganisation": {
                         "id": "did:example:567890abcdefghi",
                         "name": "Steel Manufacturer Inc.",
@@ -1679,7 +1438,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -1700,7 +1459,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2011-01-01"
@@ -1715,7 +1474,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2011-01-01"
@@ -1738,7 +1497,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -1759,7 +1518,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2010-01-01"
@@ -1774,7 +1533,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2010-01-01"
@@ -1796,7 +1555,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -1894,7 +1653,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000041/21/31001?linkType=gs1:certificationInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/54321",
                   "name": "Traceability Certification Scheme",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -1912,7 +1671,7 @@
                         "IdentifierScheme"
                       ],
                       "id": "https://abr.business.gov.au/FAQ/ABNBasics",
-                      "name": "##Basic ABN Schema"
+                      "name": "Australian Business Number"
                     },
                     "description": "QUALITY STEEL PTY LTD"
                   },
@@ -1940,7 +1699,7 @@
                             "IdentifierScheme"
                           ],
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e CERTIFICATION AUTHORITY ABN"
+                          "name": "Australian Business Number"
                         }
                       },
                       "endorsementEvidence": {
@@ -1993,7 +1752,7 @@
                           "IdentifierScheme"
                         ],
                         "id": "https://abr.business.gov.au",
-                        "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                        "name": "Australian Business Number"
                       }
                     },
                     "issueDate": "2023-12-05",
@@ -2032,7 +1791,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2001-01-01"
@@ -2056,7 +1815,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -2079,9 +1838,9 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://example.com/01/09359502000010",
-                          "name": "Steel",
-                          "batchNumber": "67890"
+                          "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
+                          "name": "Steel Coil",
+                          "batchNumber": "54321"
                         }
                       ],
                       "assessedFacility": [
@@ -2186,7 +1945,7 @@
                           "name": "STANDARDS AUSTRALIA LIMITED",
                           "registeredId": "85087326690",
                           "idScheme": {
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN",
+                            "name": "Australian Business Number",
                             "id": "https://abr.business.gov.au"
                           }
                         },
@@ -2202,7 +1961,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -2218,7 +1977,16 @@
                       ],
                       "conformityTopic": "governance.compliance",
                       "conformance": true,
-                      "assessedProduct": [],
+                      "assessedProduct": [
+                        {
+                        "type": [
+                          "Product"
+                        ],
+                        "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
+                        "name": "Steel Coil",
+                        "batchNumber": "54321"
+                      }
+                    ],
                       "assessedOrganisation": {
                         "id": "did:example:567890abcdefghi",
                         "name": "Steel Manufacturer Inc.",
@@ -2235,7 +2003,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -2256,7 +2024,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2011-01-01"
@@ -2271,7 +2039,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2011-01-01"
@@ -2294,7 +2062,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -2315,7 +2083,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2010-01-01"
@@ -2330,7 +2098,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2010-01-01"
@@ -2352,7 +2120,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -2450,7 +2218,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3003/gs1/01/09359502000099/21/31001?linkType=gs1:certificationInfo",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/DST7891011",
                   "name": "Traceability Certification Scheme",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -2468,7 +2236,7 @@
                         "IdentifierScheme"
                       ],
                       "id": "https://abr.business.gov.au/FAQ/ABNBasics",
-                      "name": "##Basic ABN Schema"
+                      "name": "Australian Business Number"
                     },
                     "description": "STEEL COMPANY PTY LTD"
                   },
@@ -2496,7 +2264,7 @@
                             "IdentifierScheme"
                           ],
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e CERTIFICATION AUTHORITY ABN"
+                          "name": "Australian Business Number"
                         }
                       },
                       "endorsementEvidence": {
@@ -2549,7 +2317,7 @@
                           "IdentifierScheme"
                         ],
                         "id": "https://abr.business.gov.au",
-                        "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                        "name": "Australian Business Number"
                       }
                     },
                     "issueDate": "2023-12-05",
@@ -2588,7 +2356,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2001-01-01"
@@ -2612,7 +2380,7 @@
                               "IdentifierScheme"
                             ],
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -2635,9 +2403,9 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://example.com/01/09359502000010",
-                          "name": "Steel",
-                          "batchNumber": "67890"
+                          "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:gs1:sustainabilityInfo",
+                          "name": "Pile Cage",
+                          "batchNumber": "DST7891011"
                         }
                       ],
                       "assessedFacility": [
@@ -2742,7 +2510,7 @@
                           "name": "STANDARDS AUSTRALIA LIMITED",
                           "registeredId": "85087326690",
                           "idScheme": {
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN",
+                            "name": "Australian Business Number",
                             "id": "https://abr.business.gov.au"
                           }
                         },
@@ -2758,7 +2526,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2024-03-20"
@@ -2774,7 +2542,14 @@
                       ],
                       "conformityTopic": "governance.compliance",
                       "conformance": true,
-                      "assessedProduct": [],
+                      "assessedProduct": [{
+                        "type": [
+                          "Product"
+                        ],
+                        "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:gs1:sustainabilityInfo",
+                        "name": "Pile Cage",
+                        "batchNumber": "DST7891011"
+                      }],
                       "assessedOrganisation": {
                         "id": "did:example:567890abcdefghi",
                         "name": "Steel Manufacturer Inc.",
@@ -2791,7 +2566,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -2812,7 +2587,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2011-01-01"
@@ -2827,7 +2602,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2011-01-01"
@@ -2850,7 +2625,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
@@ -2871,7 +2646,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "issueDate": "2010-01-01"
@@ -2886,7 +2661,7 @@
                           "registeredId": "85087326690",
                           "idScheme": {
                             "id": "https://abr.business.gov.au",
-                            "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                            "name": "Australian Business Number"
                           }
                         },
                         "effectiveDate": "2010-01-01"
@@ -2908,7 +2683,7 @@
                         "registeredId": "85087326690",
                         "idScheme": {
                           "id": "https://abr.business.gov.au",
-                          "name": "##Scheme ID Name, i.e STANDARDS AUSTRALIA LIMITED ABN"
+                          "name": "Australian Business Number"
                         },
                         "description": "A leading auditor company"
                       }
