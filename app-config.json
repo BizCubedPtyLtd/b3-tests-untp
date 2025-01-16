@@ -47,7 +47,7 @@
                     "Product"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/67890",
-                  "name": "Steel",
+                  "name": "Steel Model X",
                   "registeredId": "09359502000010",
                   "idScheme": {
                     "type": [
@@ -58,11 +58,10 @@
                   },
                   "batchNumber": "67890",
                   "productImage": {
-                    "type": [
-                      "Link"
-                    ],
-                    "linkName": "Steel Model X"
-                  },
+                      "linkURL": "https://www.dev3.pyx.io/rods.png",
+                      "linkName": "Steel Rods",
+                      "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
+                    },
                   "description": "High-quality steel rods for construction.",
                   "productCategory": [
                     {
@@ -159,7 +158,7 @@
                       },
                       "massFraction": 100,
                       "massAmount": {
-                        "value": 0,
+                        "value": 10,
                         "unit": "kg"
                       },
                       "recycledAmount": 0,
@@ -323,7 +322,7 @@
               "name": "getValueFromLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps"
+                  "storageKey": "top_line_dpps"
                 }
               ]
             }
@@ -372,11 +371,10 @@
                   "batchNumber": "54321",
                   "serialNumber": "445566",
                   "productImage": {
-                    "type": [
-                      "Link"
-                    ],
-                    "linkName": "Steel Model Y"
-                  },
+                      "linkURL": "https://www.dev3.pyx.io/coils.png",
+                      "linkName": "Steel Coils",
+                      "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
+                    },
                   "description": "Steel Coil for construction and infrastructure projects.",
                   "productCategory": [
                     {
@@ -473,7 +471,7 @@
                       },
                       "massFraction": 100,
                       "massAmount": {
-                        "value": 0,
+                        "value": 10,
                         "unit": "kg"
                       },
                       "recycledAmount": 0,
@@ -620,7 +618,7 @@
               "name": "getValueFromLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps"
+                  "storageKey": "quality_dpps"
                 }
               ]
             }
@@ -656,9 +654,9 @@
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000034/10/DST7891011",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099",
                   "name": "Pile Cage",
-                  "registeredId": "09359502000034",
+                  "registeredId": "010935950200003410725774099",
                   "idScheme": {
                     "type": [
                       "IdentifierScheme"
@@ -666,15 +664,13 @@
                     "id": "https://id.gs1.org/01/",
                     "name": "Global Trade Identification Number (GTIN)"
                   },
-                  "batchNumber": "DST7891011",
+                  "batchNumber": "725774099",
                   "serialNumber": "998877",
                   "productImage": {
-                    "type": [
-                      "Link"
-                    ],
-                    "linkName": "Pile Cage",
-                    "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png"
-                  },
+                      "linkURL": "https://www.dev3.pyx.io/pilecage.png",
+                      "linkName": "Pile Cage",
+                      "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
+                    },
                   "description": "High-strength pile cage suitable for construction and industrial applications.",
                   "productCategory": [
                     {
@@ -765,7 +761,7 @@
                       },
                       "massFraction": 100,
                       "massAmount": {
-                        "value": 0,
+                        "value": 20,
                         "unit": "kg"
                       },
                       "recycledAmount": 0,
@@ -802,9 +798,9 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:certificationInfo",
+                        "linkURL": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
-                        "linkName": "Traceability Scheme Certification",
+                        "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "encryptionMethod": "AES"
                       }
@@ -818,7 +814,7 @@
                           "Link"
                         ],
                         "linkName": "Transformation Event",
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:traceability",
+                        "linkURL": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:traceability",
                         "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                         "hashMethod": "SHA-256",
                         "encryptionMethod": "AES"
@@ -848,6 +844,24 @@
               "name": "CustomButton",
               "type": "Submit",
               "props": {}
+            },
+            {
+              "name": "BarcodeGenerator",
+              "type": "Result",
+              "props": {
+                "dataPath": {
+                  "primary": {
+                    "ai": "01",
+                    "path": "/registeredId"
+                  },
+                  "qualifiers": [
+                    {
+                      "ai": "10",
+                      "path": "/batchNumber"
+                    }
+                  ]
+                }
+              }
             }
           ],
           "services": [
@@ -915,7 +929,7 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps",
+                  "storageKey": "processor_dpps",
                   "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/id"
                 }
               ]
@@ -924,7 +938,7 @@
               "name": "getValueFromLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "orchard_facility_dpps"
+                  "storageKey": "processor_dpps"
                 }
               ]
             }
@@ -959,7 +973,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:certificationInfo",
+                      "id": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:sustainabilityInfo",
                       "name": "Pile Cage"
                     }
                   ],
@@ -1016,7 +1030,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Orchard Facility"
+                      "name": "Steel Processor"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1061,7 +1075,7 @@
       ]
     },
     {
-      "name": "AUSTRALASIAN CERTIFICATION AUTHORITY DCC",
+      "name": "AUSTRALASIAN CERTIFICATION AUTHORITY",
       "type": "producer",
       "assets": {
         "logo": "Cherries-farm-logo.webp",
@@ -1595,7 +1609,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Orchard Facility"
+                      "name": "AUSTRALASIAN CERTIFICATION AUTHORITY FOR REINFORCING AND STRUCTURAL STEELS LTD"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2160,7 +2174,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Orchard Facility"
+                      "name": "AUSTRALASIAN CERTIFICATION AUTHORITY FOR REINFORCING AND STRUCTURAL STEELS LTD"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2218,7 +2232,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000010/10/DST7891011",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/725774099",
                   "name": "Traceability Certification Scheme",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -2403,9 +2417,9 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:gs1:sustainabilityInfo",
+                          "id": "https://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
                           "name": "Pile Cage",
-                          "batchNumber": "DST7891011"
+                          "batchNumber": "725774099"
                         }
                       ],
                       "assessedFacility": [
@@ -2546,9 +2560,9 @@
                         "type": [
                           "Product"
                         ],
-                        "id": "https://localhost:3000/gs1/01/09359502000034/10/DST7891011/?linkType=gs1:gs1:sustainabilityInfo",
+                        "id": "https://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
                         "name": "Pile Cage",
-                        "batchNumber": "DST7891011"
+                        "batchNumber": "725774099"
                       }],
                       "assessedOrganisation": {
                         "id": "did:example:567890abcdefghi",
@@ -2723,7 +2737,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Orchard Facility"
+                      "name": "AUSTRALASIAN CERTIFICATION AUTHORITY FOR REINFORCING AND STRUCTURAL STEELS LTD"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
