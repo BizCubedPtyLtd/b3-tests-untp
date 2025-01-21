@@ -24,3 +24,7 @@ Reference: [ACRS Original Pile Cage DPP](https://acrs.pyx.io/verify?q=%7B%22payl
 https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099
 
 https://idr.dev3.pyx.io/gs1/01/09359502000010/10/725774099
+
+https://idr.dev3.pyx.io/gs1/01/010935950200003410725774099/10/725774099?linkType=gs1:sustainabilityInfo
+
+https://idr.dev3.pyx.io/gs1/01/09359502000034/10/DST7891011?linkType=gs1:traceability
