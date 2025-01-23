@@ -7,7 +7,7 @@ Credential Details.
 
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
-| QLD Forestry | DTE: Selling Log Load  | ---------- | /01/09359502000034/10/54L33V3N7|http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7| https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:sustainabilityInfo|
+| QLD Forestry | DTE: Selling Log Load  | ---------- | /01/09359502000034/10/54L33V3N7|http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7| https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability|https://idr.forestry.pyx.io/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability|
 
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
