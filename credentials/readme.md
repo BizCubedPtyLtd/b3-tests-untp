@@ -3,7 +3,7 @@ Credential Details.
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
 | Harvest Teams | DPP: Log Load | ---------- | /01/09359502000010/10/106|http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo|
-| Harvest Teams | DTE: Tree Chopping | ---------- | Same as DPP | http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:traceability|
+| Harvest Teams | DTE: Tree Chopping | ---------- | Same as DPP | http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:traceability|
 
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
@@ -22,7 +22,7 @@ Credential Details.
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
 | Export Yard | DPP: Pole Container | ---------- | /01/09359502000058/10/D9385005|http://localhost:3000/gs1/01/09359502000058/10/D9385005| https://localhost:3000/gs1/01/09359502000058/10/D9385005?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000058/10/D9385005?linkType=gs1:sustainabilityInfo|
-| Export Yard | DTE: Pole Batch Aggregation | ---------- | Same as DPP | http://localhost:3000/gs1/01/09359502000058/10/D9385005| https://localhost:3000/gs1/01/09359502000058/10/D9385005?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000058/10/D9385005?linkType=gs1:traceability|
+| Export Yard | DTE: Pole Batch Aggregation | ---------- | Same as DPP | http://localhost:3000/gs1/01/09359502000058/10/D9385005| https://localhost:3000/gs1/01/09359502000058/10/D9385005?linkType=gs1:traceability|https://idr.forestry.pyx.io/gs1/01/09359502000058/10/D9385005?linkType=gs1:traceability|
 
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
