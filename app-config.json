@@ -853,13 +853,7 @@
                   "primary": {
                     "ai": "01",
                     "path": "/registeredId"
-                  },
-                  "qualifiers": [
-                    {
-                      "ai": "10",
-                      "path": "/batchNumber"
-                    }
-                  ]
+                  }
                 }
               }
             }
@@ -941,6 +935,14 @@
                   "storageKey": "processor_dpps"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "findFirstMatchingKeyValue",
+          "parameters": [
+            {
+              "targetKey": "credentialSubject"
             }
           ]
         },        
