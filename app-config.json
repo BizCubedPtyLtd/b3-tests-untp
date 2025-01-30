@@ -935,14 +935,14 @@
                   "storageKey": "processor_dpps"
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "findFirstMatchingKeyValue",
-          "parameters": [
+            },
             {
-              "targetKey": "credentialSubject"
+              "name": "findFirstMatchingKeyValue",
+              "parameters": [
+                {
+                  "targetKey": "credentialSubject"
+                }
+              ]
             }
           ]
         },        
