@@ -846,16 +846,22 @@
               "props": {}
             },
             {
-              "name": "BarcodeGenerator",
-              "type": "Result",
-              "props": {
-                "dataPath": {
-                  "primary": {
-                    "ai": "01",
-                    "path": "/registeredId"
-                  }
-                }
-              }
+              "name": "BarcodeGenerator",            
+              "type": "Result",            
+              "props": {            
+                "dataPath": {            
+                  "primary": {            
+                    "ai": "01",            
+                    "path": "/registeredId"            
+                  },            
+                  "qualifiers": [            
+                    {            
+                      "ai": "10",            
+                      "path": "/batchNumber"            
+                    }            
+                  ]            
+                }            
+              }            
             }
           ],
           "services": [
