@@ -72,22 +72,6 @@
                       "id": "https://id.gs1.org/01/09520123456788/21/12345",
                       "name": "Tree"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://id.gs1.org/01/09520123456788/21/12345",
-                      "productName": "A tree",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
-                      "productName": "Log Load",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -180,377 +164,70 @@
                 "data": {
                   "type": ["ConformityAttestation", "Attestation"],
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
-                  "name": "Conformity attestation Name e.g. Product GHG Footprint certificate in accordance with GBA Rulebook.",
-                  "assessorLevel": "Self",
-                  "assessmentLevel": "GovtApproval",
+                  "name": "Responsible Wood Alliance (Australia/New Zealand)",
+                  "assessorLevel": "3rdParty",
+                  "assessmentLevel": "Accredited",
                   "attestationType": "certification",
-                  "description": "Attestation description SampleCAB Inc attests that the product class LiFePO4 EV batteries manufactured at Sample battery facility have reported GHG foorptint that conform to the GBA rulebook version 1.5.",
+                  "description": "Manages the Responsible Wood Certification Scheme standards for sustainable wood sourced from managed forests in Australia",
                   "issuedToParty": {
-                    "type": ["Party"],
-                    "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-                    "name": "ABC Example Company PTY LTD",
-                    "registeredId": "90664869327",
-                    "idScheme": {
-                      "type": ["IdentifierScheme"],
-                      "id": "https://id.gs1.org/01/",
-                      "name": "Global Trade Identification Number (GTIN)"
-                    },
-                    "description": "A leading electric energy storage company"
-                  },
-                  "authorisation": [
-                    {
-                      "type": ["Endorsement"],
-                      "id": "https://authority.gov/schemeABC/123456789",
-                      "name": "Endorsement name e.g. Accreditation of certifiers.com under the Australian National Greenhouse and Energy Reporting scheme (NGER)",
-                      "trustmark": {
-                        "type": ["BinaryFile"],
-                        "fileName": "GHG protocol trust mark",
-                        "fileType": "image/png",
-                        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
-                      },
-                      "issuingAuthority": {
-                        "type": ["Identifier"],
-                        "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                        "name": "Authorising Entity",
-                        "registeredId": "12345",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.gs1.org/01/",
-                          "name": "Global Trade Identification Number (GTIN)"
-                        }
-                      },
-                      "endorsementEvidence": {
-                        "type": ["Link"],
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "GBA rule book conformity certificate",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
-                      }
-                    },
-                    {
-                      "type": ["Endorsement"],
-                      "id": "https://authority.gov/schemeABC/123456789",
-                      "name": "Endorsement name e.g. Accreditation of certifiers.com under the Australian National Greenhouse and Energy Reporting scheme (NGER)",
-                      "trustmark": {
-                        "type": ["BinaryFile"],
-                        "fileName": "GHG protocol trust mark",
-                        "fileType": "image/png",
-                        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
-                      },
-                      "issuingAuthority": {
-                        "type": ["Identifier"],
-                        "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                        "name": "Authorising Entity",
-                        "registeredId": "12345",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.gs1.org/01/",
-                          "name": "Global Trade Identification Number (GTIN)"
-                        }
-                      },
-                      "endorsementEvidence": {
-                        "type": ["Link"],
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "GBA rule book conformity certificate",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
-                      }
-                    }
-                  ],
-                  "conformityCertificate": {
-                    "type": ["SecureLink", "Link"],
-                    "linkURL": "https://files.example-certifier.com/1234567.json",
-                    "linkName": "GBA rule book conformity certificate",
-                    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                    "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                    "hashMethod": "SHA-256",
-                    "encryptionMethod": "none"
-                  },
-                  "auditableEvidence": {
-                    "type": ["SecureLink", "Link"],
-                    "linkURL": "https://files.example-certifier.com/1234567.json",
-                    "linkName": "GBA rule book conformity certificate",
-                    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                    "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                    "hashMethod": "SHA-256",
-                    "encryptionMethod": "none"
-                  },
-                  "scope": {
-                    "type": ["ConformityAssessmentScheme", "Standard"],
-                    "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
-                    "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
-                    "issuingParty": {
-                      "type": ["Identifier"],
-                      "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                      "name": "EV battery 300Ah.",
-                      "registeredId": "12345",
+                      "type": ["Party"],
+                      "id": "https://abr.business.gov.au/ABN/View/12072594584",
+                      "name": "DTM Timber",
+                      "registeredId": "12072594584",
                       "idScheme": {
-                        "type": ["IdentifierScheme"],
-                        "id": "https://id.gs1.org/01/",
-                        "name": "Global Trade Identification Number (GTIN)"
-                      }
-                    },
-                    "issueDate": "2023-12-05",
-                    "trustmark": {
-                      "type": ["BinaryFile"],
-                      "fileName": "GHG protocol trust mark",
-                      "fileType": "image/png",
-                      "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
-                    }
+                          "type": ["IdentifierScheme"],
+                          "id": "https://id.gs1.org/01/",
+                          "name": "Global Trade Identification Number (GTIN)"
+                      },
+                      "description": "Queensland timber processing and supply company"
                   },
-                  "assessment": [
-                    {
-                      "type": ["ConformityAssessment", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "id": "https://exampleCAB.com/38f73303-a39e-45a7-b8b7-e73517548f27/01",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
-                        "name": "GBA Battery Passport",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                          "name": "EV battery 300Ah.",
-                          "registeredId": "12345",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
+                  "authorisation": [{
+                          "type": ["Endorsement"],
+                          "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                          "name": "certificate of registration Forest Management System - AS/NZS 4708:2021",
+                          "trustmark": {
+                              "type": ["BinaryFile"],
+                              "fileName": "GHG protocol trust mark",
+                              "fileType": "image/png",
+                              "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+                          },
+                          "issuingAuthority": {
+                              "type": ["Identifier"],
+                              "id": "https://www.daf.qld.gov.au/",
+                              "name": "QLD Forestry",
+                              "registeredId": "8675308",
+                              "idScheme": {
+                                "type": [
+                                  "IdentifierScheme"
+                                ]
+                              }
                           }
-                        },
-                        "issueDate": "2023-12-05"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                        "name": "National Greenhouse",
-                        "jurisdictionCountry": "AU",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                          "name": "EV battery 300Ah.",
-                          "registeredId": "12345",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
-                          }
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "GBA Battery rule book v2.0 battery assembly guidelines",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "emissions intensity",
-                              "metricValue": {
-                                "type": ["Measure"],
-                                "value": 1.8,
-                                "unit": "kg"
-                              },
-                              "score": "BB",
-                              "accuracy": 0.05
-                            },
-                            {
-                              "type": ["Metric"],
-                              "metricName": "emissions footprint",
-                              "metricValue": {
-                                "type": ["Measure"],
-                                "value": 12,
-                                "unit": "kg"
-                              },
-                              "score": "BB",
-                              "accuracy": 0.05
-                            }
-                          ]
-                        },
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "Other battery assessment criteria rulebook",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "emissions intensity",
-                              "metricValue": {
-                                "type": ["Measure"],
-                                "value": 1.8,
-                                "unit": "kg"
-                              },
-                              "score": "BB",
-                              "accuracy": 0.05
-                            },
-                            {
-                              "type": ["Metric"],
-                              "metricName": "emissions footprint",
-                              "metricValue": {
-                                "type": ["Measure"],
-                                "value": 12,
-                                "unit": "kg"
-                              },
-                              "score": "BB",
-                              "accuracy": 0.05
-                            }
-                          ]
-                        }
-                      ],
-                      "declaredValue": [
-                        {
-                          "type": ["Metric"],
-                          "metricName": "emissions footprint",
-                          "metricValue": {
-                            "type": ["Measure"],
-                            "value": 10,
-                            "unit": "kg"
-                          },
-                          "score": "BB",
-                          "accuracy": 0.05
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "governance.compliance",
-                      "assessedProduct": [
-                        {
-                          "type": ["Product"],
-                          "id": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
-                          "name": "Harvest Teams' Log Load",
-                          "registeredId": "09520123456788.21.12345",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
-                          },
-                          "batchNumber": "106",
-                          "IDverifiedByCAB": true
-                        }
-                      ],
-                      "assessedFacility": [
-                        {
-                          "type": ["Facility"],
-                          "id": "https://sample-facility-register.com/1234567",
-                          "name": "Greenacres battery factory",
-                          "registeredId": "1234567",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
-                          },
-                          "locationInformation": {
-                            "type": ["Location"],
-                            "plusCode": "https://plus.codes/8CGRC78W+MM",
-                            "geoLocation": {
-                              "type": "Point",
-                              "coordinates": [12.34, 56.78, 90.12]
-                            },
-                            "geoBoundary": {
-                              "type": "Polygon",
-                              "coordinates": [[[12.34, 56.78, 90.12]]]
-                            }
-                          },
-                          "address": {
-                            "type": ["Address"],
-                            "streetAddress": "level 11, 15 London Circuit",
-                            "postalCode": "2601",
-                            "addressLocality": "Acton",
-                            "addressRegion": "ACT",
-                            "addressCountry": "AU"
-                          },
-                          "IDverifiedByCAB": true
-                        },
-                        {
-                          "type": ["Facility"],
-                          "id": "https://sample-facility-register.com/1234567",
-                          "name": "Greenacres battery factory",
-                          "registeredId": "1234567",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
-                          },
-                          "locationInformation": {
-                            "type": ["Location"],
-                            "plusCode": "https://plus.codes/8CGRC78W+MM",
-                            "geoLocation": {
-                              "type": "Point",
-                              "coordinates": [12.34, 56.78, 90.12]
-                            },
-                            "geoBoundary": {
-                              "type": "Polygon",
-                              "coordinates": [[[12.34, 56.78, 90.12]]]
-                            }
-                          },
-                          "address": {
-                            "type": ["Address"],
-                            "streetAddress": "level 11, 15 London Circuit",
-                            "postalCode": "2601",
-                            "addressLocality": "Acton",
-                            "addressRegion": "ACT",
-                            "addressCountry": "AU"
-                          },
-                          "IDverifiedByCAB": true
-                        },
-                        {
-                          "type": ["Facility"],
-                          "id": "https://sample-facility-register.com/1234567",
-                          "name": "Greenacres battery factory",
-                          "registeredId": "1234567",
-                          "idScheme": {
-                            "type": ["IdentifierScheme"],
-                            "id": "https://id.gs1.org/01/",
-                            "name": "Global Trade Identification Number (GTIN)"
-                          },
-                          "locationInformation": {
-                            "type": ["Location"],
-                            "plusCode": "https://plus.codes/8CGRC78W+MM",
-                            "geoLocation": {
-                              "type": "Point",
-                              "coordinates": [12.34, 56.78, 90.12]
-                            },
-                            "geoBoundary": {
-                              "type": "Polygon",
-                              "coordinates": [[[12.34, 56.78, 90.12]]]
-                            }
-                          },
-                          "address": {
-                            "type": ["Address"],
-                            "streetAddress": "level 11, 15 London Circuit",
-                            "postalCode": "2601",
-                            "addressLocality": "Acton",
-                            "addressRegion": "ACT",
-                            "addressCountry": "AU"
-                          },
-                          "IDverifiedByCAB": true
-                        }
-                      ],
-                      "assessedOrganisation": {
-                        "type": ["Party"],
-                        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-                        "name": "Sample Company Pty Ltd.",
-                        "registeredId": "90664869327",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.gs1.org/01/",
-                          "name": "Global Trade Identification Number (GTIN)"
-                        },
-                        "description": "A leading electric energy storage company"
-                      },
-                      "auditor": {
-                        "type": ["Party"],
-                        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-                        "name": "Auditor Name",
-                        "registeredId": "90664869327",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.gs1.org/01/",
-                          "name": "Global Trade Identification Number (GTIN)"
-                        },
-                        "description": "A leading electric energy storage company"
                       }
-                    }
-                  ]
-                },
+                  ],
+                  "scope": {
+                      "type": ["ConformityAssessmentScheme", "Standard"],
+                      "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                      "name": "Registration of the forestry areas covered by this authority and the authority issuance to Responsible Wood",
+                      "issuingParty": {
+                          "type": ["Identifier"],
+                          "id": "https://www.bsigroup.com/en-AU/Standards/",
+                          "name": "British Standards Institution",
+                          "registeredId": "AFS 603520",
+                          "idScheme": {
+                              "type": ["IdentifierScheme"],
+                              "id": "https://id.gs1.org/01/",
+                              "name": "Global Trade Identification Number (GTIN)"
+                          }
+                      },
+                      "issueDate": "2024-12-05",
+                      "trustmark": {
+                          "type": ["BinaryFile"],
+                          "fileName": "GHG protocol trust mark",
+                          "fileType": "image/png",
+                          "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+                      }
+                  }
+                  },
                 "constructData": {
                   "mappingFields": [],
                   "dummyFields": [],
@@ -640,381 +317,148 @@
                 "data": {
                   "type": ["Product"],
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
-                  "name": "Log Load",
-                  "registeredId": "09359502000034",
+                  "name": "Log Load from State Forest",
+                  "registeredId": "09359502000010",
                   "idScheme": {
-                    "type": ["IdentifierScheme"],
-                    "id": "https://id.gs1.org/01/",
-                    "name": "Global Trade Identification Number (GTIN)"
+                      "type": ["IdentifierScheme"],
+                      "id": "https://id.gs1.org/01/",
+                      "name": "Global Trade Identification Number (GTIN)"
                   },
-                  "serialNumber": "",
                   "batchNumber": "106",
                   "productImage": {
-                    "type": ["Link"],
-                    "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
-                    "linkName": "EV Battery 300Ah Image"
+                      "type": ["Link"],
+                      "linkURL": "https://p1.pxfuel.com/preview/860/470/531/landscape-nature.jpg",
+                      "linkName": "Pine forest"
                   },
-                  "description": "The EcoCharge EC-5000 Lithium-Ion Battery is a high-capacity, 5000mAh battery designed for performance and sustainability. Manufactured with responsibly sourced materials and a 95% recyclability rate, it reduces lifecycle emissions through eco-friendly production and verified recycling programs.",
-                  "productCategory": [
-                    {
-                      "type": ["Classification"],
-                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                      "code": "46410",
-                      "name": "Primary cells",
-                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                      "schemeName": "UN Central Product Classification (CPC)"
-                    },
-                    {
-                      "type": ["Classification"],
-                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                      "code": "46410",
-                      "name": "Primary batteries",
-                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                      "schemeName": "UN Central Product Classification (CPC)"
-                    }
+                  "productCategory": [{
+                          "type": ["Classification"],
+                          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                          "code": "31310",
+                          "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                          "schemeName": "UN Central Product Classification (CPC)"
+                      }
                   ],
-                  "furtherInformation": [
-                    {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/product-information/1234567",
-                      "linkName": "Name of document that is further information"
-                    },
-                    {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/product-information/1234567",
-                      "linkName": "Name of additional document that is further information"
-                    }
+                  "furtherInformation": [{
+                          "type": ["Link"],
+                          "linkURL": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+                          "linkName": "Central Product Classification (CPC) Version 2.1 "
+                      }, {
+                          "type": ["Link"],
+                          "linkURL": "https://example-company.com/product-information/1234567",
+                          "linkName": "Name of additional document that is further information"
+                      }
                   ],
                   "producedByParty": {
-                    "type": ["Identifier"],
-                    "id": "https://id.example-company.com/party/6789",
-                    "name": "Example Manufacturing Co."
+                      "type": ["Identifier"],
+                      "id": "https://abr.business.gov.au/ABN/View?abn=66934348189",
+                      "name": "Department of Agriculture and Fisheries",
+                      "registeredId": "66934348189"
                   },
                   "producedAtFacility": {
-                    "type": ["Identifier"],
-                    "id": "https://id.example-company.com/facility/123",
-                    "name": "Green Acres Battery Factory"
+                      "type": ["Identifier"],
+                      "id": "https://id.example-company.com/facility/123",
+                      "name": "Queensland State owned managed forest"
                   },
                   "dimensions": {
-                    "type": ["Dimension"],
-                    "weight": { "value": 10, "unit": "kg" },
-                    "length": { "value": 90, "unit": "mm" },
-                    "width": { "value": 60, "unit": "mm" },
-                    "height": { "value": 10, "unit": "mm" },
-                    "volume": { "value": 7.5, "unit": "L" }
+                      "type": ["Dimension"],
+                      "weight": {
+                          "value": 600,
+                          "unit": "kg"
+                      },
+                      "length": {
+                          "value": 11.9,
+                          "unit": "m"
+                      },
+                      "width": {
+                          "value": 300,
+                          "unit": "mm"
+                      },
+                      "height": {
+                          "value": 300,
+                          "unit": "mm"
+                      },
+                      "volume": {
+                          "value": 600,
+                          "unit": "L"
+                      }
                   },
-                  "characteristic": {
-                    "Battery status": "Recycled",
-                    "Battery cell type": "Prismatic",
-                    "Number of cells per battery": "180",
-                    "Total energy": "100kwh"
-                  },
-                  "productionDate": "2024-04-24",
+                  "productionDate": "2025-01-24",
                   "countryOfProduction": "Australia",
                   "granularityLevel": "item",
-                  "dueDiligenceDeclaration": {
-                    "type": ["Link"],
-                    "linkURL": "https://example-company.com/due-diligence/1234567",
-                    "linkName": "Due Diligence Declaration"
-                  },
-                  "materialsProvenance": [
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 10,
-                      "hazardous": true,
-                      "materialSafetyInformation": {
-                        "type": ["Link"],
-                        "linkURL": "https://localhost:3000/gs1/safety-info/lithium-spodumene.pdf",
-                        "linkName": "Material Safety Data Sheet",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/safetyData"
-                      }
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    }
-                  ],
                   "conformityClaim": [
                     {
-                      "type": ["Claim", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        },
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        }
-                      ],
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.iso.org/standard/60857.html",
-                        "name": "Standard",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://iso.org/issuing-party/123",
-                          "name": "International Organization"
-                        },
-                        "issueDate": "2024-04-25"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                        "name": "National Greenhouse",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://gov.au/admin-body/12345",
-                          "name": "Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "Battery Assembly Guidelines",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "Minimum compressive strength",
-                              "metricValue": { "value": 500, "unit": "MPA" }
-                            }
-                          ]
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "governance.compliance",
-                      "conformityEvidence": {
-                        "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",                        
-                        "hashMethod": "SHA-256",
-                        "linkName": "Responsible Wood",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "encryptionMethod": "AES"
+                          "type": ["Claim", "Declaration"],
+                          "assessmentDate": "2025-01-25",
+                          "declaredValue": [],
+                          "referenceStandard": {
+                              "type": ["Standard"],
+                              "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                              "name": "Responsible Wood Certificate",
+                              "issuingParty": {
+                                  "type": ["Identifier"],
+                                  "id": "https://abr.business.gov.au/ABN/View?abn=66934348189",
+                                  "name": "Department of Agriculture and Fisheries"
+                              },
+                              "issueDate": "2024-04-25"
+                          },
+                          "referenceRegulation": {
+                              "type": ["Regulation"],
+                              "id": "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2024-0197",
+                              "name": "Forestry Regulation 2024",
+                              "jurisdictionCountry": "Australia",
+                              "administeredBy": {
+                                  "type": ["Identifier"],
+                                  "id": "https://www.daf.qld.gov.au/",
+                                  "name": "Department of Primary Industries"
+                              },
+                              "effectiveDate": "2024-03-20"
+                          },
+                          "assessmentCriteria": [{
+                                  "type": ["Criterion"],
+                                  "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                                  "name": "Forest Management System - AS/NZS 4708:2021",
+                                  "thresholdValues": []
+                              }
+                          ],
+                          "conformance": true,
+                          "conformityTopic": "environment.deforestation",
+                          "conformityEvidence": {
+                              "type": ["SecureLink", "Link"],
+                              "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",
+                              "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+                              "hashMethod": "SHA-256",
+                              "linkName": "Responsible Wood Certification",
+                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "encryptionMethod": "AES"
+                          },
+                          "id": "AFS 603520"
                       }
-                    },
-                    {
-                      "type": ["Claim", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        },
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        }
-                      ],
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.iso.org/standard/60857.html",
-                        "name": "Standard",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://iso.org/issuing-party/123",
-                          "name": "International Organization"
-                        },
-                        "issueDate": "2023-12-05"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                        "name": "National Greenhouse",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://gov.au/admin-body/12345",
-                          "name": "Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "Battery Assembly Guidelines",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "Minimum compressive strength",
-                              "metricValue": { "value": 500, "unit": "MPA" }
-                            }
-                          ]
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "environment.energy",
-                      "conformityEvidence": {
-                        "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:certificationInfo",
-                        "hashMethod": "SHA-256",
-                        "linkName": "Declaration link name",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "encryptionMethod": "AES"
-                      }
-                    }
                   ],
-                  "circularityScorecard": {
-                    "type": ["CircularityPerformance"],
-                    "recyclingInformation": {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/recycling/1234567",
-                      "linkName": "Recycling Information"
-                    },
-                    "repairInformation": {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/repair/1234567",
-                      "linkName": "Repair Instructions"
-                    },
-                    "recyclableContent": 67,
-                    "recycledContent": 86,
-                    "utilityFactor": 1.2,
-                    "materialCircularityIndicator": 0.67
-                  },
-                  "emissionsScorecard": {
-                    "type": ["EmissionsPerformance"],
-                    "carbonFootprint": 12.5,
-                    "declaredUnit": "kg",
-                    "operationalScope": "CradleToGate",
-                    "primarySourcedRatio": 75,
-                    "reportingStandard": {
-                      "type": ["Standard"],
-                      "id": "https://www.ifrs.org/standards/issb/s2",
-                      "name": "WBSCD Pathfinder framework - V.2.0",
-                      "issuingParty": {
-                        "type": ["Identifier"],
-                        "id": "https://id.ifrs.org/issuing-party/123",
-                        "name": "International Financial Reporting Standards Foundation",
-                        "registeredId": "90664869327",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.ifrs.org/issuing-party/",
-                          "name": "IFRS Issuing Party"
-                        }
-                      },
-                      "issueDate": "2024-04-25"
-                    }
-                  },
                   "traceabilityInformation": {
-                    "valueChainProcess": "Spinning",
-                    "verifiedRatio": 0.5,
-                    "traceabilityEvent": [
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Object Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      },
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Transformation Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      },
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Transaction Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      },
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Aggregation Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      },
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Association Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      },
-                      {
-                        "linkURL": "https://files.example-certifier.com/1234567.json",
-                        "linkName": "Object Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      }
-                    ]
-                  }
-                },
+                      "valueChainProcess": "Timber Extraction",
+                      "verifiedRatio": 0.5,
+                      "traceabilityEvent": [
+                        {
+                              "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:certificationInfo",
+                              "linkName": "Queensland Government Sales Permit For getting Forest product",
+                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
+                              "encryptionMethod": "AES"
+                          }, 
+                          {
+                              "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability",
+                              "linkName": "Extraction and transport",
+                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
+                              "encryptionMethod": "AES"
+                          }
+                      ]
+                  },
+                  "description": "Raw logs authorised for extraction from a Queensland State Managed Forest"
+              },
                 "constructData": {
                   "mappingFields": [],
                   "dummyFields": [],
@@ -1175,22 +619,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
                       "name": "Harves Teams' Log"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "http://localhost:3000/gs1/01/09359502000010/10/106",
-                      "productName": "A Harvest Team log",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7",
-                      "productName": "A DTM log",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -1282,7 +710,7 @@
                 },
                 "data": {
                   "type": ["ConformityAttestation", "Attestation"],
-                  "id": "https://localhost:3000/01/09359502000034/10/54L33V3N7",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7",
                   "name": "Queensland Government Sales Permit For getting Forest product",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "GovtApproval",
@@ -1292,7 +720,13 @@
                       "type": ["Party"],
                       "id": "https://abr.business.gov.au/ABN/View/12072594584",
                       "name": "DTM Timber",
-                      "registeredId": "12072594584"
+                      "registeredId": "12072594584",
+                      "idScheme": {
+                          "type": ["IdentifierScheme"],
+                          "id": "https://id.gs1.org/01/",
+                          "name": "Global Trade Identification Number (GTIN)"
+                      },
+                      "description": "A pole treatment facility"
                   },
                   "authorisation": [{
                           "type": ["Endorsement"],
@@ -1306,41 +740,26 @@
                           },
                           "issuingAuthority": {
                               "type": ["Identifier"],
-                              "id": "https://id.gs1.org/01/09520123456788/21/12345",
-                              "name": "Authorising Entity",
+                              "id": "https://www.daf.qld.gov.au/",
+                              "name": "DAF QLDs",
                               "registeredId": "12345",
                               "idScheme": {
                                   "type": ["IdentifierScheme"],
                                   "id": "https://id.gs1.org/01/",
                                   "name": "Global Trade Identification Number (GTIN)"
                               }
-                          },
-                          "endorsementEvidence": {
-                              "type": ["Link"],
-                              "linkURL": "https://files.example-certifier.com/1234567.json",
-                              "linkName": "GBA rule book conformity certificate",
-                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
                           }
                       }
                   ],
-                  "conformityCertificate": {
-                      "type": ["SecureLink", "Link"],
-                      "linkURL": "https://localhost:3000/01/09359502000034/10/54L33V3N7.json",
-                      "linkName": "Sales Permit for getting forest product",
-                      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                      "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                      "hashMethod": "SHA-256",
-                      "encryptionMethod": "none"
-                  },
                   "scope": {
                       "type": ["ConformityAssessmentScheme", "Standard"],
                       "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/5ef64c33-ebe4-4fed-9e9c-f4c39d2d83f2/code-of-conduct-for-the-sale-of-forest-and-quarry-products.pdf?ETag=7b3b90f2b1fa064a32d9e19cae607fe4",
                       "name": "Queensland code of conduct for the sale of forest and quarry products",
                       "issuingParty": {
                           "type": ["Identifier"],
-                          "id": "https://localhost:3000/01/09359502000034/10/54L33V3N7",
-                          "name": "Forestry Sales Permit",
-                          "registeredId": "54L33V3N7",
+                          "id": "https://www.daf.qld.gov.au/",
+                          "name": "DAF QLD",
+                          "registeredId": "8675309",
                           "idScheme": {
                               "type": ["IdentifierScheme"],
                               "id": "https://id.gs1.org/01/",
@@ -1487,22 +906,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability",
                       "name": "QLD Forestry Log Load"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385001/?linkType=gs1:gs1:sustainabilityInfo",
-                      "productName": "DTM log",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability",
-                      "productName": "A Received DTM log",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -1598,338 +1001,84 @@
                   "name": "Untreated Pole",
                   "registeredId": "09359502000041",
                   "idScheme": {
-                    "type": ["IdentifierScheme"],
-                    "id": "https://id.gs1.org/01/",
-                    "name": "Global Trade Identification Number (GTIN)"
+                      "type": ["IdentifierScheme"],
+                      "id": "https://id.gs1.org/01/",
+                      "name": "Global Trade Identification Number (GTIN)"
                   },
-                  "serialNumber": "",
                   "batchNumber": "D9385001",
                   "productImage": {
-                    "type": ["Link"],
-                    "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
-                    "linkName": "Untreated Pole Image"
+                      "type": ["Link"],
+                      "linkURL": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Timber_DonnellyMills2005_SeanMcClean.jpg",
+                      "linkName": "Lumber"
                   },
-                  "description": "Description of Untreated Pole",
-                  "productCategory": [
-                    {
-                      "type": ["Classification"],
-                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                      "code": "46410",
-                      "name": "Primary cells",
-                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                      "schemeName": "UN Central Product Classification (CPC)"
-                    },
-                    {
-                      "type": ["Classification"],
-                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                      "code": "46410",
-                      "name": "Primary batteries",
-                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                      "schemeName": "UN Central Product Classification (CPC)"
-                    }
+                  "productCategory": [{
+                          "type": ["Classification"],
+                          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                          "code": "31310",
+                          "name": "Wood in the rough, whether or not stripped of bark or sapwood",
+                          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                          "schemeName": "UN Central Product Classification (CPC)"
+                      }
                   ],
                   "furtherInformation": [
                     {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/product-information/1234567",
-                      "linkName": "Name of document that is further information"
-                    },
-                    {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/product-information/1234567",
-                      "linkName": "Name of additional document that is further information"
-                    }
+                          "type": ["Link"],
+                          "linkURL": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+                          "linkName": "Central Product Classification (CPC) Version 2.1 "
+                      }
                   ],
                   "producedByParty": {
-                    "type": ["Identifier"],
-                    "id": "https://id.example-company.com/party/6789",
-                    "name": "Example Manufacturing Co."
+                      "type": ["Identifier"],
+                      "id": "https://abr.business.gov.au/ABN/View/12072594584",
+                      "name": "DTM Timber",
+                      "registeredId": "12072594584"
                   },
                   "producedAtFacility": {
-                    "type": ["Identifier"],
-                    "id": "https://id.example-company.com/facility/123",
-                    "name": "Green Acres Battery Factory"
+                      "type": ["Identifier"],
+                      "id": "https://id.example-company.com/facility/123",
+                      "name": "DTM Pole Treatment Plant"
                   },
                   "dimensions": {
-                    "type": ["Dimension"],
-                    "weight": { "value": 10, "unit": "kg" },
-                    "length": { "value": 90, "unit": "mm" },
-                    "width": { "value": 60, "unit": "mm" },
-                    "height": { "value": 10, "unit": "mm" },
-                    "volume": { "value": 7.5, "unit": "L" }
-                  },
-                  "characteristic": {
-                    "Battery status": "Recycled",
-                    "Battery cell type": "Prismatic",
-                    "Number of cells per battery": "180",
-                    "Total energy": "100kwh"
-                  },
-                  "productionDate": "2024-04-24",
-                  "countryOfProduction": "Australia",
-                  "granularityLevel": "item",
-                  "dueDiligenceDeclaration": {
-                    "type": ["Link"],
-                    "linkURL": "https://example-company.com/due-diligence/1234567",
-                    "linkName": "Due Diligence Declaration"
-                  },
-                  "materialsProvenance": [
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
+                      "type": ["Dimension"],
+                      "weight": {
+                          "value": 600,
+                          "unit": "kg"
                       },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
+                      "length": {
+                          "value": 11.9,
+                          "unit": "m"
                       },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 10,
-                      "hazardous": true,
-                      "materialSafetyInformation": {
-                        "type": ["Link"],
-                        "linkURL": "https://localhost:3000/gs1/safety-info/lithium-spodumene.pdf",
-                        "linkName": "Material Safety Data Sheet",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/safetyData"
+                      "width": {
+                          "value": 300,
+                          "unit": "mm"
+                      },
+                      "height": {
+                          "value": 300,
+                          "unit": "mm"
+                      },
+                      "volume": {
+                          "value": 600,
+                          "unit": "L"
                       }
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    },
-                    {
-                      "type": ["Material"],
-                      "name": "Material",
-                      "originCountry": "AU",
-                      "materialType": {
-                        "type": ["Classification"],
-                        "id": "https://unfc.org/material-type/Lithium",
-                        "name": "Lithium"
-                      },
-                      "massFraction": 20,
-                      "massAmount": { "value": 1.0, "unit": "kg" },
-                      "recycledAmount": 0,
-                      "hazardous": false
-                    }
-                  ],
-                  "conformityClaim": [
-                    {
-                      "type": ["Claim", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        },
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        }
-                      ],
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.iso.org/standard/60857.html",
-                        "name": "Standard",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://iso.org/issuing-party/123",
-                          "name": "International Organization"
-                        },
-                        "issueDate": "2024-04-25"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                        "name": "National Greenhouse",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://gov.au/admin-body/12345",
-                          "name": "Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "Battery Assembly Guidelines",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "Minimum compressive strength",
-                              "metricValue": { "value": 500, "unit": "MPA" }
-                            }
-                          ]
-                        }
-                      ],
-                      "conformance": false,
-                      "conformityTopic": "governance.compliance",
-                      "conformityEvidence": {
-                        "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",                        
-                        "hashMethod": "SHA-256",
-                        "linkName": "Responsible Wood",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "encryptionMethod": "AES"
-                      }
-                    },
-                    {
-                      "type": ["Claim", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "declaredValue": [
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        },
-                        {
-                          "type": ["Metric"],
-                          "metricName": "GHG emissions intensity",
-                          "metricValue": { "value": 1.5, "unit": "kg" },
-                          "score": "1.2",
-                          "accuracy": 0.8
-                        }
-                      ],
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.iso.org/standard/60857.html",
-                        "name": "Standard",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://iso.org/issuing-party/123",
-                          "name": "International Organization"
-                        },
-                        "issueDate": "2023-12-05"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                        "name": "National Greenhouse",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://gov.au/admin-body/12345",
-                          "name": "Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
-                      "assessmentCriteria": [
-                        {
-                          "type": ["Criterion"],
-                          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                          "name": "Battery Assembly Guidelines",
-                          "thresholdValues": [
-                            {
-                              "type": ["Metric"],
-                              "metricName": "Minimum compressive strength",
-                              "metricValue": { "value": 500, "unit": "MPA" }
-                            }
-                          ]
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "environment.energy",
-                      "conformityEvidence": {
-                        "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:certificationInfo",
-                        "hashMethod": "SHA-256",
-                        "linkName": "Declaration link name",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "encryptionMethod": "AES"
-                      }
-                    }
-                  ],
-                  "circularityScorecard": {
-                    "type": ["CircularityPerformance"],
-                    "recyclingInformation": {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/recycling/1234567",
-                      "linkName": "Recycling Information"
-                    },
-                    "repairInformation": {
-                      "type": ["Link"],
-                      "linkURL": "https://example-company.com/repair/1234567",
-                      "linkName": "Repair Instructions"
-                    },
-                    "recyclableContent": 67,
-                    "recycledContent": 86,
-                    "utilityFactor": 1.2,
-                    "materialCircularityIndicator": 0.67
                   },
-                  "emissionsScorecard": {
-                    "type": ["EmissionsPerformance"],
-                    "carbonFootprint": 12.5,
-                    "declaredUnit": "kg",
-                    "operationalScope": "CradleToGate",
-                    "primarySourcedRatio": 75,
-                    "reportingStandard": {
-                      "type": ["Standard"],
-                      "id": "https://www.ifrs.org/standards/issb/s2",
-                      "name": "WBSCD Pathfinder framework - V.2.0",
-                      "issuingParty": {
-                        "type": ["Identifier"],
-                        "id": "https://id.ifrs.org/issuing-party/123",
-                        "name": "International Financial Reporting Standards Foundation",
-                        "registeredId": "90664869327",
-                        "idScheme": {
-                          "type": ["IdentifierScheme"],
-                          "id": "https://id.ifrs.org/issuing-party/",
-                          "name": "IFRS Issuing Party"
-                        }
-                      },
-                      "issueDate": "2024-04-25"
-                    }
-                  },
+                  "materialsProvenance": [],
+                  "conformityClaim": [],
                   "traceabilityInformation": {
-                    "valueChainProcess": "Delivery Docket Log",
-                    "verifiedRatio": 1,
-                    "traceabilityEvent": [
-                      {
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D9385001/?linkType=gs1:traceability",
-                        "linkName": "Object Event",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      }
-                    ]
-                  }
-                },
+                      "valueChainProcess": "Timber Extraction",
+                      "verifiedRatio": 1,
+                      "traceabilityEvent": [
+                        {
+                              "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D9385001/?linkType=gs1:traceability",
+                              "linkName": "Log Load from State Forest",
+                              "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
+                              "hashDigest": "6239119",
+                              "hashMethod": "SHA-256",
+                              "encryptionMethod": "AES"
+                          }
+                      ]
+                  },
+                  "description": "Raw logs to be prepared as telephone poles"
+              },
                 "constructData": {
                   "mappingFields": [],
                   "dummyFields": [],
@@ -2075,22 +1224,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385001/?linkType=gs1:gs1:sustainabilityInfo",
                       "name": "Untreated Pole"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385001/?linkType=gs1:gs1:sustainabilityInfo",
-                      "productName": "Untreated pole",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://id.gs1.org/01/09520123456788/21/12345",
-                      "productName": "Trimmed Log moving to Metall Tagging",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -2209,22 +1342,6 @@
                       ],
                       "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385002/?linkType=gs1:traceability",
                       "name": "Trimmed DTM Log"
-                    }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385002/?linkType=gs1:traceability",
-                      "productName": "Trimmed DTM Log",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385004/?linkType=gs1:traceability",
-                      "productName": "Metal Tagged DTM Log moving to Treatment",
-                      "quantity": 1,
-                      "uom": "pcs"
                     }
                   ]
                 },
@@ -2345,22 +1462,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385003/?linkType=gs1:traceability",
                       "name": "Metal Tagged DTM Log"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385003/?linkType=gs1:traceability",
-                      "productName": "Metal Tagged DTM Log",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385004/?linkType=gs1:gs1:sustainabilityInfo",
-                      "productName": "Treated DTM Pole",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -2451,26 +1552,34 @@
                   "url": "https://jargon.sh/user/unece/DigitalProductPassport/v/working/artefacts/jsonSchemas/Product.json?class=Product"
                 },
                 "data": {
-                  "type": ["Product"],
+                  "type": [
+                    "Product"
+                  ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385004",
                   "name": "Treated pole",
                   "registeredId": "09359502000041",
                   "idScheme": {
-                    "type": ["IdentifierScheme"],
+                    "type": [
+                      "IdentifierScheme"
+                    ],
                     "id": "https://id.gs1.org/01/",
                     "name": "Global Trade Identification Number (GTIN)"
                   },
                   "serialNumber": "",
                   "batchNumber": "D9385004",
                   "productImage": {
-                    "type": ["Link"],
-                    "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
+                    "type": [
+                      "Link"
+                    ],
+                    "linkURL": "https://www.lifetimepine.com.au/wp-content/uploads/timber_tpmr12515054-2.jpg",
                     "linkName": "Treated Pole Image"
                   },
                   "description": "Description of Treated Pole characteristics and use",
                   "productCategory": [
                     {
-                      "type": ["Classification"],
+                      "type": [
+                        "Classification"
+                      ],
                       "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
                       "code": "31310",
                       "name": "Wood in the rough, treated with paint, stains, creosote or other preservatives",
@@ -2480,38 +1589,58 @@
                   ],
                   "furtherInformation": [
                     {
-                      "type": ["Link"],
+                      "type": [
+                        "Link"
+                      ],
                       "linkURL": "https://example-company.com/product-information/1234567",
                       "linkName": "Name of document that is further information"
                     }
                   ],
                   "producedByParty": {
-                    "type": ["Identifier"],
-                    "id": "https://abr.business.gov.au/ABN/View?id=80656267444",
-                    "name": "DTM GROUP AUSTRALIA PTY LTD"
+                    "type": [
+                      "Identifier"
+                    ],
+                    "id": "https://abr.business.gov.au/ABN/View/12072594584",
+                    "name": "DTM Timber"
                   },
                   "producedAtFacility": {
-                    "type": ["Identifier"],
+                    "type": [
+                      "Identifier"
+                    ],
                     "id": "https://id.example-company.com/facility/123",
                     "name": "DTM Pole Treatment Plant"
                   },
                   "dimensions": {
-                    "type": ["Dimension"],
-                    "weight": { "value": 300, "unit": "kg" },
-                    "length": { "value": 12.5, "unit": "m" },
-                    "width": { "value": 1, "unit": "m" },
-                    "volume": { "value": 0.65, "unit": "m3" }
+                    "type": [
+                      "Dimension"
+                    ],
+                    "weight": {
+                      "value": 300,
+                      "unit": "kg"
+                    },
+                    "length": {
+                      "value": 12.5,
+                      "unit": "m"
+                    },
+                    "width": {
+                      "value": 1,
+                      "unit": "m"
+                    },
+                    "volume": {
+                      "value": 0.65,
+                      "unit": "m3"
+                    }
                   },
                   "productionDate": "2024-10-28",
                   "countryOfProduction": "Australia",
-                  "granularityLevel": "item",                  
+                  "granularityLevel": "item",
                   "traceabilityInformation": {
                     "valueChainProcess": "Pole treatment",
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
                         "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D9385004/?linkType=gs1:traceability",
-                        "linkName": "Object Event",
+                        "linkName": "Treated pole",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -2665,22 +1794,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385004/?linkType=gs1:gs1:sustainabilityInfo",
                       "name": "Treated DTM Pole"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385004/?linkType=gs1:gs1:sustainabilityInfo",
-                      "productName": "Treated DTM Pole",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:traceability",
-                      "productName": "Sold DTM Pole moving to Batch Aggregation",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -2815,22 +1928,6 @@
                       "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385005/?linkType=gs1:traceability",
                       "name": "Sold DTM Pole"
                     }
-                  ],
-                  "inputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000041/10/D9385005/?linkType=gs1:traceability",
-                      "productName": "Sold DTM Pole",
-                      "quantity": 1,
-                      "uom": "PCS"
-                    }
-                  ],
-                  "outputQuantityList": [
-                    {
-                      "productId": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:sustainabilityInfo",
-                      "productName": "Container of poles",
-                      "quantity": 1,
-                      "uom": "pcs"
-                    }
                   ]
                 },
                 "constructData": {
@@ -2935,9 +2032,9 @@
                     "type": [
                       "Party"
                     ],
-                    "id": "https://abr.business.gov.au/ABN/View?id=80656267444",
-                    "name": "DTM GROUP AUSTRALIA PTY LTD",
-                    "registeredId": "80656267444",
+                    "id": "https://abr.business.gov.au/ABN/View/12072594584",
+                    "name": "DTM Timber",
+                    "registeredId": "12072594584",
                     "idScheme": {
                       "type": [
                         "IdentifierScheme"
@@ -3112,7 +2209,7 @@
                   "batchNumber": "D9385006",
                   "productImage": {
                     "type": ["Link"],
-                    "linkURL": "https://c.animaapp.com/b3vf2M20/img/pp-header@2x.png",
+                    "linkURL": "https://www.nzpoles.com/wp-content/uploads/SED-poles_0000_IMG_7596-1536x1152-1_0001_export_0002_Background.jpg",
                     "linkName": "Pole Container Image"
                   },
                   "description": "Description of Pole Container",
@@ -3187,7 +2284,7 @@
                   ],
                   "traceabilityInformation": {
                     "valueChainProcess": "Pole container batch",
-                    "verifiedRatio": 0.5,
+                    "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
                         "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:traceability",
