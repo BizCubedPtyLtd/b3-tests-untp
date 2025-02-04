@@ -60,7 +60,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
                       "name": "Harvest Teams' Log Load"
                     }
                   ],
@@ -425,7 +425,7 @@
                           "conformityTopic": "environment.deforestation",
                           "conformityEvidence": {
                               "type": ["SecureLink", "Link"],
-                              "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",
                               "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
                               "hashMethod": "SHA-256",
                               "linkName": "Responsible Wood Certification",
@@ -440,7 +440,7 @@
                       "verifiedRatio": 0.5,
                       "traceabilityEvent": [
                         {
-                              "linkURL": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:certificationInfo",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:certificationInfo",
                               "linkName": "Queensland Government Sales Permit For getting Forest product",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                               "hashDigest": "6239119",
@@ -448,7 +448,7 @@
                               "encryptionMethod": "AES"
                           }, 
                           {
-                              "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability",
                               "linkName": "Extraction and transport",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                               "hashDigest": "6239119",
@@ -607,7 +607,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
                       "name": "DTM Delivery Docket Log"
                     }
                   ],
@@ -616,7 +616,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
                       "name": "Harves Teams' Log"
                     }
                   ]
@@ -894,7 +894,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
                       "name": "Received DTM Log - Untreated Pole"
                     }
                   ],
@@ -903,7 +903,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability",
                       "name": "QLD Forestry Log Load"
                     }
                   ]
@@ -1068,7 +1068,7 @@
                       "verifiedRatio": 1,
                       "traceabilityEvent": [
                         {
-                              "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
                               "linkName": "Log Load from State Forest",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                               "hashDigest": "6239119",
@@ -1212,7 +1212,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
                       "name": "Trimmed Log moving to Metall Tagging"
                     }
                   ],
@@ -1221,7 +1221,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
                       "name": "Untreated Pole"
                     }
                   ]
@@ -1331,7 +1331,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
                       "name": "Metal Tagged DTM Log moving to Treatment"
                     }
                   ],
@@ -1340,7 +1340,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8002?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8002?linkType=gs1:traceability",
                       "name": "Trimmed DTM Log"
                     }
                   ]
@@ -1450,7 +1450,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
                       "name": "Treated DTM Pole"
                     }
                   ],
@@ -1459,7 +1459,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
                       "name": "Metal Tagged DTM Log"
                     }
                   ]
@@ -1639,7 +1639,7 @@
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
                         "linkName": "Treated pole",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
@@ -1782,7 +1782,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
                       "name": "Sold DTM Pole moving to Batch Aggregation"
                     }
                   ],
@@ -1791,7 +1791,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
                       "name": "Treated DTM Pole"
                     }
                   ]
@@ -1916,7 +1916,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:sustainabilityInfo",
                       "name": "Container of poles"
                     }
                   ],
@@ -1925,7 +1925,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8005?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8005?linkType=gs1:traceability",
                       "name": "Sold DTM Pole"
                     }
                   ]
@@ -2072,7 +2072,7 @@
                       "SecureLink",
                       "Link"
                     ],
-                    "linkURL": "https://localhost:3000/01/09359502000058/10/D8006.json",
+                    "linkURL": "http://localhost:3000/01/09359502000058/10/D8006.json",
                     "linkName": "DAFF Commonwealth Export Permit",
                     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                     "hashMethod": "SHA-256",
@@ -2236,12 +2236,58 @@
                   "granularityLevel": "batch",
                   "conformityClaim": [
                     {
+                      "type": ["Claim", "Declaration"],
+                      "assessmentDate": "2024-04-25",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "referenceStandard": {
+                        "type": ["Standard"],
+                        "id": "https://www.iso.org/standard/60857.html",
+                        "name": "Standard",
+                        "issuingParty": {
+                          "type": ["Identifier"],
+                          "id": "https://iso.org/issuing-party/123",
+                          "name": "International Organization"
+                        },
+                        "issueDate": "2024-04-25"
+                      },
+                      "referenceRegulation": {
+                        "type": ["Regulation"],
+                        "id": "https://www.legislation.gov.au/C2020A00012/2021-03-02/text",
+                        "name": "Export Control Act 2020",
+                        "jurisdictionCountry": "Australia",
+                        "administeredBy": {
+                          "type": ["Identifier"],
+                          "id": "https://gov.au/admin-body/12345",
+                          "name": "Australian Government"
+                        },
+                        "effectiveDate": "2024-03-20"
+                      },
+                      "assessmentCriteria": [
+                        {
+                          "type": ["Criterion"],
+                          "id": "https://www.agriculture.gov.au/biosecurity-trade/export/from-australia",
+                          "name": "Exporting from Australia Criteria"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "type": ["SecureLink", "Link"],
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "hashDigest": "",
+                        "hashMethod": "SHA-256",
+                        "linkName": "DAFF Commonwealth export license",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
                       "type": [
                         "Claim",
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
                       "assessmentCriteria": [
                         {
                           "type": [
@@ -2254,7 +2300,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "linkName": "AS/NZS ISO 9001:2015 Quality Management System",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2268,7 +2314,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
                       "assessmentCriteria": [
                         {
                           "type": [
@@ -2281,7 +2327,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "linkName": "AS3818.11-2010 Timber - Heavy Structural Products - Utility Poles",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2295,7 +2341,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
                       "assessmentCriteria": [
                         {
                           "type": [
@@ -2308,7 +2354,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "linkName": "AS3818.1-2010 Heavy Structural Products Visually Graded General Requirements",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2322,7 +2368,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
                       "assessmentCriteria": [
                         {
                           "type": [
@@ -2335,7 +2381,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "linkName": "AS1604-2010 Timber - Presevative Treated-Sawn & Round",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2349,7 +2395,7 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
                       "assessmentCriteria": [
                         {
                           "type": [
@@ -2362,7 +2408,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "linkName": "AS/NZS 1605 Sampling & Analyzing Timber Preservative Treated Timber",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2376,7 +2422,7 @@
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
                         "linkName": "Object Event",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
