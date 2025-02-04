@@ -327,8 +327,8 @@
                   "batchNumber": "106",
                   "productImage": {
                       "type": ["Link"],
-                      "linkURL": "https://p1.pxfuel.com/preview/860/470/531/landscape-nature.jpg",
-                      "linkName": "Pine forest"
+                      "linkURL": "https://www.forestry.pyx.io/log_load.png",
+                      "linkName": "Log Load"
                   },
                   "productCategory": [{
                           "type": ["Classification"],
@@ -607,7 +607,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385001?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
                       "name": "DTM Delivery Docket Log"
                     }
                   ],
@@ -881,7 +881,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385001",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001",
                   "processType": "Receiving a Log Load to Delivery Docket",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -894,7 +894,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385001?linkType=gs1:sustainabilityInfo",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
                       "name": "Received DTM Log - Untreated Pole"
                     }
                   ],
@@ -997,7 +997,7 @@
                 },
                 "data": {
                   "type": ["Product"],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385001",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001",
                   "name": "Untreated Pole",
                   "registeredId": "09359502000041",
                   "idScheme": {
@@ -1005,10 +1005,10 @@
                       "id": "https://id.gs1.org/01/",
                       "name": "Global Trade Identification Number (GTIN)"
                   },
-                  "batchNumber": "D9385001",
+                  "batchNumber": "D8001",
                   "productImage": {
                       "type": ["Link"],
-                      "linkURL": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Timber_DonnellyMills2005_SeanMcClean.jpg",
+                      "linkURL": "https://www.forestry.pyx.io/untreated_pole.png",
                       "linkName": "Lumber"
                   },
                   "productCategory": [{
@@ -1068,7 +1068,7 @@
                       "verifiedRatio": 1,
                       "traceabilityEvent": [
                         {
-                              "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D9385001?linkType=gs1:traceability",
+                              "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
                               "linkName": "Log Load from State Forest",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                               "hashDigest": "6239119",
@@ -1199,7 +1199,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385002",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8002",
                   "processType": "Trimming a DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -1212,7 +1212,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385003?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
                       "name": "Trimmed Log moving to Metall Tagging"
                     }
                   ],
@@ -1221,7 +1221,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385001?linkType=gs1:sustainabilityInfo",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:sustainabilityInfo",
                       "name": "Untreated Pole"
                     }
                   ]
@@ -1318,7 +1318,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385003",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003",
                   "processType": "Metal Tagging of a trimmed DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -1331,7 +1331,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385004?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
                       "name": "Metal Tagged DTM Log moving to Treatment"
                     }
                   ],
@@ -1340,7 +1340,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385002?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8002?linkType=gs1:traceability",
                       "name": "Trimmed DTM Log"
                     }
                   ]
@@ -1437,7 +1437,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385004",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004",
                   "processType": "Treatment of a Metal Tagged DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -1450,7 +1450,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385004?linkType=gs1:sustainabilityInfo",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
                       "name": "Treated DTM Pole"
                     }
                   ],
@@ -1459,7 +1459,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385003?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
                       "name": "Metal Tagged DTM Log"
                     }
                   ]
@@ -1555,7 +1555,7 @@
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385004",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004",
                   "name": "Treated pole",
                   "registeredId": "09359502000041",
                   "idScheme": {
@@ -1566,12 +1566,12 @@
                     "name": "Global Trade Identification Number (GTIN)"
                   },
                   "serialNumber": "",
-                  "batchNumber": "D9385004",
+                  "batchNumber": "D8004",
                   "productImage": {
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.lifetimepine.com.au/wp-content/uploads/timber_tpmr12515054-2.jpg",
+                    "linkURL": "https://www.forestry.pyx.io/treated_pole.png",
                     "linkName": "Treated Pole Image"
                   },
                   "description": "Description of Treated Pole characteristics and use",
@@ -1639,7 +1639,7 @@
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D9385004?linkType=gs1:traceability",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
                         "linkName": "Treated pole",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
@@ -1769,7 +1769,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D9385005",
+                  "id": "http://localhost:3000/gs1/01/09359502000041/10/D8005",
                   "processType": "Selling a treated DTM pole",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -1782,7 +1782,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
                       "name": "Sold DTM Pole moving to Batch Aggregation"
                     }
                   ],
@@ -1791,7 +1791,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385004?linkType=gs1:sustainabilityInfo",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:sustainabilityInfo",
                       "name": "Treated DTM Pole"
                     }
                   ]
@@ -1903,7 +1903,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D9385006",
+                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006",
                   "processType": "Making a container of DTM poles",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -1916,7 +1916,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:sustainabilityInfo",
+                      "id": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:sustainabilityInfo",
                       "name": "Container of poles"
                     }
                   ],
@@ -1925,7 +1925,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D9385005?linkType=gs1:traceability",
+                      "id": "https://localhost:3000/gs1/01/09359502000041/10/D8005?linkType=gs1:traceability",
                       "name": "Sold DTM Pole"
                     }
                   ]
@@ -2022,7 +2022,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D9385006/",
+                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006/",
                   "name": "DAFF Commonwealth Export License",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "GovtApproval",
@@ -2072,7 +2072,7 @@
                       "SecureLink",
                       "Link"
                     ],
-                    "linkURL": "https://localhost:3000/01/09359502000058/10/D9385006.json",
+                    "linkURL": "https://localhost:3000/01/09359502000058/10/D8006.json",
                     "linkName": "DAFF Commonwealth Export Permit",
                     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                     "hashMethod": "SHA-256",
@@ -2197,7 +2197,7 @@
                 },
                 "data": {
                   "type": ["Product"],
-                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D9385006",
+                  "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006",
                   "name": "Pole Container",
                   "registeredId": "09359502000058",
                   "idScheme": {
@@ -2206,10 +2206,10 @@
                     "name": "Global Trade Identification Number (GTIN)"
                   },
                   "serialNumber": "",
-                  "batchNumber": "D9385006",
+                  "batchNumber": "D8006",
                   "productImage": {
                     "type": ["Link"],
-                    "linkURL": "https://www.nzpoles.com/wp-content/uploads/SED-poles_0000_IMG_7596-1536x1152-1_0001_export_0002_Background.jpg",
+                    "linkURL": "https://www.forestry.pyx.io/pole_container.png",
                     "linkName": "Pole Container Image"
                   },
                   "description": "Description of Pole Container",
@@ -2273,7 +2273,7 @@
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
                         "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
                         "hashDigest": "",
                         "hashMethod": "SHA-256",
                         "linkName": "DAFF Commonwealth export license",
@@ -2287,7 +2287,7 @@
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D9385006?linkType=gs1:traceability",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
                         "linkName": "Object Event",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
