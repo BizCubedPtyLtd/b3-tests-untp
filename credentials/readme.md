@@ -3,7 +3,7 @@ Credential Details.
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
 | Harvest Teams | DPP: Log Load | ---------- | /01/09359502000010/10/106|http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo|
-| Harvest Teams | DTE: Tree Chopping | ---------- | /01/09359502000010/10/106 | http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:traceability|
+| Harvest Teams | DTE: Tree Harvesting | ---------- | /01/09359502000010/10/106 | http://localhost:3000/gs1/01/09359502000010/10/106| https://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability|https://idr.forestry.pyx.io/gs1/01/09359502000010/10/106?linkType=gs1:traceability|
 
 | Facility | Credential | Actual ID | GTIN/GLN | ID | LH Link| PUB Link|
 |----------|------------|----------|----------|---------|-----|-----|
