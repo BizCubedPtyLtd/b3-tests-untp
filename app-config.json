@@ -2236,48 +2236,137 @@
                   "granularityLevel": "batch",
                   "conformityClaim": [
                     {
-                      "type": ["Claim", "Declaration"],
-                      "assessmentDate": "2024-04-25",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
-                      "referenceStandard": {
-                        "type": ["Standard"],
-                        "id": "https://www.iso.org/standard/60857.html",
-                        "name": "Standard",
-                        "issuingParty": {
-                          "type": ["Identifier"],
-                          "id": "https://iso.org/issuing-party/123",
-                          "name": "International Organization"
-                        },
-                        "issueDate": "2024-04-25"
-                      },
-                      "referenceRegulation": {
-                        "type": ["Regulation"],
-                        "id": "https://www.legislation.gov.au/C2020A00012/2021-03-02/text",
-                        "name": "Export Control Act 2020",
-                        "jurisdictionCountry": "Australia",
-                        "administeredBy": {
-                          "type": ["Identifier"],
-                          "id": "https://gov.au/admin-body/12345",
-                          "name": "Australian Government"
-                        },
-                        "effectiveDate": "2024-03-20"
-                      },
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
                       "assessmentCriteria": [
                         {
-                          "type": ["Criterion"],
-                          "id": "https://www.agriculture.gov.au/biosecurity-trade/export/from-australia",
-                          "name": "Exporting from Australia Criteria"
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "name": "ISO 9001 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "type": ["SecureLink", "Link"],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
-                        "hashDigest": "",
-                        "hashMethod": "SHA-256",
-                        "linkName": "DAFF Commonwealth export license",
+                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkName": "AS/NZS ISO 9001:2015 Quality Management System",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "name": "ISO 9001 Sandard"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkName": "AS3818.11-2010 Timber - Heavy Structural Products - Utility Poles",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "name": "ISO 9001 Sandard"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkName": "AS3818.1-2010 Heavy Structural Products Visually Graded General Requirements",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "name": "ISO 9001 Sandard"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkName": "AS1604-2010 Timber - Presevative Treated-Sawn & Round",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://idr.forestry.pyx.io/container_certificate.png",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "name": "ISO 9001 Sandard"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "linkURL": "https://idr.forestry.pyx.io/container_certificate.png",
+                        "linkName": "AS/NZS 1605 Sampling & Analyzing Timber Preservative Treated Timber",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
                         "encryptionMethod": "AES"
                       }
                     }
