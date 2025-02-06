@@ -61,7 +61,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
-                      "name": "Harvest Teams' Log Load"
+                      "name": "Harvest Teams' Load of Logs"
                     }
                   ],
                   "inputEPCList": [
@@ -261,7 +261,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "Responsible Wood"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -304,7 +304,7 @@
           ]
         },
         {
-          "name": "Issue Log Load DPP",
+          "name": "Issue Load of Logs DPP",
           "id": "produce_product",
           "components": [
             {
@@ -317,7 +317,7 @@
                 "data": {
                   "type": ["Product"],
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
-                  "name": "Log Load from State Forest",
+                  "name": "Load of Logs from State Forest",
                   "registeredId": "09359502000010",
                   "idScheme": {
                       "type": ["IdentifierScheme"],
@@ -328,7 +328,7 @@
                   "productImage": {
                       "type": ["Link"],
                       "linkURL": "https://www.forestry.pyx.io/log_load.png",
-                      "linkName": "Log Load"
+                      "linkName": "Load of Logs"
                   },
                   "productCategory": [{
                           "type": ["Classification"],
@@ -362,30 +362,32 @@
                   },
                   "dimensions": {
                       "type": ["Dimension"],
-                      "weight": {
-                          "value": 600,
-                          "unit": "kg"
-                      },
                       "length": {
                           "value": 11.9,
                           "unit": "m"
                       },
                       "width": {
-                          "value": 300,
-                          "unit": "mm"
-                      },
-                      "height": {
-                          "value": 300,
-                          "unit": "mm"
-                      },
-                      "volume": {
-                          "value": 600,
-                          "unit": "L"
+                          "value": 30,
+                          "unit": "cm"
                       }
                   },
                   "productionDate": "2025-01-24",
                   "countryOfProduction": "Australia",
                   "granularityLevel": "item",
+                  "materialsProvenance": [
+                    {
+                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "originCountry": "AU",
+                      "materialType": {
+                        "type": ["Classification"],
+                        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                        "code": "31310",
+                        "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                        "schemeName": "UN Central Product Classification (CPC)"
+                      }                      
+                    }
+                  ],
                   "conformityClaim": [
                     {
                           "type": ["Claim", "Declaration"],
@@ -617,7 +619,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
-                      "name": "Harves Teams' Log"
+                      "name": "Harvest Teams' Log"
                     }
                   ]
                 },
@@ -655,7 +657,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "QLD Forestry"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -808,7 +810,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "QLD Forestry"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -882,7 +884,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001",
-                  "processType": "Receiving a Log Load to Delivery Docket",
+                  "processType": "Receiving a Load of Logs to Delivery Docket",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -904,7 +906,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7?linkType=gs1:traceability",
-                      "name": "QLD Forestry Log Load"
+                      "name": "QLD Forestry Load of Logs"
                     }
                   ]
                 },
@@ -942,7 +944,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1040,28 +1042,29 @@
                   },
                   "dimensions": {
                       "type": ["Dimension"],
-                      "weight": {
-                          "value": 600,
-                          "unit": "kg"
-                      },
                       "length": {
                           "value": 11.9,
                           "unit": "m"
                       },
                       "width": {
-                          "value": 300,
-                          "unit": "mm"
-                      },
-                      "height": {
-                          "value": 300,
-                          "unit": "mm"
-                      },
-                      "volume": {
-                          "value": 600,
-                          "unit": "L"
+                          "value": 30,
+                          "unit": "cm"
                       }
                   },
-                  "materialsProvenance": [],
+                  "materialsProvenance": [
+                    {
+                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "originCountry": "AU",
+                      "materialType": {
+                        "type": ["Classification"],
+                        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                        "code": "31310",
+                        "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                        "schemeName": "UN Central Product Classification (CPC)"
+                      }                      
+                    }
+                  ],
                   "conformityClaim": [],
                   "traceabilityInformation": {
                       "valueChainProcess": "Timber Extraction",
@@ -1069,7 +1072,7 @@
                       "traceabilityEvent": [
                         {
                               "linkURL": "http://localhost:3000/gs1/01/09359502000041/10/D8001?linkType=gs1:traceability",
-                              "linkName": "Log Load from State Forest",
+                              "linkName": "Load of Logs from State Forest",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                               "hashDigest": "6239119",
                               "hashMethod": "SHA-256",
@@ -1112,7 +1115,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1260,7 +1263,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1303,7 +1306,7 @@
           ]
         },
         {
-          "name": "DTM Metal Tagging DTE",
+          "name": "DTM Metall Tagging DTE",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -1319,7 +1322,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003",
-                  "processType": "Metal Tagging of a trimmed DTM log",
+                  "processType": "Metall Tagging of a trimmed DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -1332,7 +1335,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
-                      "name": "Metal Tagged DTM Log moving to Treatment"
+                      "name": "Metall Tagged DTM Log moving to Treatment"
                     }
                   ],
                   "inputEPCList": [
@@ -1379,7 +1382,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1438,7 +1441,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004",
-                  "processType": "Treatment of a Metal Tagged DTM log",
+                  "processType": "Treatment of a Metall Tagged DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -1460,7 +1463,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
-                      "name": "Metal Tagged DTM Log"
+                      "name": "Metall Tagged DTM Log"
                     }
                   ]
                 },
@@ -1498,7 +1501,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1614,23 +1617,29 @@
                     "type": [
                       "Dimension"
                     ],
-                    "weight": {
-                      "value": 300,
-                      "unit": "kg"
-                    },
                     "length": {
                       "value": 12.5,
                       "unit": "m"
                     },
                     "width": {
-                      "value": 1,
-                      "unit": "m"
-                    },
-                    "volume": {
-                      "value": 0.65,
-                      "unit": "m3"
+                      "value": 30,
+                      "unit": "cm"
                     }
                   },
+                  "materialsProvenance": [
+                    {
+                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "originCountry": "AU",
+                      "materialType": {
+                        "type": ["Classification"],
+                        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                        "code": "31310",
+                        "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                        "schemeName": "UN Central Product Classification (CPC)"
+                      }                      
+                    }
+                  ],
                   "productionDate": "2024-10-28",
                   "countryOfProduction": "Australia",
                   "granularityLevel": "item",
@@ -1682,7 +1691,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "DTM Pole Treatment Plant"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1830,7 +1839,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "DTM Timber"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1964,7 +1973,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "Export Yard"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2142,7 +2151,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Harvest Teams"
+                      "name": "Export Yard"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2234,6 +2243,24 @@
                   "productionDate": "2024-04-24",
                   "countryOfProduction": "Australia",
                   "granularityLevel": "batch",
+                  "materialsProvenance": [
+                    {
+                      "name": "Ironwood Treated Pole",
+                      "originCountry": "AU",
+                      "materialType": {
+                        "type": ["Classification"],
+                        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                        "code": "31310",
+                        "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                        "schemeName": "UN Central Product Classification (CPC)"
+                      },
+                      "massAmount": {
+                        "value": 20,
+                        "unit": "PCS"
+                      }                      
+                    }
+                  ],
                   "conformityClaim": [
                     {
                       "type": ["Claim", "Declaration"],
@@ -2287,20 +2314,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
+                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                           "name": "ISO 9001 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
                         "linkName": "AS/NZS ISO 9001:2015 Quality Management System",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2314,20 +2341,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
-                          "name": "ISO 9001 Sandard"
+                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                          "name": "AS3818.11-2010 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
                         "linkName": "AS3818.11-2010 Timber - Heavy Structural Products - Utility Poles",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2341,20 +2368,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
-                          "name": "ISO 9001 Sandard"
+                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                          "name": "AS3818.1-2010 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
                         "linkName": "AS3818.1-2010 Heavy Structural Products Visually Graded General Requirements",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2368,20 +2395,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
-                          "name": "ISO 9001 Sandard"
+                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                          "name": "AS1604-2010 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
                         "linkName": "AS1604-2010 Timber - Presevative Treated-Sawn & Round",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2395,20 +2422,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf",
-                          "name": "ISO 9001 Sandard"
+                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                          "name": "AS/NZS 1605 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:certificationInfo",
+                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
                         "linkName": "AS/NZS 1605 Sampling & Analyzing Timber Preservative Treated Timber",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -2423,7 +2450,7 @@
                     "traceabilityEvent": [
                       {
                         "linkURL": "http://localhost:3000/gs1/01/09359502000058/10/D8006?linkType=gs1:traceability",
-                        "linkName": "Object Event",
+                        "linkName": "Poles Batch",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
