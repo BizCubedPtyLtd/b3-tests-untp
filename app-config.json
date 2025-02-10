@@ -47,7 +47,7 @@
                     "Product"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/67890",
-                  "name": "Steel Model X",
+                  "name": "Steel Rods",
                   "registeredId": "09359502000010",
                   "idScheme": {
                     "type": [
@@ -359,7 +359,7 @@
                     "Product"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/54321",
-                  "name": "Steel Model Y",
+                  "name": "Steel Coil",
                   "registeredId": "09359502000041",
                   "idScheme": {
                     "type": [
