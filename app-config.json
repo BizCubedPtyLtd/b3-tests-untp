@@ -58,7 +58,7 @@
                   },
                   "batchNumber": "67890",
                   "productImage": {
-                      "linkURL": "https://www.dev3.pyx.io/rods.png",
+                      "linkURL": "https://www.dev3.pyx.io/top_steel_x.png",
                       "linkName": "Steel Rods",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
@@ -195,7 +195,7 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:certificationInfo",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
                         "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
@@ -371,7 +371,7 @@
                   "batchNumber": "54321",
                   "serialNumber": "445566",
                   "productImage": {
-                      "linkURL": "https://www.dev3.pyx.io/coils.png",
+                      "linkURL": "https://www.dev3.pyx.io/quality_steel_y.png",
                       "linkName": "Steel Coils",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
@@ -508,7 +508,7 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
                         "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
@@ -656,7 +656,7 @@
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099",
                   "name": "Pile Cage",
-                  "registeredId": "010935950200003410725774099",
+                  "registeredId": "09359502000034",
                   "idScheme": {
                     "type": [
                       "IdentifierScheme"
@@ -667,7 +667,7 @@
                   "batchNumber": "725774099",
                   "serialNumber": "998877",
                   "productImage": {
-                      "linkURL": "https://www.dev3.pyx.io/pilecage.png",
+                      "linkURL": "https://www.dev3.pyx.io/pile_cage.png",
                       "linkName": "Pile Cage",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
@@ -883,7 +883,7 @@
                       }
                     ],
                     "type": ["DigitalProductPassport"],
-                    "dlrLinkTitle": "Cherries Product Passport",
+                    "dlrLinkTitle": "Steel Product Passport",
                     "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
@@ -962,7 +962,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000034/10/DST7891011",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099",
                   "processType": "Pile cage",
                   "eventTime": "2025-01-03T00:01:00.000+11:00",
                   "action": "observe",
@@ -984,7 +984,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:sustainabilityInfo",
                       "name": "Steel Coil"
                     },
                     {
@@ -992,7 +992,7 @@
                         "Item"
                       ],
                       "name": "Steel Rods",
-                      "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo"
+                      "id": "http://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo"
                     }
                   ],
                   "inputQuantityList": [],
@@ -1290,7 +1290,7 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
+                          "id": "http://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
                           "name": "Steel Rods",
                           "batchNumber": "67890"
                         }
@@ -1433,7 +1433,7 @@
                         "type": [
                           "Product"
                         ],
-                        "id": "https://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
+                        "id": "http://localhost:3000/gs1/01/09359502000010/10/67890?linkType=gs1:sustainabilityInfo",
                         "name": "Steel Rods",
                         "batchNumber": "67890"
                       }
@@ -1854,7 +1854,7 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
+                          "id": "http://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
                           "name": "Steel Coil",
                           "batchNumber": "54321"
                         }
@@ -1998,7 +1998,7 @@
                         "type": [
                           "Product"
                         ],
-                        "id": "https://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
+                        "id": "http://localhost:3000/gs1/01/09359502000041/10/54321?linkType=gs1:certificationInfo",
                         "name": "Steel Coil",
                         "batchNumber": "54321"
                       }
@@ -2219,7 +2219,7 @@
           ]
         },
         {
-          "name": "Issue Steel Proseccor DCC",
+          "name": "Issue Steel Processor DCC",
           "id": "produce_product",
           "components": [
             {
@@ -2234,7 +2234,7 @@
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000010/10/725774099",
+                  "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099",
                   "name": "Traceability Certification Scheme",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -2419,7 +2419,7 @@
                           "type": [
                             "Product"
                           ],
-                          "id": "https://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
+                          "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
                           "name": "Pile Cage",
                           "batchNumber": "725774099"
                         }
@@ -2562,7 +2562,7 @@
                         "type": [
                           "Product"
                         ],
-                        "id": "https://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
+                        "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gsi:sustainabilityInfo",
                         "name": "Pile Cage",
                         "batchNumber": "725774099"
                       }],
