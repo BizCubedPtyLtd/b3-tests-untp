@@ -1,0 +1,39 @@
+{
+    "id": "identifiers/dtmtimber",
+    "namespace": "dtmtimber",
+    "applicationIdentifiers": [
+        {
+            "title": "DTM Handling Documents",
+            "label": "DTM docs",
+            "shortcode": "dtmdocs",
+            "ai": "01",
+            "type": "I",
+            "qualifiers": ["02", "03", "04"],
+            "regex": "(\\d{12,14}|\\d{8})"
+          },
+        {
+            "title": "Raw Timber Delivery Docket",
+            "label": "RTDD",
+            "shortcode": "rtdd",
+            "ai": "02",
+            "type": "Q",
+            "regex": "(RTDD-\\d{6})"
+        },
+        {
+            "title": "Pole Number",
+            "label": "polenumber",
+            "shortcode": "pole",
+            "ai": "03",
+            "type": "Q",
+            "regex": "([A-Za-z]\\d{4})"
+        },
+        {
+            "title": "Pole Treatment Document",
+            "label": "poletreatment",
+            "shortcode": "treat",
+            "ai": "04",
+            "type": "Q",
+            "regex": "(\\d{4,7})"
+        }
+    ]
+}
