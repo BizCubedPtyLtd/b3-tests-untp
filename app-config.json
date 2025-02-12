@@ -47,8 +47,8 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
-                  "processType": "Tree chopping",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305",
+                  "processType": "Tree Harvesting",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -60,7 +60,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305?linkType=gs1:sustainabilityInfo",
                       "name": "Harvest Teams' Load of Logs"
                     }
                   ],
@@ -163,7 +163,7 @@
                 },
                 "data": {
                   "type": ["ConformityAttestation", "Attestation"],
-                  "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305",
                   "name": "Responsible Wood Alliance (Australia/New Zealand)",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "Accredited",
@@ -316,7 +316,7 @@
                 },
                 "data": {
                   "type": ["Product"],
-                  "id": "http://localhost:3000/gs1/01/09359502000010/10/106",
+                  "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305",
                   "name": "Load of Logs from State Forest",
                   "registeredId": "09359502000010",
                   "idScheme": {
@@ -324,30 +324,33 @@
                       "id": "https://id.gs1.org/01/",
                       "name": "Global Trade Identification Number (GTIN)"
                   },
-                  "batchNumber": "106",
+                  "batchNumber": "RT305",
                   "productImage": {
                       "type": ["Link"],
                       "linkURL": "https://www.forestry.pyx.io/log_load.png",
                       "linkName": "Load of Logs"
                   },
-                  "productCategory": [{
+                  "productCategory": [
+                    {
                           "type": ["Classification"],
                           "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
                           "code": "31310",
                           "name": "Wood in the rough, weather or not stripped of bark or sapwood",
                           "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
                           "schemeName": "UN Central Product Classification (CPC)"
-                      }
+                    }
                   ],
-                  "furtherInformation": [{
+                  "furtherInformation": [
+                    {
                           "type": ["Link"],
                           "linkURL": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
                           "linkName": "Central Product Classification (CPC) Version 2.1 "
-                      }, {
+                    },
+                    {
                           "type": ["Link"],
                           "linkURL": "https://example-company.com/product-information/1234567",
                           "linkName": "Name of additional document that is further information"
-                      }
+                    }
                   ],
                   "producedByParty": {
                       "type": ["Identifier"],
@@ -376,7 +379,7 @@
                   "granularityLevel": "item",
                   "materialsProvenance": [
                     {
-                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "name": "Ironbark - Eucalyptus Paniculata",
                       "originCountry": "AU",
                       "materialType": {
                         "type": ["Classification"],
@@ -385,6 +388,10 @@
                         "name": "Wood in the rough, weather or not stripped of bark or sapwood",
                         "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
                         "schemeName": "UN Central Product Classification (CPC)"
+                      },
+                      "massAmount": {
+                        "value": 5,
+                        "unit": "PCS"
                       }                      
                     }
                   ],
@@ -427,7 +434,7 @@
                           "conformityTopic": "environment.deforestation",
                           "conformityEvidence": {
                               "type": ["SecureLink", "Link"],
-                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:certificationInfo",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/RT305?linkType=gs1:certificationInfo",
                               "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
                               "hashMethod": "SHA-256",
                               "linkName": "Responsible Wood Certification",
@@ -450,7 +457,7 @@
                               "encryptionMethod": "AES"
                           }, 
                           {
-                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/RT305?linkType=gs1:traceability",
                               "linkName": "Extraction and transport",
                               "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                               "hashDigest": "6239119",
@@ -618,8 +625,8 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502000010/10/106?linkType=gs1:sustainabilityInfo",
-                      "name": "Harvest Teams' Log"
+                      "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305?linkType=gs1:sustainabilityInfo",
+                      "name": "Harvest Teams' Load of Logs"
                     }
                   ]
                 },
@@ -1053,7 +1060,7 @@
                   },
                   "materialsProvenance": [
                     {
-                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "name": "Ironbark - Eucalyptus Paniculata",
                       "originCountry": "AU",
                       "materialType": {
                         "type": ["Classification"],
@@ -1216,7 +1223,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
-                      "name": "Trimmed Log moving to Metall Tagging"
+                      "name": "Trimmed Log moving to Metal Tagging"
                     }
                   ],
                   "inputEPCList": [
@@ -1306,7 +1313,7 @@
           ]
         },
         {
-          "name": "DTM Metall Tagging DTE",
+          "name": "DTM Metal Tagging DTE",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -1322,7 +1329,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003",
-                  "processType": "Metall Tagging of a trimmed DTM log",
+                  "processType": "Metal Tagging of a trimmed DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -1335,7 +1342,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
-                      "name": "Metall Tagged DTM Log moving to Treatment"
+                      "name": "Metal Tagged DTM Log moving to Treatment"
                     }
                   ],
                   "inputEPCList": [
@@ -1441,7 +1448,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004",
-                  "processType": "Treatment of a Metall Tagged DTM log",
+                  "processType": "Treatment of a Metal Tagged DTM log",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -1463,7 +1470,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
-                      "name": "Metall Tagged DTM Log"
+                      "name": "Metal Tagged DTM Log"
                     }
                   ]
                 },
@@ -1628,7 +1635,7 @@
                   },
                   "materialsProvenance": [
                     {
-                      "name": "Ironwood Erythrophleum Chlorostachys",
+                      "name": "Ironbark - Eucalyptus Paniculata",
                       "originCountry": "AU",
                       "materialType": {
                         "type": ["Classification"],
@@ -2235,17 +2242,14 @@
                   "dimensions": {
                     "type": ["Dimension"],
                     "weight": { "value": 4400, "unit": "kg" },
-                    "length": { "value": 12.2, "unit": "m" },
-                    "width": { "value": 2.4, "unit": "m" },
-                    "height": { "value": 2.6, "unit": "m" },
-                    "volume": { "value": 67.5, "unit": "m3" }
+                    "length": { "value": 12.2, "unit": "m" }
                   },
                   "productionDate": "2024-04-24",
                   "countryOfProduction": "Australia",
                   "granularityLevel": "batch",
                   "materialsProvenance": [
                     {
-                      "name": "Ironwood Treated Pole",
+                      "name": "Ironbark Treated Pole",
                       "originCountry": "AU",
                       "materialType": {
                         "type": ["Classification"],
@@ -2257,6 +2261,22 @@
                       },
                       "massAmount": {
                         "value": 20,
+                        "unit": "PCS"
+                      }                      
+                    },
+                    {
+                      "name": "Spotted Gum",
+                      "originCountry": "AU",
+                      "materialType": {
+                        "type": ["Classification"],
+                        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                        "code": "31310",
+                        "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                        "schemeName": "UN Central Product Classification (CPC)"
+                      },
+                      "massAmount": {
+                        "value": 5,
                         "unit": "PCS"
                       }                      
                     }
