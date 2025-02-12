@@ -1,0 +1,14 @@
+{
+    "id": "identifiers/responsiblewood",
+    "namespace": "responsiblewood",
+    "applicationIdentifiers": [
+        {
+            "title": "Australian Forest Standard Certificate Number",
+            "label": "CertNo",
+            "shortcode": "certno",
+            "ai": "01",
+            "type": "I",
+            "regex": "(AFS-\\d{6})"
+        }
+    ]
+}
