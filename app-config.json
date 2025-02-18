@@ -825,33 +825,6 @@
                             "Criterion"
                           ],
                           "id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
-                          "name": "Country Of Origin"
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "governance.transparency",
-                      "conformityEvidence": {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502000034/21/20001?linkType=gs1:traceability",
-                        "linkName": "100% Canadian Copper",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      }
-                    },
-                    {
-                      "type": [
-                        "Claim",
-                        "Declaration"
-                      ],
-                      "assessmentDate": "2024-11-11",
-                      "id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
-                      "assessmentCriteria": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
                           "name": "Mines Act Permit"
                         }
                       ],
