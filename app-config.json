@@ -502,13 +502,13 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000041/21/20001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/21/20001?linkType=gs1:traceability",
                       "name": "Transform Copper Concentrate"
                     }
                   ],
                   "inputQuantityList": [
                     {
-                      "productId": "https://localhost:3000/gs1/01/09359502000034/21/10001?linkType=gs1:sustainabilityInfo",
+                      "productId": "http://localhost:3000/gs1/01/09359502000034/21/10001?linkType=gs1:sustainabilityInfo",
                       "productName": "Copper Concentrate",
                       "quantity": 20,
                       "uom": "KGM"
@@ -903,7 +903,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/gtin/09359502000041/21/20001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/gtin/09359502000041/21/20001?linkType=gs1:traceability",
                       "name": "Copper Concentrate"
                     }
                   ],
@@ -1318,22 +1318,13 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/01/09359502000058/21/20001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000058/21/20001?linkType=gs1:traceability",
                       "name": "Transform Copper Cathodes"
-                    }
-                  ],
-                  "inputEPCList": [
-                    {
-                      "type": [
-                        "Item"
-                      ],
-                      "id": "https://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:sustainabilityInfo",
-                      "name": "Copper Cathode"
                     }
                   ],
                   "inputQuantityList": [
                     {
-                      "productId": "https://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:sustainabilityInfo",
+                      "productId": "http://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:sustainabilityInfo",
                       "productName": "Copper Cathode",
                       "quantity": 20,
                       "uom": "KGM"
@@ -1657,7 +1648,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/gtin/09359502000041/21/10001?linkType=gs1:traceability",
                       "name": "Copper Cathode"
                     }
                   ],
