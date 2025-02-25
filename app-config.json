@@ -798,7 +798,7 @@
                           "SecureLink",
                           "Link"
                         ],
-                        "linkURL": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:certificationInfo",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gs1:certificationInfo",
                         "hashMethod": "SHA-256",
                         "linkName": "Structural Steel Certification",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
@@ -814,7 +814,7 @@
                           "Link"
                         ],
                         "linkName": "Transformation Event",
-                        "linkURL": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:traceability",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gs1:traceability",
                         "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                         "hashMethod": "SHA-256",
                         "encryptionMethod": "AES"
@@ -975,7 +975,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "https://idr.dev3.pyx.io/gs1/01/09359502000034/10/725774099?linkType=gs1:sustainabilityInfo",
+                      "id": "http://localhost:3000/gs1/01/09359502000034/10/725774099?linkType=gs1:sustainabilityInfo",
                       "name": "Pile Cage"
                     }
                   ],
