@@ -1931,7 +1931,7 @@
                 "data": {
                   "type": ["Product"],
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001",
-                  "name": "Untreated Pole",
+                  "name": "DTM Untreated Pole",
                   "registeredId": "09359502000041",
                   "idScheme": {
                       "type": ["IdentifierScheme"],
