@@ -985,6 +985,15 @@
                   "identifierKeyPath": "/0/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_transformation_event",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
             }
           ]
         },
@@ -1732,6 +1741,15 @@
                   "identifierKeyPath": "/0/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "battery_transformation_event",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
             }
           ]
         },
@@ -1756,7 +1774,7 @@
                         "type": [
                           "Product"
                         ],
-                        "id": "https://idr.bcmine.pyx.io/gs1/01/09359502000058/21/10001",
+                        "id": "http://localhost:3000/gs1/01/09359502000058/21/10001",
                         "name": "EV battery 300Ah.",
                         "registeredId": "09359502000058",
                         "idScheme": {
@@ -2086,7 +2104,7 @@
                           "verifiedRatio": 0.5,
                           "traceabilityEvent": [
                             {
-                              "linkURL": "https://idr.bcmine.pyx.io/gs1/01/09359502000058/21/20001?linkType=gs1:traceability",
+                              "linkURL": "http://localhost:3000/gs1/01/09359502000058/21/20001?linkType=gs1:traceability",
                               "linkName": "Transformation Event",
                               "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/",
                               "hashDigest": "6239119",
