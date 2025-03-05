@@ -144,8 +144,16 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "mine_transformation_event",
+                  "storageKey": "mine_transform_event",
                   "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_transform_event"
                 }
               ]
             }            
@@ -155,12 +163,6 @@
           "name": "Issue DPP",
           "id": "produce_product",
           "components": [
-            {
-              "name": "LocalStorageLoader",
-              "type": "EntryData",
-              "props": {
-                "storageKey": "mine_transformation_event",
-                "nestedComponents": [
                   {
                     "name": "JsonForm",
                     "type": "EntryData",
@@ -394,9 +396,6 @@
                       "dummyFields": [
                       ],
                       "generationFields": []
-                    }
-                  }
-                ]
               }
             },
             {
@@ -467,7 +466,7 @@
               "name": "getValueFromLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "mine_transformation_event"
+                  "storageKey": "mine_dpps"
                 }
               ]
             }
@@ -589,6 +588,23 @@
                     }
                   },
                   "identifierKeyPath": "/0/id"
+                }
+              ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_move_to_next_facility",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_move_to_next_facility"
                 }
               ]
             }
@@ -849,6 +865,23 @@
                   "identifierKeyPath": "/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_dfr",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_dfr"
+                }
+              ]
             }
           ]
         }
@@ -985,6 +1018,23 @@
                   "identifierKeyPath": "/0/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_transform_event",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_transform_event"
+                }
+              ]
             }
           ]
         },
@@ -992,12 +1042,6 @@
           "name": "Issue DPP",
           "id": "produce_product",
           "components": [
-            {
-              "name": "LocalStorageLoader",
-              "type": "EntryData",
-              "props": {
-                "storageKey": "smelter_transformation_event",
-                "nestedComponents": [
                   {
                     "name": "JsonForm",
                     "type": "EntryData",
@@ -1212,9 +1256,6 @@
                       "dummyFields": [
                       ],
                       "generationFields": []
-                    }
-                  }
-                ]
               }
             },
             {
@@ -1409,6 +1450,23 @@
                   "identifierKeyPath": "/0/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_move_to_next_facility",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_move_to_next_facility"
+                }
+              ]
             }
           ]
         },
@@ -1596,6 +1654,23 @@
                   "identifierKeyPath": "/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_dfr",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "smelter_dfr"
+                }
+              ]
             }
           ]
         }
@@ -1732,6 +1807,23 @@
                   "identifierKeyPath": "/0/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "battery_transformation_event",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "battery_transformation_event"
+                }
+              ]
             }
           ]
         },
@@ -1739,12 +1831,6 @@
           "name": "Issue DPP",
           "id": "produce_product",
           "components": [
-            {
-              "name": "LocalStorageLoader",
-              "type": "EntryData",
-              "props": {
-                "storageKey": "battery_transformation_event",
-                "nestedComponents": [
                   {
                     "name": "JsonForm",
                     "type": "EntryData",
@@ -2113,9 +2199,6 @@
                       "dummyFields": [
                       ],
                       "generationFields": []
-                    }
-                  }
-                ]
               }
             },
             {
@@ -4682,6 +4765,23 @@
                   "identifierKeyPath": "/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "_coppermark_mine_dcc",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "coppermark_mine_dcc"
+                }
+              ]
             }
           ]
         },
@@ -7224,10 +7324,26 @@
                   "identifierKeyPath": "/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "coppermark_smelter_dcc",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "coppermark_smelter_dcc"
             }
           ]
         }	  
-          
+          ]
+        }          
       ]
     },
     {
@@ -7403,6 +7519,23 @@
                   "identifierKeyPath": "/id"
                 }
               ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "orgbook_mine_dcc",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "orgbook_mine_dcc"
+                }
+              ]
             }
           ]
         },
@@ -7506,6 +7639,23 @@
                     }
                   },
                   "identifierKeyPath": "/id"
+                }
+              ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_dia",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "mine_dia"
                 }
               ]
             }
@@ -7858,6 +8008,23 @@
                     }
                   },
                   "identifierKeyPath": "/id"
+                }
+              ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "tsm_mine_dcc",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "tsm_mine_dcc"
                 }
               ]
             }
