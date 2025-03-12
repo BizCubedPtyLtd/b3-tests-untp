@@ -13,6 +13,7 @@ Reference: [Responsible Business Transparency Protocol Demo](https://rbtp.pyx.io
 | Mine | DPP: Copper Concentrate | /01/09359502000034/21/10001 | https://www.rbtp.pyx.io/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https://vcs.rbtp.pyx.io:443/v1/verifiable-credentials/9aa6f4a0-bfa2-4c69-a85e-407619675f64.json%22%7D%7D | https://idr.rbtp.pyx.io/gs1/01/09359502000034/21/10001?linkType=gs1:sustainabilityInfo |
 | Mine | DTE: Transaction | Same as DPP | https://www.rbtp.pyx.io/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fvcs.rbtp.pyx.io%3A443%2Fv1%2Fverifiable-credentials%2Ff0cad761-ca87-45f4-a439-cb34634a5cd6.json%22%2C%22hash%22%3A%2257f3696957622a26e522129dce1cd66878a34be30f0088222e702b79fc0ceb00%22%7D%7D | https://idr.rbtp.pyx.io/gs1/01/09359502000034/21/10001?linkType=gs1:traceability |
 | Mine | DCC: RMIC | /01/09359502000034/21/32005 | https://www.rbtp.pyx.io/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fvcs.rbtp.pyx.io%3A443%2Fv1%2Fverifiable-credentials%2Fe50dc142-9172-43db-a42f-70d7940eda4e.json%22%2C%22hash%22%3A%22dd55606e3f0101219865ae6949779904e636d001db9c0fd45ae99ff20f1e4e0d%22%7D%7D | https://idr.rbtp.pyx.io/gs1/01/09359502000034/21/32005?linkType=gs1:certificationInfo
+| Mine | DCC: REIC | /01/09359502000034/21/33005 | TBA - localhost only | http://localhost:3000/gs1/01/09359502000034/21/33005?linkType=gs1:certificationInfo
 
 | Facility | Credential | GTIN/GLN | VC Link | File Path |
 |----------|------------|----------|---------|-----------|
