@@ -6,7 +6,7 @@
   },
   "styles": {
     "primaryColor": "#002c5f",
-    "secondaryColor": "white",
+    "secondaryColor": "#005CA6",
     "tertiaryColor": "white"
   },
   "generalFeatures": [
@@ -7923,7 +7923,7 @@
       },
       "styles": {
         "primaryColor": "#002c5f",
-        "secondaryColor": "#4967a9",
+        "secondaryColor": "#005CA6",
         "tertiaryColor": "#ffffff"
       },
       "features": [
