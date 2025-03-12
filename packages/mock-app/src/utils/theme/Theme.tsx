@@ -5,6 +5,7 @@ const ThemeSettings = (styles: any = {}) => {
     palette: {
       primary: {
         main: styles?.primaryColor ?? '#ffffff',
+        button: styles?.secondaryColor ?? styles?.primaryColor ?? '#ffffff',
         typography: styles?.tertiaryColor ?? '#ffffff',
         contrastText: styles?.tertiaryColor ?? '#ffffff', // text color, intended to contrast with main
       },

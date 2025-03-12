@@ -18,8 +18,10 @@ const Application = ({ app }: IApplication) => {
         <Button
           sx={{
             color: 'primary.typography',
+            backgroundColor: 'primary.button',
             '&:hover': {
-              filter: 'brightness(0.9)',
+              // filter: 'brightness(0.9)',
+              backgroundColor: 'primary.main',
             },
           }}
           key={childPath}

@@ -12,7 +12,7 @@ const Home = () => {
         <Button
           sx={{
             color: 'primary.typography',
-            backgroundColor: '#005CA6',
+            backgroundColor: 'primary.button',
             '&:hover': {
               // filter: 'brightness(0.9)',
             }
@@ -31,7 +31,7 @@ const Home = () => {
       <Button
         sx={{
           color: 'primary.typography',
-          backgroundColor: '#005CA6',
+          backgroundColor: 'primary.button',
           '&:hover': {
             // filter: 'brightness(0.9)',
           },
@@ -55,7 +55,7 @@ const Home = () => {
         <Button
           sx={{
             color: 'primary.typography',
-            backgroundColor: '#005CA6',
+            backgroundColor: 'primary.button',
             '&:hover': {
               // filter: 'brightness(0.9)',
             },

@@ -1,12 +1,12 @@
 {
   "name": "Responsible Business Transparency Protocol Demo",
   "assets": {
-    "logo": "rba_logo_white.png",
+    "logo": "http://localhost:3002/rba_logo_white.png",
     "brandTitle": "RBTP"
   },
   "styles": {
     "primaryColor": "#002c5f",
-    "secondaryColor": "white",
+    "secondaryColor": "#005CA6",
     "tertiaryColor": "white"
   },
   "generalFeatures": [
@@ -7923,7 +7923,7 @@
       },
       "styles": {
         "primaryColor": "#002c5f",
-        "secondaryColor": "#4967a9",
+        "secondaryColor": "#005CA6",
         "tertiaryColor": "#ffffff"
       },
       "features": [
