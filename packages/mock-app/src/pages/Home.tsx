@@ -12,9 +12,10 @@ const Home = () => {
         <Button
           sx={{
             color: 'primary.typography',
+            backgroundColor: '#005CA6',
             '&:hover': {
-              filter: 'brightness(0.9)',
-            },
+              // filter: 'brightness(0.9)',
+            }
           }}
           key={path}
           variant='contained'
@@ -30,8 +31,9 @@ const Home = () => {
       <Button
         sx={{
           color: 'primary.typography',
+          backgroundColor: '#005CA6',
           '&:hover': {
-            filter: 'brightness(0.9)',
+            // filter: 'brightness(0.9)',
           },
         }}
         key={'/scanning'}
@@ -53,8 +55,9 @@ const Home = () => {
         <Button
           sx={{
             color: 'primary.typography',
+            backgroundColor: '#005CA6',
             '&:hover': {
-              filter: 'brightness(0.9)',
+              // filter: 'brightness(0.9)',
             },
           }}
           key={path}
