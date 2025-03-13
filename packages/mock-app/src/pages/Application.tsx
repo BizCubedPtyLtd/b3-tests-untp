@@ -19,9 +19,13 @@ const Application = ({ app }: IApplication) => {
           sx={{
             color: 'primary.typography',
             backgroundColor: 'primary.button',
+            boxShadow: 'none',
+            borderRadius: 0,
+            textTransform: 'none',
             '&:hover': {
               // filter: 'brightness(0.9)',
               backgroundColor: 'primary.main',
+              boxShadow: 'none',
             },
           }}
           key={childPath}

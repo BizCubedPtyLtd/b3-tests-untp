@@ -77,7 +77,7 @@ function Header() {
             toggleDrawer(false);
           }}
         >
-          <ListItemIcon>{renderAvatar(app)}</ListItemIcon>
+          {/* <ListItemIcon>{renderAvatar(app)}</ListItemIcon> */}
           <ListItemText primary={app.name} />
         </ListItemButton>
       </ListItem>
@@ -110,6 +110,8 @@ function Header() {
   };
 
   const renderHeaderText = (appConfig: ConfigAppType) => {
+    console.log("app config name:", appConfig.name)
+    console.log("header brand info name:", headerBrandInfo.name)
     return (
       <Typography
         variant='h5'
@@ -195,9 +197,18 @@ function Header() {
                     padding: '10px',
                   }}
                 >
-                  <Typography variant='h5' sx={{ color: 'black' }}>
+                  {/* <Typography variant='h5' sx={{ color: 'black' }}>
                     {appConfig.name}
-                  </Typography>
+                  </Typography> */}
+                  <Box
+                    component="img"
+                    sx={{
+                      maxHeight: 80,
+                      maxWidth: 80
+                    }}
+                    alt="RBA Logo"
+                    src={"rba_logo_blue.png"}
+                  />
                 </Stack>
                 <Divider />
                 {renderSidebar()}
@@ -213,10 +224,21 @@ function Header() {
               }}
             >
               {/* Render avatar */}
-              {headerBrandInfo.assets?.logo && (
+              {/* {headerBrandInfo.assets?.logo && (
                 <Avatar sx={{ marginRight: '10px' }} alt='Company logo' src={headerBrandInfo.assets.logo} />
-              )}
-              {renderHeaderText(appConfig)}
+              )} */}
+              {!headerBrandInfo.name.includes(appConfig.name) ?
+                <>{renderHeaderText(appConfig)}</>
+                :
+                <Box
+                  component="img"
+                  sx={{
+                    maxHeight: 50
+                  }}
+                  alt="RBA Logo"
+                  src={"rba_logo_text_white.png"}
+                />
+              }
             </Stack>
           </Box>
 
@@ -234,6 +256,7 @@ function Header() {
               <Button
                 sx={{
                   color: 'primary.typography',
+                  textTransform: 'none',
                 }}
               >
                 Back to Home

@@ -13,8 +13,13 @@ const Home = () => {
           sx={{
             color: 'primary.typography',
             backgroundColor: 'primary.button',
+            boxShadow: 'none',
+            borderRadius: 0,
+            textTransform: 'none',
             '&:hover': {
               // filter: 'brightness(0.9)',
+              backgroundColor: 'primary.main',
+              boxShadow: 'none',
             }
           }}
           key={path}
@@ -32,8 +37,13 @@ const Home = () => {
         sx={{
           color: 'primary.typography',
           backgroundColor: 'primary.button',
+          boxShadow: 'none',
+          borderRadius: 0,
+          textTransform: 'none',
           '&:hover': {
             // filter: 'brightness(0.9)',
+            backgroundColor: 'primary.main',
+            boxShadow: 'none',
           },
         }}
         key={'/scanning'}
@@ -56,8 +66,13 @@ const Home = () => {
           sx={{
             color: 'primary.typography',
             backgroundColor: 'primary.button',
+            boxShadow: 'none',
+            borderRadius: 0,
+            textTransform: 'none',
             '&:hover': {
               // filter: 'brightness(0.9)',
+              backgroundColor: 'primary.main',
+              boxShadow: 'none',
             },
           }}
           key={path}
