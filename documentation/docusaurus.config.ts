@@ -5,8 +5,8 @@ const url = process.env.DOCS_URL || 'http://localhost';
 const baseUrl = process.env.DOCS_BASE_URL || '/';
 
 const config: Config = {
-  title: 'UN Transparency Protocol Test Suite',
-  tagline: 'A comprehensive suite of tools for testing conformance to the UNTP Specification.',
+  title: 'Responsible Business Transparency Protocol Test Suite',
+  tagline: 'A comprehensive suite of tools for testing conformance to the RBTP Specification.',
   favicon: 'img/favicon.ico',
 
   url,
@@ -59,44 +59,54 @@ const config: Config = {
     },
   image: 'img/un-crm-social-card.png',    
   navbar: {
-      title: 'TP',
+      // title: '',
       logo: {
-        alt: 'UNTP Test Suite Logo',
-        src: 'img/logo.svg',
+        alt: 'RBA Logo',
+        src: 'img/rba_logo_text_white.png',
       },
       items: [
-        {to: '/docs/introduction', label: 'Introduction', position: 'right'},
         {
-          to: '/docs/mock-apps/',
+           type: 'docsVersionDropdown',
+        },
+        // {to: '/docs/introduction', label: 'Introduction', position: 'right'},
+        {
+          to: '/docs/mock-apps/getting-started',
           label: 'Getting started',
           position: 'right',
         },
         {
-          to: '/docs/mock-apps/',
-          label: 'Tools and support',
-          position: 'right',
-        },
-        {to: 'https://uncefact.github.io/spec-untp/docs/extensions/', label: 'Extensions', position: 'right'},
-        {
-          to: 'https://github.com/uncefact/tests-untp',
-          label: 'Contribute',
+          to: '/docs/digital-representation/',
+          label: 'Digital Representation',
           position: 'right',
         },
         {
-          href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
-          position: 'right',
-          html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
-          className: 'navbar-slack-link',
-        },
-        {
-          href: 'https://github.com/uncefact/tests-untp',
-          html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
-          className: 'navbar-github-link',
+          to: '/docs/contact-and-support/',
+          label: 'Contact and Support',
           position: 'right',
         },
-         {
-            type: 'docsVersionDropdown',
-          },
+        // {
+        //   to: '/docs/mock-apps/',
+        //   label: 'Tools and support',
+        //   position: 'right',
+        // },
+        // {to: 'https://uncefact.github.io/spec-untp/docs/extensions/', label: 'Extensions', position: 'right'},
+        // {
+        //   to: 'https://github.com/uncefact/tests-untp',
+        //   label: 'Contribute',
+        //   position: 'right',
+        // },
+        // {
+        //   href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+        //   position: 'right',
+        //   html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
+        //   className: 'navbar-slack-link',
+        // },
+        // {
+        //   href: 'https://github.com/uncefact/tests-untp',
+        //   html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
+        //   className: 'navbar-github-link',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -159,7 +169,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© United Nations Economic Commission for Europe`,
+      copyright: `© 2025 Responsible Business Alliance. All Rights Reserved.`,
     },
     prism: {
       theme: prismThemes.github,

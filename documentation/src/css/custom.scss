@@ -11,10 +11,11 @@
   --ifm-color-primary: #006AB1;
   --ifm-color-content: #232221;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-navbar-background-color: #fff;
+  --ifm-navbar-background-color: #002c5f;
+  --ifm-navbar-link-color: #fff;
   --ifm-navbar-shadow: none;
 
-  --ifm-footer-background-color: none;
+  --ifm-footer-background-color: #002c5f;
   --ifm-footer-color: #888583;
   --ifm-footer-padding-vertical: 1rem;
 
@@ -24,7 +25,7 @@
 
   --ifm-spacing-horizontal: 20px;
 
-  --ifm-navbar-padding-vertical: 20px;
+  --ifm-navbar-padding-vertical: 13px;
   --ifm-footer-padding-horizontal: 0;
   --ifm-container-width: 1400px;
 }
@@ -68,6 +69,14 @@ html {
     width: 40px;
     font-size: 10px;
     line-height: 25px;
+  }
+}
+
+.navbar__logo {
+  height: 52px;
+  img {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -302,3 +311,6 @@ aside[class^="theme-doc-sidebar-container"] {
   bottom: 1.3rem;
 }
 
+.footer--dark {
+  --ifm-footer-background-color: #002c5f;
+}

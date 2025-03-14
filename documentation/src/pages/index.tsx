@@ -10,7 +10,7 @@ function HomepageHero() {
     <header className="home-hero">
       <div className="home-hero__container">
         <div className="home-hero__content">
-          <h1 className="home-hero__title">UN Transparency Protocol <br /> Test Suite</h1>
+          <h1 className="home-hero__title">Responsible Business Transparency Protocol <br /> Test Suite</h1>
           <p className="home-hero__description">{siteConfig.tagline}</p>
           <div className="home-hero__actions">
             <Link

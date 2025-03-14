@@ -1,17 +1,17 @@
 services:
-  # documentation:
-  #   build:
-  #     context: ./documentation
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - 3002:3002
-  #   environment:
-  #     - PORT=3002
-  #     - DOCS_URL=http://0.0.0.0
-  #     - DOCS_BASE_URL=/
-  #   volumes:
-  #     - ./documentation:/app
-  #     - /app/node_modules
+  documentation:
+    build:
+      context: ./documentation
+      dockerfile: Dockerfile
+    ports:
+      - 3002:3002
+    environment:
+      - PORT=3002
+      - DOCS_URL=http://0.0.0.0
+      - DOCS_BASE_URL=/
+    volumes:
+      - ./documentation:/app
+      - /app/node_modules
 
   # untp-playground:
   #   build:
