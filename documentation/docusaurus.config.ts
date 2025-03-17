@@ -33,7 +33,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/uncefact/tests-untp/tree/main/',
+          editUrl: 'https://github.com/BizCubedPtyLtd/b3-tests-untp/tree/MSPYX-481_rbtp/documentation',
+          exclude: ['mock-apps', 'test-suites', 'introduction'],
         },
         blog: false,
         theme: {
@@ -65,12 +66,12 @@ const config: Config = {
         src: 'img/rba_logo_text_white.png',
       },
       items: [
-        {
-           type: 'docsVersionDropdown',
-        },
+        // {
+        //    type: 'docsVersionDropdown',
+        // },
         // {to: '/docs/introduction', label: 'Introduction', position: 'right'},
         {
-          to: '/docs/mock-apps/getting-started',
+          to: '/docs/getting-started',
           label: 'Getting started',
           position: 'right',
         },
@@ -113,49 +114,41 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Getting Started',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/introduction',
+              label: 'About',
+              to: '/docs/getting-started/about',
             },
             {
-              label: 'Getting Started',
-              to: '/docs/mock-apps/',
+              label: 'Purpose',
+              to: '/docs/getting-started/purpose',
             },
           ],
         },
         {
-          title: 'Test Suites and Tools',
+          title: 'Digital Representation',
           items: [
             {
-              label: 'Mock Apps',
-              to: '/docs/mock-apps/',
+              label: 'Schema A',
+              to: '/docs/digital-representation/schema-a',
             },
             {
-              label: 'Technical Interoperability',
-              to: '/docs/mock-apps/',
-            },
-            {
-              label: 'Semantic Interoperability',
-              to: '/docs/mock-apps/',
-            },
-            {
-              label: 'Graph Validation',
-              to: '/docs/mock-apps/',
+              label: 'Schema B',
+              to: '/docs/digital-representation/schema-b',
             },
           ],
         },
         {
-          title: 'UN Transparency Protocol',
+          title: 'Contact and Support',
           items: [
             {
-              label: 'UNTP Specification',
-              href: 'https://uncefact.github.io/spec-untp/',
+              label: 'FAQs',
+              to: '/docs/contact-and-support/faqs'
             },
             {
-              label: 'Slack Channel',
-              href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+              label: 'Common Issues and Solution',
+              to: '/docs/contact-and-support/common-issues-and-solutions'
             },
           ],
         },

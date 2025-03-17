@@ -3,9 +3,9 @@ sidebar_position: 3
 title: CLI
 ---
 
-import Disclaimer from './../../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp/) Semantic Interoperability Test Suite CLI is a powerful tool designed for rapid validation of credentials produced by UNTP implementers and implementations. This suite ensures that the credentials comply with the core UNTP data model, making it an essential resource for developers, organisations and communities working with the UNTP protocol.
 

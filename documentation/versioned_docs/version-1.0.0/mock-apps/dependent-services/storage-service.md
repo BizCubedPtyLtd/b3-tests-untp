@@ -3,9 +3,9 @@ sidebar_position: 6
 title: Storage Service
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Storage Service plays a vital role in the United Nations Transparency Protocol (UNTP) ecosystem by providing a [secure and efficient](https://uncefact.github.io/spec-untp/docs/specification/DecentralisedAccessControl) way to store credentials and documents.
 

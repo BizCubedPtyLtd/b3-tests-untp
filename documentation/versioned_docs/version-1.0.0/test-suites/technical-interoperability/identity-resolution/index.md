@@ -3,9 +3,9 @@ sidebar_position: 10
 title: Identity Resolution (IDR)
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Overview
 

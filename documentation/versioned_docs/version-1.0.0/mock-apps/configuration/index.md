@@ -3,9 +3,9 @@ sidebar_position: 8
 title: Configuration
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Mock Apps config file is used to define the system level config, the apps within the mock app system, the apps functions and the connection to the external services.
 

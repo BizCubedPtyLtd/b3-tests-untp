@@ -3,9 +3,9 @@ sidebar_position: 7
 title: Extensions
 ---
 
-import Disclaimer from './../../../_disclaimer.mdx';
+<!-- import Disclaimer from './../../../_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp/) allows for extensions to its core data model. The UNTP Semantic Interoperability Test Suite can validate these extensions, ensuring they remain compliant with the core UNTP data model. This enables implementors to prototype and test custom credential types or additional properties while maintaining conformance with the UNTP protocol.
 

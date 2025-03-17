@@ -3,9 +3,9 @@ sidebar_position: 3
 title: Installation
 ---
 
-import Disclaimer from '.././\_disclaimer.mdx';
+<!-- import Disclaimer from '.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Before you begin installing the mock apps, ensure that you have the following prerequisites in place:
 

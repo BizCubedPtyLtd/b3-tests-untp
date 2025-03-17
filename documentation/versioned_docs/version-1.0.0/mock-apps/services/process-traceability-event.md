@@ -3,9 +3,9 @@ sidebar_position: 55
 title: Process Traceability Event
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

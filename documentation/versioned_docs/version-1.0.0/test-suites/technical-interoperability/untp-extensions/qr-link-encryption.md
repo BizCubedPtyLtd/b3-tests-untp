@@ -3,9 +3,9 @@ sidebar_position: 6
 title: QR Link / Encryption
 ---
 
-import Disclaimer from './../../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The QR Link / Encryption feature is a crucial component of the UNTP ecosystem, providing a standardised way to access, verify, and render credentials.
 

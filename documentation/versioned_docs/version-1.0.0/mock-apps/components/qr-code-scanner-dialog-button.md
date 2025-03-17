@@ -3,9 +3,9 @@ sidebar_position: 51
 title: QR Code Scanner Dialog Button
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

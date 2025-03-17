@@ -3,9 +3,9 @@ sidebar_position: 5
 title: Configuration
 ---
 
-import Disclaimer from './../../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Before proceeding, we need to create the configuration file. The Tier 2 test suite config file defines the credentials being tested, the schema version to test against, and the location of the credential being tested.
 

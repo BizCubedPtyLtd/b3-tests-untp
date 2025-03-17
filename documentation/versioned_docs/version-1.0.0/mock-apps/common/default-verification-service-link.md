@@ -3,9 +3,9 @@ sidebar_position: 39
 title: Default Verification Service Link
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

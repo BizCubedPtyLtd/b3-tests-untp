@@ -3,9 +3,9 @@ sidebar_position: 4
 title: Installation
 ---
 
-import Disclaimer from './../../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Before you begin installing the Tier 2 test suite CLI, ensure that you have the following prerequisites in place:
 

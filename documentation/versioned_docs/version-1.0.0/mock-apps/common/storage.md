@@ -3,9 +3,9 @@ sidebar_position: 32
 title: Storage
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

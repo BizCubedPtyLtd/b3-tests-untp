@@ -3,9 +3,9 @@ sidebar_position: 6
 title: Usage
 ---
 
-import Disclaimer from './../../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Once you have configured the test suite, you can run it to validate your UNTP credentials.
 

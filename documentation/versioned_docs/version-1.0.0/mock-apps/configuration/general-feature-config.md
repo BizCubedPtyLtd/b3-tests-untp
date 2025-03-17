@@ -3,9 +3,9 @@ sidebar_position: 10
 title: General Feature
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 General Features define a shared set of functionalities accessible by all Mock Apps within the Mock App system.
 

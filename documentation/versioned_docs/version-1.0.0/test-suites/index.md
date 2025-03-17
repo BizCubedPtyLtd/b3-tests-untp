@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Test Suites
 ---
 
-import Disclaimer from './../\_disclaimer.mdx';
+<!-- import Disclaimer from './../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The UNTP Test Suite comprises three test suites:
 

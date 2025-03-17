@@ -3,9 +3,9 @@ sidebar_position: 23
 title: Process DPP
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

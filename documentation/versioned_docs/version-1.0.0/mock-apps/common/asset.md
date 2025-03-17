@@ -3,9 +3,9 @@ sidebar_position: 28
 title: Asset
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 The `Asset` object contains information about the brand's visual identity and verification credentials.

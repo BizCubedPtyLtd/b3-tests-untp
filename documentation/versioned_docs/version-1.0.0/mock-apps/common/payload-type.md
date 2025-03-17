@@ -3,9 +3,9 @@ sidebar_position: 58
 title: Payload Type
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

@@ -3,9 +3,9 @@ sidebar_position: 40
 title: Scanning App
 ---
 
-import Disclaimer from '.././\_disclaimer.mdx';
+<!-- import Disclaimer from '.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 The Scanning App is a dedicated page within the Mock App system, designed to enable users to scan barcodes and verify/view associated credentials. This page incorporates several key functions to manage the scanning and verification process efficiently. 

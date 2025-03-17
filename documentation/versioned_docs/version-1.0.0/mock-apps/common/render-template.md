@@ -3,9 +3,9 @@ sidebar_position: 36
 title: Render Template
 ---
 
-import Disclaimer from '../../_disclaimer.mdx';
+<!-- import Disclaimer from '../../_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Update to RenderTemplate2024 -->
 ## Description
 

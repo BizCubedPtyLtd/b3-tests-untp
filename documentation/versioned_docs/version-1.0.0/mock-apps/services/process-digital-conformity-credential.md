@@ -3,9 +3,9 @@ sidebar_position: 53
 title: Process Digital Conformity Credential
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

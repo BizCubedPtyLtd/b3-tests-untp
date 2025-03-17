@@ -3,9 +3,9 @@ sidebar_position: 22
 title: Services
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Implement Process Object event -->
 Services are units of business logic that perform specific operations or interactions with external systems. They handle data processing, API calls, and other backend functionalities.
 

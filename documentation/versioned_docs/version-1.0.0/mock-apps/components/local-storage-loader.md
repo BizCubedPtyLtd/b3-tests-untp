@@ -3,9 +3,9 @@ sidebar_position: 19
 title: Local Storage Loader
 ---
 
-import Disclaimer from '../../_disclaimer.mdx';
+<!-- import Disclaimer from '../../_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: What pointer is used to access the object returned by LocalStorageLoader within nestedComponents -->
 ## Description
 

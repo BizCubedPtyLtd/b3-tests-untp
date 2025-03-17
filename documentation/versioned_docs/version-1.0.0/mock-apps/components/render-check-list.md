@@ -3,9 +3,9 @@ sidebar_position: 50
 title: Render Check List
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 ## Description
 
 The RenderCheckList component is responsible for rendering a list of items with checkboxes. It is a composed component that will load data from another component ([Import Button](./import-button) and [QR Code Scanner Dialog Button](./qr-code-scanner-dialog-button)), when the user clicks to import or scan a QR code. The component will render a list of items with checkboxes, the labels of the checkboxes will be the identifiers of the items that are loaded from the data with the path is configured at `requiredFieldPath` field.

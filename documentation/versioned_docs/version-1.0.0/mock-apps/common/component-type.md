@@ -3,9 +3,9 @@ sidebar_position: 35
 title: Component Type
 ---
 
-import Disclaimer from '../../_disclaimer.mdx';
+<!-- import Disclaimer from '../../_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

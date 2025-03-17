@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Technical Interoperability
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp/) Technical Interoperability test suite ensures that implementations of the UNTP protocol meet the required standards for interoperability. This suite comprises both internal tests developed by the UNTP community and external tests created by other communities.
 

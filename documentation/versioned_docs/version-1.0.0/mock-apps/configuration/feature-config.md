@@ -3,9 +3,9 @@ sidebar_position: 12
 title: Feature
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Features are the building blocks of functionality within the Mock App system. Each feature is comprised of components and services which are used to compose the business logic and orchestrate services.
 

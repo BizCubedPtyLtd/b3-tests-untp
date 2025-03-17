@@ -3,9 +3,9 @@ sidebar_position: 56
 title: Convert Object To Array 1 Item
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

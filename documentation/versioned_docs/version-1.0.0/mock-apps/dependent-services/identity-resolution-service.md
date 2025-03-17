@@ -3,9 +3,9 @@ sidebar_position: 7
 title: Identity Resolver Service
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Identity Resolver Service (IDR) is a critical component of the United Nations Transparency Protocol (UNTP) ecosystem. It serves as a bridge between the [identifiers of things (e.g., products, entities, transactions)](https://uncefact.github.io/spec-untp/docs/specification/Identifiers) and additional information about those things. You can learn more about Identity Resolver Services [here](https://uncefact.github.io/spec-untp/docs/specification/IdentityResolver).
 

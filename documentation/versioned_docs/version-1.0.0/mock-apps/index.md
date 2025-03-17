@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Mock Apps
 ---
 
-import Disclaimer from '.././\_disclaimer.mdx';
+<!-- import Disclaimer from '.././\_disclaimer.mdx';
 
-<Disclaimer />
+<!-- <Disclaimer /> --> -->
 
 The [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp/) mock apps are designed to model value chain participation and facilitate the testing and demonstration of UNTP implementation within a value chain. These apps provide a flexible and configurable system that allows implementors to compose and customise workflows to suit their specific needs.
 

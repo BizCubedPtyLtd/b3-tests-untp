@@ -3,9 +3,9 @@ sidebar_position: 25
 title: Process Transformation Event
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Confirm the system does delete the transaction events from local storage. If so, update diagram. -->
 ## Description
 

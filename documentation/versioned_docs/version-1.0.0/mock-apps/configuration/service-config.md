@@ -3,9 +3,9 @@ sidebar_position: 14
 title: Service
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Services are units of business logic that perform specific operations or interactions with external systems. They handle data processing, API calls, and other backend functionalities.
 

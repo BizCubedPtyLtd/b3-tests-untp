@@ -3,9 +3,9 @@ sidebar_position: 5
 title: Verifiable Credential Service
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Verifiable Credential Service is a crucial component of the [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp) ecosystem.
 

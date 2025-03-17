@@ -3,9 +3,9 @@ sidebar_position: 12
 title: Transparency Graphs
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Overview
 

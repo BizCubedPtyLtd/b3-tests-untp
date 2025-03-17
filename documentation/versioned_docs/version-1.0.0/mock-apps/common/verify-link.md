@@ -3,9 +3,9 @@ sidebar_position: 37
 title: Verify Link
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Implement Verify link generator -->
 ## Description
 

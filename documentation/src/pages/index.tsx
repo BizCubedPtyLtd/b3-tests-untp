@@ -15,13 +15,13 @@ function HomepageHero() {
           <div className="home-hero__actions">
             <Link
               className="button button--primary button--lg"
-              to={'/docs/mock-apps/'}>
+              to={'/docs/getting-started/'}>
               Get Started
             </Link>
           </div>
         </div>
         <div className="home-hero__image-wrapper rad-10">
-          <img src={HomeHeroImageUrl} className="home-hero__image" alt="" />
+          {/* <img src={HomeHeroImageUrl} className="home-hero__image" alt="" /> */}
         </div>
       </div>
     </header>
@@ -31,7 +31,7 @@ function HomepageHero() {
 export default function Home() {
   return (
     <Layout
-      title="UN Transparency Protocol"
+      title="Responsible Business Transparency Protocol"
       description="Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.">
       <main className="homepage-content">
         <HomepageHero/>

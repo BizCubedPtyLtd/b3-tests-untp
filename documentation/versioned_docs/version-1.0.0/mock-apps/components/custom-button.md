@@ -3,9 +3,9 @@ sidebar_position: 17
 title: Custom Button
 ---
 
-import Disclaimer from '../../_disclaimer.mdx';
+<!-- import Disclaimer from '../../_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

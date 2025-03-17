@@ -3,9 +3,9 @@ sidebar_position: 2
 title: Getting Started
 ---
 
-import Disclaimer from '.././\_disclaimer.mdx';
+<!-- import Disclaimer from '.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 
 Within the Getting Started section we will focus on the following topics:

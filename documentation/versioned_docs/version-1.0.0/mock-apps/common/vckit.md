@@ -3,9 +3,9 @@ sidebar_position: 30
 title: VCkit
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Add the ability to pass in an API key -->
 ## Description
 

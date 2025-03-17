@@ -3,9 +3,9 @@ sidebar_position: 13
 title: Testing Transparency Graphs
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Detailed testing procedures for Transparency Graphs will be provided in future updates. These tests will cover:
 

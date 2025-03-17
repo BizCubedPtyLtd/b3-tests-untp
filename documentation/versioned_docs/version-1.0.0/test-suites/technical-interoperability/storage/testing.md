@@ -3,9 +3,9 @@ sidebar_position: 9
 title: Testing Storage
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Storage component is a critical part of the UNTP ecosystem, responsible for [securely storing and retrieving credentials and related data](https://uncefact.github.io/spec-untp/docs/specification/DecentralisedAccessControl). This test suite verifies the functionality, security, and accessibility of your storage implementation.
 

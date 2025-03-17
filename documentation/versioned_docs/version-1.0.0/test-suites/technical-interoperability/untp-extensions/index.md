@@ -3,9 +3,9 @@ sidebar_position: 5
 title: UNTP Extensions
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Overview
 

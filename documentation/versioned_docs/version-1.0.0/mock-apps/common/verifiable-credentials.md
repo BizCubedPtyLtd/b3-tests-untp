@@ -3,9 +3,9 @@ sidebar_position: 46
 title: Verifiable Credentials
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

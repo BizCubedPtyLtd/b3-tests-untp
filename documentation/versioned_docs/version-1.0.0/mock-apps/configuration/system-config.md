@@ -3,9 +3,9 @@ sidebar_position: 9
 title: System
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 This is a high-level system configuration used to brand the Mock App system, define the apps contained within the Mock App system, and define the connections to common external services that each app can use.
 

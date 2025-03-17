@@ -3,9 +3,9 @@ sidebar_position: 4
 title: Testing Verifiable Credentials
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 To test your Verifiable Credential implementation:
 

@@ -3,9 +3,9 @@ sidebar_position: 29
 title: Style
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Find out why we can't use the names of colours for primary colours -->
 
 ## Description

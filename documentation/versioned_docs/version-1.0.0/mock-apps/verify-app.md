@@ -3,9 +3,9 @@ sidebar_position: 41
 title: Verify App
 ---
 
-import Disclaimer from '.././\_disclaimer.mdx';
+<!-- import Disclaimer from '.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 ## Description
 

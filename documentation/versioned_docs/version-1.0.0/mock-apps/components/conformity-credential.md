@@ -3,9 +3,9 @@ sidebar_position: 20
 title: Conformity Credential
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 <!-- TODO: Add Verify link generator to conformity credential component -->
 ## Description
 

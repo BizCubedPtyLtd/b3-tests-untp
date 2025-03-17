@@ -3,9 +3,9 @@ sidebar_position: 3
 title: Installation
 ---
 
-import Disclaimer from '../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Before you begin installing the Tier 1 test suite, ensure that you have the [dependant services](/docs/mock-apps/dependent-services/) and the following prerequisites in place:
 

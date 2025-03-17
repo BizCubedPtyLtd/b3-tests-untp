@@ -3,9 +3,9 @@ sidebar_position: 11
 title: Testing Identity Resolution
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- <!-- import Disclaimer from '../../../\_disclaimer.mdx'; --> -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Detailed testing procedures for the Identity Resolution component will be provided in future updates. These tests will cover:
 

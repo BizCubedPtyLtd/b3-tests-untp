@@ -3,9 +3,9 @@ sidebar_position: 11
 title: App
 ---
 
-import Disclaimer from '../.././\_disclaimer.mdx';
+<!-- import Disclaimer from '../.././\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 Apps are used to represent and encapsulate the process/business logic of each actor within the value chain. Each app is independently configured to ensure the appropriate functionality can be implemented dependent on the role that actor in the value chain plays.
 

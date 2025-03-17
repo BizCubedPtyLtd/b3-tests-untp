@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Semantic Interoperability
 ---
 
-import Disclaimer from './../../\_disclaimer.mdx';
+<!-- import Disclaimer from './../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The [United Nations Transparency Protocol (UNTP)](https://uncefact.github.io/spec-untp/) Semantic Interoperability Test Suite is a vital tool for implementers working on UNTP implementations and extensions. This comprehensive suite, designed for the second tier of UNTP testing, enables implementers to:
 

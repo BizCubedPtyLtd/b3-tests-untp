@@ -3,9 +3,9 @@ sidebar_position: 7
 title: Rendering
 ---
 
-import Disclaimer from '../../../\_disclaimer.mdx';
+<!-- import Disclaimer from '../../../\_disclaimer.mdx'; -->
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 The Rendering component of the UNTP extensions focuses on how credential data is visually presented. It utilises a `Render Template`, which is crucial in ensuring consistent and flexible presentation of product information across different systems and applications. To support uptake across supply chain actors with varying levels of technical maturity, human rendering of digital credentials is essential.
 
