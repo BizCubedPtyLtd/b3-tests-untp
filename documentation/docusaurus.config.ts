@@ -12,8 +12,8 @@ const config: Config = {
   url,
   baseUrl,
 
-  organizationName: 'uncefact', // Replace with your GitHub org/user name
-  projectName: 'tests-untp', // Replace with your repo name
+  organizationName: 'pyx-industries', // Replace with your GitHub org/user name
+  projectName: 'rbtp', // Replace with your repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,7 +33,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/BizCubedPtyLtd/b3-tests-untp/tree/MSPYX-481_rbtp/documentation',
+          editUrl: 'https://github.com/pyx-industries/rbtp/tree/master/documentation',
           exclude: ['mock-apps', 'test-suites', 'introduction'],
         },
         blog: false,
@@ -54,7 +54,7 @@ const config: Config = {
   themeConfig: {
     slackLink:
     'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
-    repoLink: 'https://github.com/uncefact/tests-untp',
+    repoLink: 'https://github.com/pyx-industries/rbtp',
     colorMode: {
       disableSwitch: true,
     },
@@ -157,7 +157,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/uncefact/tests-untp',
+              href: 'https://github.com/pyx-industries/rbtp/tree/master/documentation',
             },
           ],
         },
