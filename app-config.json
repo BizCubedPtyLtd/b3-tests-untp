@@ -1964,7 +1964,7 @@
                         "encryptionMethod": "AES"
                       },
                       {
-                        "linkURL": "https://idr.forestry.pyx.io/gs1/01/09359502000072/10/108?linkType=gs1:traceability",
+                        "linkURL": "https://localhost:3000/gs1/01/09359502000072/10/108?linkType=gs1:traceability",
                         "linkName": "Load of Logs Aggregation",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
