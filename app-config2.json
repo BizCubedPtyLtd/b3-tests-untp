@@ -858,11 +858,11 @@
       ]
     },
     {
-      "name": "Hurford Timber Supplies",
+      "name": "Timber Supply Company",
       "type": "producer",
       "assets": {
         "logo": "QLD-Forestry-logo.webp",
-        "brandTitle": "Hurford Timber Supplies"
+        "brandTitle": "Timber Supply Company"
       },
       "styles": {
         "primaryColor": "#b5651d",
@@ -1186,7 +1186,7 @@
                   ],
                   "issuer": {
                     "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                    "name": "PEFC"
+                    "name": "Responsible Wood"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502111129/10/002",
                   "credentialSubject": {
@@ -1195,18 +1195,18 @@
                       "Attestation"
                     ],
                     "id": "http://localhost:3000/gs1/01/09359502111129/10/002",
-                    "name": "Programme for the Endorsement of Forest Certification",
+                    "name": "Responsible Wood Certificate",
                     "assessorLevel": "3rdParty",
                     "assessmentLevel": "GovtApproval",
                     "attestationType": "verification",
-                    "description": "The PEFC chain of custody certification proves that a company's forest and tree-based products come from sustainably managed forests and are tracked through every stage of production, processing, and distribution. It ensures transparency and traceability, showing that the products have been handled responsibly from forest to final product",
+                    "description": "The Responsible Wood certification proves that a company's forest and tree-based products come from sustainably managed forests and are tracked through every stage of production, processing, and distribution. It ensures transparency and traceability, showing that the products have been handled responsibly from forest to final product",
                     "issuedToParty": {
                       "type": [
                         "Party"
                       ],
-                      "id": "https://abr.business.gov.au/ABN/View/85127102005",
-                      "name": "HURFORD HARDWOOD KYOGLE PTY LIMITED",
-                      "registeredId": "85127102005",
+                      "id": "https://abr.business.gov.au/ABN/View/1234567891011",
+                      "name": "Timber Supply Company PTY LIMITED",
+                      "registeredId": "1234567891011",
                       "idScheme": {
                         "type": [
                           "IdentifierScheme"
@@ -1214,7 +1214,7 @@
                         "id": "https://id.gs1.org/01/",
                         "name": "Global Trade Identification Number (GTIN)"
                       },
-                      "description": "PEFC"
+                      "description": "Responsible Wood Certificate"
                     },
                     "authorisation": [
                       {
@@ -1235,9 +1235,9 @@
                           "type": [
                             "Identifier"
                           ],
-                          "id": "https://pefc.org/",
-                          "name": "Programme for the Endorsement of Forest Certification",
-                          "registeredId": "12345678910",
+                          "id": "https://abr.business.gov.au/ABN/View/34105321702",
+                          "name": "Responsible Wood (AUSTRALIAN FORESTRY STANDARD LIMITED)",
+                          "registeredId": "34105321702",
                           "idScheme": {
                             "type": [
                               "IdentifierScheme"
@@ -1250,7 +1250,7 @@
                     ],
                     "conformityCertificate": {
                     "type": ["SecureLink", "Link"],
-                    "linkURL": "http://localhost:3003/add_conformity_cert_here.pdf",
+                    "linkURL": "http://localhost:3003/pefc_certificate.pdf",
                     "linkName": "Conformity certificate",
                     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                     "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
@@ -1262,8 +1262,8 @@
                         "SecureLink",
                         "Link"
                       ],
-                      "linkURL": "http://localhost:3003/add_cert_here.pdf",
-                      "linkName": "Auditable Evidence",
+                      "linkURL": "http://localhost:3003/supplier_pefc_certificate.pdf",
+                      "linkName": "Responsible Wood Certificate",
                       "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                       "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
                       "hashMethod": "SHA-256",
@@ -1280,9 +1280,9 @@
                         "type": [
                           "Identifier"
                         ],
-                        "id": "https://pefc.org/",
-                        "name": "Programme for the Endorsement of Forest Certification",
-                        "registeredId": "12345678910",
+                        "id": "https://abr.business.gov.au/ABN/View/34105321702",
+                        "name": "Responsible Wood Certificate",
+                        "registeredId": "34105321702",
                         "idScheme": {
                           "type": [
                             "IdentifierScheme"
@@ -1307,7 +1307,7 @@
                           "ConformityAssessment",
                           "Declaration"
                         ],
-                        "id": "https://public.global-mark.com.au:8443/certificate.nsf/1/F7B4836A577E0399CA258C68005596D1/$file/Attachment.pdf",
+                        "id": "http://localhost:3003/rw_conformity_assessment_cert_link",
                         "referenceStandard": {
                           "type": [
                             "Standard"
@@ -1320,7 +1320,7 @@
                             ],
                             "id": "https://abr.business.gov.au/ABN/View/55108087654",
                             "name": "Global Mark",
-                            "registeredId": "12345678910",
+                            "registeredId": "55108087654",
                             "idScheme": {
                               "type": [
                                 "IdentifierScheme"
@@ -1348,7 +1348,7 @@
                               "Facility"
                             ],
                             "id": "http://localhost:3000/gs1/414/add_locationInfo_link_here",
-                            "name": "Hurford Forest",
+                            "name": "Timber Supply Company managed forest",
                             "registeredId": "123456791011",
                             "idScheme": {
                               "type": [
@@ -1412,7 +1412,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "PEFC"
+                      "name": "Responsible Wood"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1542,7 +1542,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Hurford Timber Supplies"
+                      "name": "Timber Supply Company"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -1589,7 +1589,7 @@
           ]
         },
         {
-          "name": "Issue Hurford Timber Supplies Logs Passport DPP",
+          "name": "Issue Timber Supply Company Logs Passport DPP",
           "id": "produce_product",
           "components": [
             {
@@ -1610,7 +1610,7 @@
                   ],
                   "issuer": {
                     "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                    "name": "Hurford Timber Supplies"
+                    "name": "Timber Supply Company"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502111129/10/001",
                   "credentialSubject": {
@@ -1618,7 +1618,7 @@
                       "Product"
                     ],
                     "id": "http://localhost:3000/gs1/01/09359502111129/10/001",
-                    "name": "Logs from Hurford Timber Supplies",
+                    "name": "Logs from Timber Supply Company",
                     "registeredId": "09359502111129",
                     "idScheme": {
                       "type": [
@@ -1632,8 +1632,8 @@
                       "type": [
                         "Link"
                       ],
-                      "linkURL": "http://localhost:3003/dpi_forestry_qld_logs.png",
-                      "linkName": "Hurford's Logs"
+                      "linkURL": "http://localhost:3003/timber_supply_logs.png",
+                      "linkName": "Timber Supply Company's Logs"
                     },
                     "productCategory": [
                       {
@@ -1667,16 +1667,16 @@
                       "type": [
                         "Identifier"
                       ],
-                      "id": "https://abr.business.gov.au/ABN/View/85127102005",
-                      "name": "HURFORD HARDWOOD KYOGLE PTY LIMITED",
-                      "registeredId": "85127102005"
+                      "id": "https://abr.business.gov.au/ABN/View/add_details_here",
+                      "name": "Timber Supply Company PTY LIMITED",
+                      "registeredId": "1234567981011"
                     },
                     "producedAtFacility": {
                       "type": [
                         "Identifier"
                       ],
                       "id": "https://id.example-company.com/facility/123",
-                      "name": "Hurford managed forest"
+                      "name": "Timber Supply Company managed forest"
                     },
                     "dimensions": {
                       "type": [
@@ -1756,47 +1756,15 @@
                           "Claim",
                           "Declaration"
                         ],
-                        "assessmentDate": "2025-01-25",
-                        "declaredValue": [],
-                        "referenceStandard": {
-                          "type": [
-                            "Standard"
-                          ],
-                          "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
-                          "name": "Chain of Custody of Forest and Tree Based Products Requirements",
-                          "issuingParty": {
-                            "type": [
-                              "Identifier"
-                            ],
-                            "id": "https://pefc.org/",
-                            "name": "Programme for the Endorsement of Forest Certification"
-                          },
-                          "issueDate": "2024-04-25"
-                        },
-                        "referenceRegulation": {
-                          "type": [
-                            "Regulation"
-                          ],
-                          "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
-                          "name": "Chain of Custody of Forest and Tree Based Products Requirements",
-                          "jurisdictionCountry": "Australia",
-                          "administeredBy": {
-                            "type": [
-                              "Identifier"
-                            ],
-                            "id": "https://www.nrmmrrd.qld.gov.au/",
-                            "name": "QLD Department of Resources"
-                          },
-                          "effectiveDate": "2024-03-20"
-                        },
+                        "assessmentDate": "2024-11-11",
+                        "id": "http://localhost:3003/rw_conformity_assessment_cert_link",
                         "assessmentCriteria": [
                           {
                             "type": [
                               "Criterion"
                             ],
                             "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
-                            "name": "Chain of Custody of Forest and Tree Based Products Requirements",
-                            "thresholdValues": []
+                            "name": "Chain of Custody of Forest and Tree Based Products Requirements"                            
                           }
                         ],
                         "conformance": true,
@@ -1806,14 +1774,10 @@
                             "SecureLink",
                             "Link"
                           ],
-                          "linkURL": "http://localhost:3000/gs1/01/09359502111129/10/002?linkType=gs1:certificationInfo",
-                          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-                          "hashMethod": "SHA-256",
-                          "linkName": "PEFC Chain of Custody Certificate",
-                          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                          "encryptionMethod": "AES"
-                        },
-                        "id": "GM-RW-COC-100844"
+                          "linkURL": "http://localhost:3000/gs1/01/09359502111129/10/002?linkType=gs1:certificationInfo",                          
+                          "linkName": "Responsible Wood Certificate",
+                          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"                          
+                        }                        
                       }
                     ],
                     "traceabilityInformation": {
@@ -1830,7 +1794,7 @@
                         }
                       ]
                     },
-                    "description": "Raw logs authorised for extraction from a Hurford Managed Forest"
+                    "description": "Raw logs authorised for extraction from a Timber Supply Company managed forest"
                   }
                 },
                 "constructData": {
@@ -1866,7 +1830,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Hurford Timber Supplies"
+                      "name": "Timber Supply Company"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2014,7 +1978,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Hurford Timber Supplies"
+                      "name": "Timber Supply Company"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -2322,7 +2286,7 @@
                       "Attestation"
                     ],
                     "id": "http://localhost:3000/gs1/01/09359502111136/10/002",
-                    "name": "DAFF Commonwealth Export License",
+                    "name": "Bill of Lading - Export Yard",
                     "assessorLevel": "3rdParty",
                     "assessmentLevel": "Accredited",
                     "attestationType": "certification",
@@ -2387,7 +2351,7 @@
                         "SecureLink",
                         "Link"
                       ],
-                      "linkURL": "http://localhost:3003/add_cert_here.pdf",
+                      "linkURL": "http://localhost:3003/au_to_cn_bill_of_lading.pdf",
                       "linkName": "Bill of Lading",
                       "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                       "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
@@ -2638,7 +2602,7 @@
           ]
         },
         {
-          "name": "Logs Container for Export DPP",
+          "name": "Logs Container for Export to China DPP",
           "id": "produce_product",
           "components": [
             {
@@ -2667,7 +2631,7 @@
                       "Product"
                     ],
                     "id": "http://localhost:3000/gs1/01/09359502111136/10/PCIU8757515",
-                    "name": "Logs Container for Export",
+                    "name": "Logs Container for Export to China",
                     "registeredId": "09359502111136",
                     "idScheme": {
                       "type": [
@@ -2682,7 +2646,7 @@
                         "Link"
                       ],
                       "linkURL": "http://localhost:3003/pole_container.png",
-                      "linkName": "Container of Logs"
+                      "linkName": "Container of Logs authorised for export to China"
                     },
                     "productCategory": [
                       {
@@ -2801,6 +2765,34 @@
                           "Claim",
                           "Declaration"
                         ],
+                        "assessmentDate": "2024-11-11",
+                        "id": "http://localhost:3003/rw_conformity_assessment_cert_link",
+                        "assessmentCriteria": [
+                          {
+                            "type": [
+                              "Criterion"
+                            ],
+                            "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
+                            "name": "Chain of Custody of Forest and Tree Based Products Requirements"                            
+                          }
+                        ],
+                        "conformance": true,
+                        "conformityTopic": "environment.deforestation",
+                        "conformityEvidence": {
+                          "type": [
+                            "SecureLink",
+                            "Link"
+                          ],
+                          "linkURL": "http://localhost:3000/gs1/01/09359502111129/10/002?linkType=gs1:certificationInfo",                          
+                          "linkName": "Responsible Wood Certificate",
+                          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"                          
+                        }                        
+                      },
+                      {
+                        "type": [
+                          "Claim",
+                          "Declaration"
+                        ],
                         "assessmentDate": "2025-01-25",
                         "declaredValue": [],
                         "referenceStandard": {
@@ -2902,7 +2894,7 @@
                         }
                       ]
                     },
-                    "description": "Container of logs authorised for export"
+                    "description": "Container of logs authorised for export to China"
                   }
                 },
                 "constructData": {
@@ -3250,14 +3242,14 @@
                     "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Honour Lane Shipping LTD"
                   },
-                  "id": "http://localhost:3000/gs1/01/09359502111150/10/002",
+                  "id": "http://localhost:3000/gs1/01/09359502111150/10/SH19D00038",
                 "credentialSubject": {
                   "type": [
                     "ConformityAttestation",
                     "Attestation"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502111150/10/002",
-                  "name": "Chinese Government Export License",
+                  "id": "http://localhost:3000/gs1/01/09359502111150/10/SH19D00038",
+                  "name": "Bill of Lading - China",
                   "assessorLevel": "3rdParty",
                   "assessmentLevel": "GovtApproval",
                   "attestationType": "certification",
@@ -3317,7 +3309,7 @@
                         "SecureLink",
                         "Link"
                       ],
-                      "linkURL": "http://localhost:3003/add_cert_here.pdf",
+                      "linkURL": "http://localhost:3003/cn_to_au_bill_of_lading.pdf",
                       "linkName": "Auditable Evidence",
                       "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                       "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
@@ -3464,7 +3456,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502111150/10/0021?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502111150/10/MAT19001?linkType=gs1:traceability",
                       "name": "Sliced Veneers Bundles"
                     }
                   ],
@@ -3725,7 +3717,7 @@
                     "Product"
                   ],
                   "id": "http://localhost:3000/gs1/01/09359502111150/10/MRSU4178379",
-                  "name": "Veneers Bundles Container for Export",
+                  "name": "Veneer Bundles Container for Export to Australia",
                   "registeredId": "09359502111150",
                   "idScheme": {
                     "type": [
@@ -3739,8 +3731,8 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "http://localhost:3003/dtm_logs.png",
-                    "linkName": "Lumber"
+                    "linkURL": "http://localhost:3003/veneer_bundles_container.png",
+                    "linkName": "Veneer Bundles Container"
                   },
                   "productCategory": [
                     {
@@ -3837,6 +3829,34 @@
                         "Claim",
                         "Declaration"
                       ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "http://localhost:3003/rw_conformity_assessment_cert_link",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
+                          "name": "Chain of Custody of Forest and Tree Based Products Requirements"                            
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "environment.deforestation",
+                      "conformityEvidence": {
+                        "type": [
+                          "SecureLink",
+                          "Link"
+                        ],
+                        "linkURL": "http://localhost:3000/gs1/01/09359502111129/10/002?linkType=gs1:certificationInfo",                          
+                        "linkName": "Responsible Wood Certificate",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"                          
+                      }                        
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
                       "assessmentDate": "2025-01-25",
                       "declaredValue": [],
                       "referenceStandard": {
@@ -3915,7 +3935,7 @@
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3003/gs1/01/09359502111150/10/002?linkType=gs1:certificationInfo",
+                        "linkURL": "http://localhost:3003/gs1/01/09359502111150/10/SH19D00038?linkType=gs1:certificationInfo",
                         "linkName": "Bill of Lading - China",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -3938,7 +3958,7 @@
                       }
                     ]
                   },
-                  "description": "Container of Veneers Bundles prepared for export"
+                  "description": "Container of Veneers Bundles prepared for export to Australia"
                 }
               },
                 "constructData": {
@@ -4041,11 +4061,11 @@
       ]
     },
     {
-      "name": "Matilda Venners",
+      "name": "Matilda Veneers",
       "type": "producer",
       "assets": {
         "logo": "Export-Yard-logo.webp",
-        "brandTitle": "Matilda Venners"
+        "brandTitle": "Matilda Veneers"
       },
       "styles": {
         "primaryColor": "#b5651d",
@@ -4437,10 +4457,10 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "http://localhost:3003/sliced_veneers_image.png",
+                    "linkURL": "http://localhost:3003/sliced_veneers.png",
                     "linkName": "Sliced Veneers Image"
                   },
-                  "description": "Description of Sliced Matilda Venners",
+                  "description": "Description of Sliced Matilda Veneers",
                   "productCategory": [
                     {
                       "type": [
@@ -4566,33 +4586,6 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "http://localhost:3003/fsc_certificate.pdf",
-                      "assessmentCriteria": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "http://localhost:3003/fsc_certificate.pdf",
-                          "name": "Forest Stewardship Council Certificate"
-                        }
-                      ],
-                      "conformance": true,
-                      "conformityTopic": "governance.compliance",
-                      "conformityEvidence": {
-                        "linkURL": "http://localhost:3003/fsc_certificate.pdf",
-                        "linkName": "Forest Stewardship Council Certificate",
-                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-                        "hashDigest": "6239119",
-                        "hashMethod": "SHA-256",
-                        "encryptionMethod": "AES"
-                      }
-                    },
-                    {
-                      "type": [
-                        "Claim",
-                        "Declaration"
-                      ],
-                      "assessmentDate": "2024-11-11",
                       "id": "http://localhost:3003/pefc_certificate.pdf",
                       "assessmentCriteria": [
                         {
@@ -4620,21 +4613,76 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "http://localhost:3003/rw_certificate.pdf",
+                      "id": "http://localhost:3003/rw_certificate_mv.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "http://localhost:3003/rw_certificate.pdf",
+                          "id": "http://localhost:3003/rw_certificate_mv.pdf",
                           "name": "Responsible Wood Chain of Custody Certificate"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "http://localhost:3003/rw_certificate.pdf",
+                        "linkURL": "http://localhost:3003/rw_certificate_mv.pdf",
                         "linkName": "Responsible Wood Chain of Custody Certificate",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "http://localhost:3003/rw_conformity_assessment_cert_link.pdf",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://cdn.pefc.org/pefc.org/media/2020-02/66954288-f67f-4297-9912-5a62fcc50ddf/23621b7b-3a5d-55c9-be4d-4e6a5f61c789.pdf",
+                          "name": "Chain of Custody of Forest and Tree Based Products Requirements"                            
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "environment.deforestation",
+                      "conformityEvidence": {
+                        "type": [
+                          "SecureLink",
+                          "Link"
+                        ],
+                        "linkURL": "http://localhost:3000/gs1/01/09359502111129/10/002?linkType=gs1:certificationInfo",                          
+                        "linkName": "Timber Supply Company's Responsible Wood Certificate",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"                          
+                      }                        
+                    },
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "http://localhost:3003/rw_certificate_mv.pdf",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "http://localhost:3003/rw_certificate_mv.pdf",
+                          "name": "Matilda Veneers Responsible Wood Chain of Custody Certificate"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "governance.compliance",
+                      "conformityEvidence": {
+                        "linkURL": "http://localhost:3003/rw_certificate_mv.pdf",
+                        "linkName": "Matilda Veneers Responsible Wood Chain of Custody Certificate",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -4643,12 +4691,12 @@
                     }
                   ],
                   "traceabilityInformation": {
-                    "valueChainProcess": "Sliced Veneers",
+                    "valueChainProcess": "Veneer Laminating",
                     "verifiedRatio": 1,
                     "traceabilityEvent": [
                       {
-                        "linkURL": "http://localhost:3000/gs1/01/09359502111143/10/004?linkType=gs1:traceability",
-                        "linkName": "Unpacking Veneer Bundles",
+                        "linkURL": "http://localhost:3000/gs1/01/09359502111167/10/004?linkType=gs1:traceability",
+                        "linkName": "Veneer Laminating",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -4703,7 +4751,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Matilda Veneers"
+                      "name": "Veneer Finishing Plant"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -4752,7 +4800,7 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "sliced_veneer_dpps",
+                  "storageKey": "finished_veneer_product_dpp",
                   "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/id"
                 }
               ]
@@ -4761,7 +4809,7 @@
               "name": "getValueFromLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "sliced_veneer_dpps"
+                  "storageKey": "finished_veneer_product_dpp"
                 }
               ]
             },
@@ -4776,7 +4824,7 @@
           ]
         },
         {
-          "name": "Selling Veneers DTE",
+          "name": "Selling Finshed Veneer Product DTE",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -4791,8 +4839,8 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502111143/10/0041",
-                  "processType": "Selling Veneers",
+                  "id": "http://localhost:3000/gs1/01/09359502111167/10/002",
+                  "processType": "Selling Finshed Veneer Product",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -4804,7 +4852,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502111150/10/001?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502111174/10/001?linkType=gs1:traceability",
                       "name": "Construction of New Performing Arts Center"
                     }
                   ],
@@ -4813,8 +4861,8 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502111143/10/OR003771?linkType=gs1:sustainabilityInfo",
-                      "name": " Sliced Veneer"
+                      "id": "http://localhost:3000/gs1/01/09359502111167/10/001?linkType=gs1:sustainabilityInfo",
+                      "name": " Finished Veneer Product"
                     }
                   ]
                 },
@@ -4859,7 +4907,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Matilda Veneers"
+                      "name": "Veneer Finishing Plant"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -4921,7 +4969,7 @@
       },
       "features": [
         {
-          "name": "Construction of New Center DTE",
+          "name": "Construction of New Performing Arts Center DTE",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -4936,7 +4984,7 @@
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502111150/10/001",
+                  "id": "http://localhost:3000/gs1/01/09359502111174/10/001",
                   "processType": "Construction of New Center",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
@@ -4949,8 +4997,8 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502111143/10/0041?linkType=gs1:traceability",
-                      "name": "Sliced Veneers Sale Invoice"
+                      "id": "http://localhost:3000/gs1/01/09359502111167/10/002?linkType=gs1:traceability",
+                      "name": "Finished Veneers Sale Invoice"
                     }
                   ]
                 },
