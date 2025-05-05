@@ -182,7 +182,7 @@
                     "https://vocabulary.uncefact.org/untp/dcc/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "DPI Forestry Qld"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000034/10/54L33V3N7",
@@ -524,15 +524,15 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Harvest Teams"
                   },
-                  "id": "http://localhost:3000/gs1/01/09359502000027/10/106",
+                  "id": "http://localhost:3000/gs1/01/09359502000027/10/106/",
                   "credentialSubject": {
                   "type": [
                     "Product"
                   ],
-                  "id": "http://localhost:3000/gs1/01/09359502000027/10/106",
+                  "id": "http://localhost:3000/gs1/01/09359502000027/10/106/",
                   "name": "Log #106 from State Forest",
                   "registeredId": "09359502000027",
                   "idScheme": {
@@ -547,7 +547,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dpi_forestry_qld_logs.png",
+                    "linkURL": "http://localhost:3003/dpi_forestry_qld_logs.png",
                     "linkName": "Log #106"
                   },
                   "productCategory": [
@@ -735,13 +735,13 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.forestry.pyx.io:443/v2",
+                    "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
-                      "id": "did:web:vckit.forestry.pyx.io",
+                      "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                       "name": "Harvest Teams"
                     },
                     "headers": {
-                      "Authorization": "Bearer iqAjMHtkFn9HjiU7XV2W"
+                      "Authorization": "Bearer test123"
                     }
                   },
                   "dpp": {
@@ -759,16 +759,16 @@
                       "DigitalProductPassport"
                     ],
                     "dlrLinkTitle": "DTM Product Passport",
-                    "dlrVerificationPage": "https://www.forestry.pyx.io/verify"
+                    "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
                     "dlrAPIUrl": "http://localhost:3000",
-                    "dlrAPIKey": "5sFkAFd5swQgZ-tvr5X_",
+                    "dlrAPIKey": "test123",
                     "namespace": "gs1",
                     "linkRegisterPath": "/api/resolver"
                   },
                   "storage": {
-                    "url": "https://vcs.forestry.pyx.io/v1/credentials",
+                    "url": "http://localhost:3334/v1/credentials",
                     "params": {
                       "bucket": "verifiable-credentials"
                     },
@@ -823,7 +823,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Harvest Teams"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000065/10/107",
@@ -846,7 +846,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dpi_forestry_qld_logs.png",
+                    "linkURL": "http://localhost:3003/dpi_forestry_qld_logs.png",
                     "linkName": "Log #107"
                   },
                   "productCategory": [
@@ -1034,13 +1034,13 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.forestry.pyx.io:443/v2",
+                    "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
-                      "id": "did:web:vckit.forestry.pyx.io",
+                      "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                       "name": "Harvest Teams"
                     },
                     "headers": {
-                      "Authorization": "Bearer iqAjMHtkFn9HjiU7XV2W"
+                      "Authorization": "Bearer test123"
                     }
                   },
                   "dpp": {
@@ -1058,16 +1058,16 @@
                       "DigitalProductPassport"
                     ],
                     "dlrLinkTitle": "DTM Product Passport",
-                    "dlrVerificationPage": "https://www.forestry.pyx.io/verify"
+                    "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
                     "dlrAPIUrl": "http://localhost:3000",
-                    "dlrAPIKey": "5sFkAFd5swQgZ-tvr5X_",
+                    "dlrAPIKey": "test123",
                     "namespace": "gs1",
                     "linkRegisterPath": "/api/resolver"
                   },
                   "storage": {
-                    "url": "https://vcs.forestry.pyx.io/v1/credentials",
+                    "url": "http://localhost:3334/v1/credentials",
                     "params": {
                       "bucket": "verifiable-credentials"
                     },
@@ -1122,7 +1122,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Harvest Teams"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000072/10/108",
@@ -1145,7 +1145,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dpi_forestry_qld_logs.png",
+                    "linkURL": "http://localhost:3003/dpi_forestry_qld_logs.png",
                     "linkName": "Log #107"
                   },
                   "productCategory": [
@@ -1333,13 +1333,13 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.forestry.pyx.io:443/v2",
+                    "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
-                      "id": "did:web:vckit.forestry.pyx.io",
+                      "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                       "name": "Harvest Teams"
                     },
                     "headers": {
-                      "Authorization": "Bearer iqAjMHtkFn9HjiU7XV2W"
+                      "Authorization": "Bearer test123"
                     }
                   },
                   "dpp": {
@@ -1357,16 +1357,16 @@
                       "DigitalProductPassport"
                     ],
                     "dlrLinkTitle": "DTM Product Passport",
-                    "dlrVerificationPage": "https://www.forestry.pyx.io/verify"
+                    "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
                     "dlrAPIUrl": "http://localhost:3000",
-                    "dlrAPIKey": "5sFkAFd5swQgZ-tvr5X_",
+                    "dlrAPIKey": "test123",
                     "namespace": "gs1",
                     "linkRegisterPath": "/api/resolver"
                   },
                   "storage": {
-                    "url": "https://vcs.forestry.pyx.io/v1/credentials",
+                    "url": "http://localhost:3334/v1/credentials",
                     "params": {
                       "bucket": "verifiable-credentials"
                     },
@@ -1495,13 +1495,13 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://vckit.forestry.pyx.io:443/v2",
+                    "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
-                      "id": "did:web:vckit.forestry.pyx.io",
+                      "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                       "name": "Harvest Teams"
                     },
                     "headers": {
-                      "Authorization": "Bearer iqAjMHtkFn9HjiU7XV2W"
+                      "Authorization": "Bearer test123"
                     }
                   },
                   "traceabilityEvent": {
@@ -1518,16 +1518,16 @@
                       "DigitalTraceabilityEvent"
                     ],
                     "dlrLinkTitle": "Transformation Event",
-                    "dlrVerificationPage": "https://www.forestry.pyx.io/verify"
+                    "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
                     "dlrAPIUrl": "http://localhost:3000",
-                    "dlrAPIKey": "5sFkAFd5swQgZ-tvr5X_",
+                    "dlrAPIKey": "test123",
                     "namespace": "gs1",
                     "linkRegisterPath": "/api/resolver"
                   },
                   "storage": {
-                    "url": "https://vcs.forestry.pyx.io/v1/documents",
+                    "url": "http://localhost:3334/v1/documents",
                     "params": {
                       "bucket": "verifiable-credentials"
                     },
@@ -1565,7 +1565,7 @@
                     "https://vocabulary.uncefact.org/untp/dcc/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Responsible Wood"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305",
@@ -1609,7 +1609,7 @@
                         ],
                         "fileName": "Responsble Wood Logo",
                         "fileType": "image/png",
-                        "file": "https://www.forestry.pyx.io/responsible_wood_logo.png"
+                        "file": "http://localhost:3003/responsible_wood_logo.png"
                       },
                       "issuingAuthority": {
                         "type": [
@@ -1631,7 +1631,7 @@
                       "SecureLink",
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/rw_cert.pdf",
+                    "linkURL": "http://localhost:3003/rw_cert.pdf",
                     "linkName": "Responsible Wood Certificate",
                     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                     "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
@@ -1772,7 +1772,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Harvest Teams"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000010/10/RT305",
@@ -1795,7 +1795,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dpi_forestry_qld_logs.png",
+                    "linkURL": "http://localhost:3003/dpi_forestry_qld_logs.png",
                     "linkName": "Load of Logs"
                   },
                   "productCategory": [
@@ -1822,7 +1822,7 @@
                       "type": [
                         "Link"
                       ],
-                      "linkURL": "https://www.forestry.pyx.io/business_card_example.pdf",
+                      "linkURL": "http://localhost:3003/business_card_example.pdf",
                       "linkName": "Seller Business Card - Example"
                     }
                   ],
@@ -1838,7 +1838,7 @@
                     "type": [
                       "Identifier"
                     ],
-                    "id": "https://id.example-company.com/facility/123",
+                    "id": "http://localhost:3000/gs1/414/9359502111136?linkType=gs1:locationInfo",
                     "name": "Queensland State owned managed forest"
                   },
                   "dimensions": {
@@ -2072,6 +2072,227 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Issue DFR",
+          "id": "produce_product",
+          "components": [
+            {
+              "name": "JsonForm",
+              "type": "EntryData",
+              "props": {
+                "schema": {
+                  "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.5.0/artefacts/jsonSchemas/DigitalFacilityRecord.json?class=DigitalFacilityRecord"
+                },
+                "data": {
+                  "type": [
+                  "DigitalFacilityRecord",
+                  "VerifiableCredential"
+                   ],
+                  "@context": [
+                  "https://www.w3.org/ns/credentials/v2",
+                  "https://vocabulary.uncefact.org/untp/dfr/0.5.0/"
+                  ],
+                  "issuer": {
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
+                    "name": "Harvest Teams"
+                  },
+                  "id": "http://localhost:3000/gs1/414/9359502111136",
+                "credentialSubject": {                 
+                  "type": [
+                    "Facility"
+                  ],
+                  "id": "http://localhost:3000/gs1/414/9359502111136",
+                  "registeredId": "9359502111136",
+                  "description": "Description of Harvest Team's operated wood",
+                  "name": "Harvest Team's operated wood",
+                  "idScheme": {
+                    "type": [
+                      "IdentifierScheme"
+                    ],
+                    "id": "https://id.gs1.org/414/",
+                    "name": "Global Location Number (GLN)"
+                  },
+                  "countryOfOperation": "AU",
+                  "processCategory": [
+                    {
+                      "type": [
+                        "Classification"
+                      ],
+                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/31310",
+                      "code": "31310",
+                      "name": "Wood in the rough, weather or not stripped of bark or sapwood",
+                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                      "schemeName": "UN Central Product Classification (CPC)"
+                    }
+                  ],
+                  "operatedByParty": {
+                    "type": [
+                      "Identifier"
+                    ],
+                    "id": "http://localhost:3000/gs1/add_registry_link_here?linkType=gs1:registryEntry",
+                    "name": "Harvest Team",
+                    "registeredId": "9359502111136",
+                    "idScheme": {
+                      "type": [
+                        "IdentifierScheme"
+                      ],
+                      "id": "https://id.gs1.org/01/",
+                      "name": "Global Trade Identification Number (GTIN)"
+                    }
+                  },
+                  "otherIdentifier": [                    
+                  ],
+                  "address": {
+                    "streetAddress": "11 Test Road",
+                    "postalCode": "4321",
+                    "addressLocality": "Brisbane",
+                    "addressRegion": "QLD",
+                    "addressCountry": "AU"
+                  },
+                  "locationInformation": {
+                    "plusCode": "https://plus.codes/5RGH4HR4+J5 ",
+                    "geoLocation": {
+                      "type": "Point",
+                      "coordinates": [-19.858438,151.555437]
+                    },
+                    "geoBoundary": {
+                      "type": "Polygon",
+                      "coordinates": [
+                        [
+                          [151.555437,-19.858438],
+                          [152.093687,-19.848062],
+                          [152.137688,-20.492562],
+                          [151.264313,-20.492562],
+                          [151.555437,-19.858438]                        
+                        ]
+                      ]
+                    },
+                    "geoBoundaryLink": "https://geojson.io/#data=data:application/json,%7B%22type%22%3A%22Feature%22%2C%22geometry%22%3A%7B%22type%22%3A%22Polygon%22%2C%22coordinates%22%3A%5B%5B%5B151.555437%2C-19.858438%5D%2C%5B152.093687%2C-19.848062%5D%2C%5B152.137688%2C-20.492562%5D%2C%5B151.264313%2C-20.492562%5D%2C%5B151.555437%2C-19.858438%5D%5D%5D%7D%2C%22properties%22%3A%7B%7D%7D"
+                  },
+                  "conformityClaim":[
+                    {
+                      "type": [
+                        "Claim",
+                        "Declaration"
+                      ],
+                      "assessmentDate": "2024-11-11",
+                      "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                      "name": "Responsible Wood Certificate",
+                      "assessmentCriteria": [
+                        {
+                          "type": [
+                            "Criterion"
+                          ],
+                          "id": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/e118e5b9-78bf-4015-9fd7-4f39d33b53e7/afs-603520-certificate-registration.pdf?ETag=eb50d466e33597690616cd8fdae7754c",
+                          "name": "Forest Management System - AS/NZS 4708:2021"
+                        }
+                      ],
+                      "conformance": true,
+                      "conformityTopic": "environment.deforestation",
+                      "conformityEvidence": {
+                        "linkURL": "http://localhost:3000/gs1/01/09359502000010/10/RT305?linkType=gs1:certificationInfo",
+                        "linkName": "Responsible Wood Certification",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                        "hashDigest": "6239119",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "AES"
+                      }
+                    }
+                  ]
+                }
+                },
+                "constructData": {
+                  "mappingFields": [],
+                  "dummyFields": [],
+                  "generationFields": [
+                    {
+                      "path": "/eventID",
+                      "handler": "generateIdWithSerialNumber"
+                    }
+                  ]
+                },
+                "className": "json-form",
+                "style": {
+                  "margin": "40px auto",
+                  "paddingTop": "40px",
+                  "width": "80%"
+                }
+              }
+            },
+            {
+              "name": "CustomButton",
+              "type": "Submit",
+              "props": {}
+            }
+          ],
+          "services": [
+            {
+              "name": "processDigitalFacilityRecord",
+              "parameters": [
+                {
+                  "vckit": {
+                    "vckitAPIUrl": "http://localhost:3332/v2",
+                    "issuer": {
+                      "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
+                      "name": "Harvest Teams"
+                    },
+                    "headers": {
+                      "Authorization": "Bearer test123"
+                    }
+                  },
+                  "digitalFacilityRecord": {
+                    "context": ["https://test.uncefact.org/vocabulary/untp/dfr/0.5.0/"],
+                    "renderTemplate": [
+                      {
+                        "template": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /> <link href=\"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\" rel=\"stylesheet\"> <title>Digital Facility Record</title> <style> :root { --primary-colorsblue-10: rgba(247, 250, 253, 1); --primary-colorsgray-100: rgba(250, 250, 250, 1); --white: rgba(255, 255, 255, 1); --black: rgba(0, 0, 0, 1); --primary-colorsgray-300: rgba(237, 239, 240, 1); --primary-colorsgray-500: rgba(236, 228, 212, 1); --primary-colorsgray-600: rgba(179, 145, 81, 1); --primary-colorsblue-700: rgba(128, 98, 53, 1); --primary-colorsgray-700: rgba(32, 8, 25, 1); --primary-colorsblue-100: rgba(181, 213, 245, 0.5); --primary-colorsblue-100-full: rgba(181, 213, 245, 1); --primary-colorsblue-200: rgba(32, 8, 25, 1); --primary-colorsblue-400: rgba(179, 145, 81, 1); --primary-colorsblue-600: rgba(0, 110, 181, 1); --primary-colorsgray-400: rgba(212, 214, 216, 1); --primary-colorsgray-300: rgba(237, 239, 240, 1); --accent-colorslight-green: rgba(184, 236, 182, 1); --text-color-green: rgba(8, 50, 0, 1); --accent-colorslight-red: rgba(255, 188, 183, 1); --text-color-red: rgba(50, 0, 0, 1); } /* Globals CSS */ * { margin: 0; box-sizing: border-box; } body { font-family: 'Lato', sans-serif; } section { padding: 0 16px 0 16px; } a { text-decoration: none; } .facility-record { width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; word-break: break-word; } .facility-record .contents { display: flex; flex-direction: column; gap: 24px; } .facility-record .traceability-header { display: flex; flex-direction: column; width: 100%; align-items: center; } .facility-record .TRACE-header { display: flex; flex-direction: column; width: 100%; align-items: flex-start; gap: 12px; padding: 32px 16px 20px 16px; background-color: var(--primary-colorsgray-700); } .facility-record .PP-title { width: 100%; font-weight: 500; color: var(--white); font-size: 16px; line-height: 22px; text-transform: uppercase; } .facility-record .name-description { display: flex; flex-direction: column; gap: 8px; } .facility-record .name-description h1 { font-weight: 900; color: var(--white); font-size: 30px; line-height: 32.5px; } .facility-record .name-description p { font-weight: 500; color: var(--white); font-size: 16px; line-height: 17.4px; } .facility-record .text-wrapper { align-self: stretch; font-weight: 900; color: var(--white); font-size: 30px; line-height: 32.5px; } .facility-record .issuing-organisation { padding: 0px 16px 16px; align-self: stretch; width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; background-color: var(--primary-colorsgray-600); } .facility-record .data-two-columns { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; padding: 10px 0px 12px; width: 100%; border-bottom-width: 1px; border-bottom-style: solid; } .facility-record .data-two-columns:last-child { border-bottom: none; } .facility-record .table-line { border-bottom: 1px solid #d4d6d8; } .facility-record .item-value a { color: #232E3D; } .facility-record .declarations { display: flex; flex-direction: column; gap: 12px; padding: 0px 16px; width: 100%; } .facility-record .declaration-title { font-size: 20px; font-weight: 700; line-height: 21.8px; color: var(--primary-colorsgray-700); } .facility-record .cards-conformities { display: flex; flex-direction: column; gap: 8px; } .facility-record .cards-conformity { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 336px; padding: 16px 18px 16px 16px; position: relative; background-color: var(--white); border-radius: 4px; border: 1px solid; border-color: var(--primary-colorsgray-400); } .facility-record .frame { display: flex; align-items: center; justify-content: space-between; position: relative; align-self: stretch; width: 100%; flex: 0 0 auto; } .facility-record .div-2 { display: inline-flex; align-items: center; gap: 4px; position: relative; flex: 0 0 auto; } .facility-record .company-name { position: relative; width: fit-content; font-weight: 400; color: var(--primary-colorsgray-600); font-size: 14px; line-height: 19.2px; } .facility-record .tags-VC-badge-red { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 4px 8px; flex: 0 0 auto; background-color: var(--accent-colorslight-red); color: var(--text-color-red); border-radius: 8px; overflow: hidden; } .facility-record .tags-VC-badge-green { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 4px 8px; flex: 0 0 auto; background-color: var(--accent-colorslight-green); color: var(--text-color-green); border-radius: 8px; overflow: hidden; } .facility-record .verifiable { width: fit-content; font-weight: 600; font-size: 14px; line-height: 15.3px; } .facility-record .frame-2 { display: flex; flex-direction: column; align-items: center; gap: 4px; position: relative; align-self: stretch; width: 100%; flex: 0 0 auto; } .facility-record .text-wrapper { position: relative; align-self: stretch; margin-top: -1px; font-weight: 400; color: var(--primary-colorsblue-700); font-size: 18px; line-height: 21.2px; } .facility-record .p { color: var(--primary-colorsgray-600); font-size: 14px; line-height: 19.2px; align-self: stretch; font-weight: 400; color: #55606e; } .facility-record .span { font-weight: 400; font-size: 14px; line-height: 19.2px; } .facility-record .text-wrapper-3 { color: #55606e; } .facility-record .gray-bottom-line { border-bottom: 1px #55606E solid; width: fit-content; text-decoration: none; } .facility-record .frame-3 { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 8px; align-self: stretch; width: 100%; } .facility-record .frame-4 { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex: 1; flex-grow: 1; } .facility-record .typography-heading { display: inline-flex; align-items: center; justify-content: center; gap: 10px; } .facility-record .heading { flex: 1; color: var(--primary-colorsgray-700); font-size: 16px; font-weight: 400; line-height: 17.44px; } .facility-record .heading-2 { flex: 1; font-weight: 400; color: var(--primary-colorsgray-600); font-size: 14px; line-height: 19.2px; } .facility-record .cards-traceability { display: flex; align-items: center; justify-content: space-between; padding: 8px 0px; position: relative; align-self: stretch; width: 100%; flex: 0 0 auto; border-radius: 4px; } .facility-record .frame-5 { display: inline-flex; align-items: center; gap: 8px; position: relative; flex: 0 0 auto; } .facility-record .company-name-wrapper { display: flex; flex-direction: column; width: 260px; align-items: flex-start; gap: 4px; } .facility-record .company-name-2 { color: var(--black); font-size: 16px; line-height: 17.4px; align-self: stretch; font-weight: 400; } .facility-record .issuing-details { width: 100%; padding: 24px 16px 36px; background-color: var(--primary-colorsgray-300); display: flex; flex-direction: column; align-items: flex-start; gap: 4px; } .facility-record .typography-heading { display: inline-flex; align-items: center; justify-content: center; gap: 10px; } .facility-record .text-wrapper-2 { width: fit-content; font-weight: 700; color: var(--black); font-size: 20px; line-height: 21.8px; } .facility-record .div { display: inline-flex; flex-direction: column; align-items: flex-start; width: 100%; } .facility-record .data-two-columns-2 { display: grid; grid-template-columns: 1.4fr 3fr; gap: 16px; padding: 10px 0px 12px; width: 100%; border-bottom-width: 1px; border-bottom-style: solid; } .facility-record .border-bottom-gray-400 { border-color: var(--primary-colorsgray-400); } .facility-record .border-bottom-gray-500 { border-color: var(--primary-colorsgray-500); } .facility-record .border-bottom-blue-100 { border-color: var(--primary-colorsblue-100-full); } .facility-record .border-bottom-blue-200 { border-color: var(--primary-colorsblue-200); } .facility-record .label { font-weight: 400; color: var(--primary-colorsgray-300); font-size: 16px; line-height: 22px; } .facility-record .label-2 { font-weight: 400; color: var(--primary-colorsgray-600); font-size: 16px; line-height: 22px; } .facility-record .data-data-link { flex-direction: column; align-items: flex-start; gap: 6px; align-self: stretch; display: flex; flex: 1; flex-grow: 1; } .facility-record .div-wrapper { gap: 10px; display: inline-flex; align-items: flex-start; text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--primary-colorsblue-400); text-underline-offset: 3px; } .facility-record .line { display: inline-flex; align-items: flex-start; gap: 10px; border-bottom-width: 2px; border-bottom-style: solid; border-color: var(--primary-colorsblue-200); } .facility-record .line-2 { width: fit-content; font-weight: 500; color: var(--white); font-size: 16px; line-height: 17.4px; } .facility-record .line-3 { width: fit-content; font-weight: 500; color: var(--primary-colorsgray-700); font-size: 16px; line-height: 22px; } .facility-record .line-4 { display: inline-flex; align-items: flex-start; gap: 10px; border-bottom-width: 2px; border-bottom-style: solid; border-color: var(--primary-colorsblue-400); } .facility-record .data-data { display: flex; align-items: center; gap: 10px; align-self: stretch; flex-grow: 1; flex: 1; } .facility-record .data-data a { line-height: 22px; } .facility-record .data-data-2 a { margin-right: 10px; } .facility-record .data { flex: 1; font-weight: 500; color: var(--white); font-size: 16px; line-height: 17.4px; } .facility-record .data-2 { font-weight: 500; color: var(--primary-colorsgray-700); font-size: 16px; line-height: 17.4px; flex: 1; } .blue-bottom-line, .blue-bottom-line:link { border-bottom: 2px hsl(210, 68%, 59%) solid; width: fit-content; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex; cursor: pointer; text-decoration: none; color: #232E3D; } .blue-bottom-line-2, .blue-bottom-line-2:link { width: fit-content; color: var(--white); text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--primary-colorsblue-200); text-underline-offset: 3px; } /* Media Queries for Mobiles */ @media (min-width: 50px) { .facility-record { min-width: 100%; } } div:has(.facility-record) .facility-record .declarations, div:has(.facility-record) .facility-record section { padding: 0px; } </style> </head> <body> <div class=\"facility-record\"> <div class=\"contents\"> <div class=\"image-section\" style=\"width: 100%; max-width: 100%; height: auto;\"> <img src=\"https://www.forestry.pyx.io/forest.png\" alt=\"Descriptive text\" style=\"width: 40%; height: auto; display: block;\" /> </div> <div class=\"traceability-header\"> <div class=\"TRACE-header\"> <div class=\"PP-title\">FACILITY RECORD</div> <div class=\"name-description\"> <h1>{{credentialSubject.credentialSubject.name}}</h1> <p>{{credentialSubject.credentialSubject.description}}</p> </div> </div> <div class=\"issuing-organisation\"> <div class=\"div\"> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Operator</div> <div class=\"data-data\"> <a href=\"{{credentialSubject.credentialSubject.operatedByParty.id}}\" class=\"blue-bottom-line-2\">{{credentialSubject.credentialSubject.operatedByParty.name}}</a> </div> </div> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Country</div> <div class=\"data-data\"> <div class=\"data\">{{credentialSubject.credentialSubject.countryOfOperation}}</div> </div> </div> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Address</div> <div class=\"data-data\"> {{!-- TODO 1: plain text --}} {{!-- <div class=\"data\"> {{credentialSubject.credentialSubject.address.streetAddress}} {{credentialSubject.credentialSubject.address.addressLocality}}, {{credentialSubject.credentialSubject.address.postalCode}}</div> --}} {{!-- TODO 2: confirm --}} {{!-- <a href=\"https://www.google.com/maps/?q={{credentialSubject.credentialSubject.address.streetAddress}} {{credentialSubject.credentialSubject.address.addressRegion}} {{credentialSubject.credentialSubject.address.postalCode}} {{credentialSubject.credentialSubject.address.addressCountry}}\" class=\"blue-bottom-line-2\" target=\"_blank\">{{credentialSubject.credentialSubject.address.streetAddress}}</a> --}} {{!-- TODO 3: confirm --}} <a href=\"{{credentialSubject.credentialSubject.locationInformation.plusCode}}\" class=\"blue-bottom-line-2\" target=\"_blank\">{{credentialSubject.credentialSubject.address.streetAddress}} {{credentialSubject.credentialSubject.address.addressLocality}}, {{credentialSubject.credentialSubject.address.postalCode}}</a> </div> </div> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Processes</div> <div class=\"data-data-2\"> {{#each credentialSubject.credentialSubject.processCategory}} <a href=\"{{id}}\" class=\"blue-bottom-line-2\">{{name}}</a> {{/each}} </div> </div> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Geolocation</div> <a href=\"https://www.google.com/maps?q={{lookup credentialSubject.credentialSubject.locationInformation.geoLocation.coordinates 0}},{{lookup credentialSubject.credentialSubject.locationInformation.geoLocation.coordinates 1}}&ll={{lookup credentialSubject.credentialSubject.locationInformation.geoLocation.coordinates 0}},{{lookup credentialSubject.credentialSubject.locationInformation.geoLocation.coordinates 1}}&z=13\" class=\"data-data-link\" target=\"_blank\"> <div class=\"line-4\"> <div class=\"line-2\">Show on map</div> </div> </a> </div> <div class=\"data-two-columns border-bottom-gray-500\"> <div class=\"label\">Geoboundary</div> <a href=\"{{credentialSubject.credentialSubject.locationInformation.geoBoundaryLink}}\"   class=\"data-data-link\" target=\"_blank\"> <div class=\"line-4\"> <div class=\"line-2\">Show on map</div> </div> </a> </div> </div> </div> </div> <section class=\"declarations\"> <div class=\"declaration-title\">Declarations</div> <div class=\"cards-conformities\"> {{#each credentialSubject.credentialSubject.conformityClaim}} <div class=\"cards-conformity\"> <div class=\"frame\"> <div class=\"div-2\"> <div class=\"company-name\">Conformance:</div> <div class=\"{{#if conformance}}tags-VC-badge-green{{else}}tags-VC-badge-red{{/if}}\"> <div class=\"verifiable\">{{#if conformance}}Yes{{else}}No{{/if}}</div> </div> </div> <div class=\"company-name\">Assessed: {{assessmentDate}}</div> </div> <div class=\"frame-2\"> <div class=\"text-wrapper\">{{conformityEvidence.linkName}}</div> <p class=\"p\"> <span class=\"span\">{{referenceRegulation.name}} administered in {{referenceRegulation.jurisdictionCountry}} by </span> <a href=\"{{referenceRegulation.administeredBy.id}}\" class=\"text-wrapper-3 gray-bottom-line\">{{referenceRegulation.administeredBy.name}}</a> </p> <p class=\"p\"> <span class=\"span\">{{referenceStandard.name}} issued by </span> <a href=\"{{referenceStandard.issuingParty.id}}\" class=\"text-wrapper-3 gray-bottom-line\">{{referenceStandard.issuingParty.name}}</a> </p> </div> <div class=\"frame-3\"> {{#each declaredValue}} <div class=\"frame-4\"> <div class=\"typography-heading\"> <p class=\"heading\">{{metricName}} is {{metricValue.value}}{{metricValue.unit}}</p> </div> <div class=\"typography-heading\"> <p class=\"heading-2\">Score: {{score}} | Accuracy {{accuracy}}</p> </div> </div> {{/each}} </div> <a href=\"{{conformityEvidence.linkURL}}\" class=\"cards-traceability\"> <div class=\"frame-5\"> <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M5 21C4.45 21 3.97933 20.8043 3.588 20.413C3.19667 20.0217 3.00067 19.5507 3 19V5C3 4.45 3.196 3.97933 3.588 3.588C3.98 3.19667 4.45067 3.00067 5 3H19C19.55 3 20.021 3.196 20.413 3.588C20.805 3.98 21.0007 4.45067 21 5V19C21 19.55 20.8043 20.021 20.413 20.413C20.0217 20.805 19.5507 21.0007 19 21H5ZM5 5V19H19V5H17V12L14.5 10.5L12 12V5H5Z\" fill=\"#7D5B3D\"></path> </svg> <div class=\"company-name-wrapper\"> <div class=\"company-name-2\">Evidence</div> </div> </div> <svg width=\"10\" height=\"15\" viewBox=\"0 0 10 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1 1L8 8L1 15\" stroke=\"#7D5B3D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"> </path> </svg> </a> </div> {{/each}} </div> </section> </div> <div class=\"issuing-details\"> <div class=\"typography-heading\"> <div class=\"text-wrapper-2\">Issuing details</div> </div> <div class=\"div\"> <div class=\"data-two-columns-2 border-bottom-gray-400\"> <div class=\"label-2\">Issued by</div> <div class=\"data-data-link\"> <div class=\"div-wrapper\"> <a href=\"{{issuer.id}}\" class=\"line-3\">{{issuer.name}}</a> </div> </div> </div> <div class=\"data-two-columns-2 border-bottom-gray-400\"> <div class=\"label-2\">Valid from</div> <div class=\"data-data\"> <div class=\"data-2\">{{validFrom}}</div> </div> </div> <div class=\"data-two-columns-2 border-bottom-gray-400\"> <div class=\"label-2\">Valid until</div> <div class=\"data-data\"> <div class=\"data-2\">{{validUntil}}</div> </div> </div> </div> </div> </div> </body> </html>",
+                        "@type": "WebRenderingTemplate2022"
+                      }
+                    ],
+                    "type": ["DigitalFacilityRecord"],
+                    "dlrLinkTitle": "DigitalFacilityRecord",
+                    "dlrVerificationPage": "http://localhost:3003/verify"
+                  },
+                  "dlr": {
+                    "dlrAPIUrl": "http://localhost:3000",
+                    "dlrAPIKey": "test123",
+                    "namespace": "gs1",
+                    "linkRegisterPath": "/api/resolver"
+                  },
+                  "storage": {
+                    "url": "http://localhost:3334/v1/documents",
+                    "params": {
+                      "bucket": "verifiable-credentials"
+                    },
+                    "options": {
+                      "method": "POST",
+                      "headers": {
+                        "Content-Type": "application/json"
+                      }
+                    }
+                  },
+                  "identifierKeyPath": "/id"
+                }
+              ]
+            },
+            {
+              "name": "mergeToLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "harvest_teams_dfr",
+                  "objectKeyPath": "/decodedEnvelopedVC/credentialSubject/0/id"
+                }
+              ]
+            },
+            {
+              "name": "getValueFromLocalStorage",
+              "parameters": [
+                {
+                  "storageKey": "harvest_teams_dfr"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2239,7 +2460,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "DTM Timber"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8001",
@@ -2262,7 +2483,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dtm_logs.png",
+                    "linkURL": "http://localhost:3003/dtm_logs.png",
                     "linkName": "Lumber"
                   },
                   "productCategory": [
@@ -2539,7 +2760,7 @@
                       "type": [
                         "Item"
                       ],
-                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8003?linkType=gs1:traceability",
+                      "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004?linkType=gs1:traceability",
                       "name": "Treated DTM Log"
                     }
                   ],
@@ -2921,7 +3142,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "DTM Timber"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000041/10/D8004",
@@ -2945,7 +3166,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/dtm_treated_poles.png",
+                    "linkURL": "http://localhost:3003/dtm_treated_poles.png",
                     "linkName": "DTM Treated Pole Image"
                   },
                   "description": "Description of DTM Treated Pole characteristics and use",
@@ -3491,7 +3712,7 @@
                     "https://vocabulary.uncefact.org/untp/dcc/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Export Yard"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006/",
@@ -3688,7 +3909,7 @@
                     "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                   ],
                   "issuer": {
-                    "id": "did:web:vckit.forestry.pyx.io",
+                    "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
                     "name": "Export Yard"
                   },
                   "id": "http://localhost:3000/gs1/01/09359502000058/10/D8006",
@@ -3712,7 +3933,7 @@
                     "type": [
                       "Link"
                     ],
-                    "linkURL": "https://www.forestry.pyx.io/pole_container.png",
+                    "linkURL": "http://localhost:3003/pole_container.png",
                     "linkName": "Pole Container Image"
                   },
                   "description": "Description of Pole Container",
@@ -3728,6 +3949,21 @@
                       "schemeName": "UN Central Product Classification (CPC)"
                     }
                   ],
+                    "producedByParty": {
+                      "type": [
+                        "Identifier"
+                      ],
+                      "id": "https://abr.business.gov.au/ABN/View?abn=66934348189",
+                      "name": "Department of Agriculture and Fisheries",
+                      "registeredId": "66934348189"
+                    },
+                    "producedAtFacility": {
+                      "type": [
+                        "Identifier"
+                      ],
+                      "id": "http://localhost:3000/gs1/414/9359502111136?linkType=gs1:locationInfo",
+                      "name": "Queensland State owned managed forest"
+                    },
                   "dimensions": {
                     "type": [
                       "Dimension"
@@ -3915,21 +4151,21 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                      "id": "http://localhost:3003/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                          "id": "http://localhost:3003/container_certificate.pdf",
                           "name": "ISO 9001 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
-                        "linkName": "AS/NZS ISO 9001:2015 Quality Management System",
+                        "linkURL": "http://localhost:3003/container_certificate.pdf",
+                        "linkName": "AS/NZS ISO 9001:2016 Quality Management System",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -3942,21 +4178,21 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                      "id": "http://localhost:3003/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
-                          "name": "AS3818.11-2010 Sandard"
+                          "id": "http://localhost:3003/container_certificate.pdf",
+                          "name": "AS3818.11-2009 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
-                        "linkName": "AS3818.11-2010 Timber - Heavy Structural Products - Utility Poles",
+                          "linkURL": "http://localhost:3003/container_certificate.pdf",
+                          "linkName": "AS3818.11-2009 Timber - Heavy Structural Products - Utility Poles",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -3969,20 +4205,20 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                      "id": "http://localhost:3003/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
-                          "name": "AS3818.1-2010 Sandard"
+                            "id": "http://localhost:3003/container_certificate.pdf",
+                            "name": "AS3818.1-2009 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
+                        "linkURL": "http://localhost:3003/container_certificate.pdf",
                         "linkName": "AS3818.1-2010 Heavy Structural Products Visually Graded General Requirements",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
@@ -3996,21 +4232,21 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                      "id": "http://localhost:3003/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
-                          "name": "AS1604-2010 Sandard"
+                            "id": "http://localhost:3003/container_certificate.pdf",
+                            "name": "AS/NZS 1604.1:2021 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
-                        "linkName": "AS1604-2010 Timber - Presevative Treated-Sawn & Round",
+                          "linkURL": "http://localhost:3003/container_certificate.pdf",
+                          "linkName": "AS/NZS 1604.1:2021 Products & Treatment",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -4023,21 +4259,48 @@
                         "Declaration"
                       ],
                       "assessmentDate": "2024-11-11",
-                      "id": "https://www.forestry.pyx.io/container_certificate.pdf",
+                      "id": "http://localhost:3003/container_certificate.pdf",
                       "assessmentCriteria": [
                         {
                           "type": [
                             "Criterion"
                           ],
-                          "id": "https://www.forestry.pyx.io/container_certificate.pdf",
-                          "name": "AS/NZS 1605 Sandard"
+                            "id": "http://localhost:3003/container_certificate.pdf",
+                            "name": "AS/NZS 1604.2:2021 Sandard"
                         }
                       ],
                       "conformance": true,
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
-                        "linkURL": "https://www.forestry.pyx.io/container_certificate.pdf",
-                        "linkName": "AS/NZS 1605 Sampling & Analyzing Timber Preservative Treated Timber",
+                          "linkURL": "http://localhost:3003/container_certificate.pdf",
+                          "linkName": "AS/NZS 1604.2:2021 Presevative Treated Wood Based Products",
+                          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+                          "hashDigest": "6239119",
+                          "hashMethod": "SHA-256",
+                          "encryptionMethod": "AES"
+                        }
+                      },
+                      {
+                        "type": [
+                          "Claim",
+                          "Declaration"
+                        ],
+                        "assessmentDate": "2024-11-11",
+                        "id": "http://localhost:3003/container_certificate.pdf",
+                        "assessmentCriteria": [
+                          {
+                            "type": [
+                              "Criterion"
+                            ],
+                            "id": "http://localhost:3003/container_certificate.pdf",
+                            "name": "AS/NZS 104.3:2021 Sandard"
+                          }
+                        ],
+                        "conformance": true,
+                        "conformityTopic": "governance.compliance",
+                        "conformityEvidence": {
+                          "linkURL": "http://localhost:3003/container_certificate.pdf",
+                          "linkName": "AS/NZS 104.3:2021 Sampling & Analyzing Timber Preservative Treated Timber",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
