@@ -86,5 +86,9 @@ e2e/cypress/fixtures/credentials-e2e/*
 !e2e/cypress/fixtures/credentials-e2e/.gitkeep
 e2e/cypress/screenshots
 
+<<<<<<< Updated upstream
 # storage-data
 storage-data/*
+=======
+storage-data/
+>>>>>>> Stashed changes
