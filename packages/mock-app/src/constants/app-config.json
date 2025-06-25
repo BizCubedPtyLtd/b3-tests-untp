@@ -1,7 +1,7 @@
 {
   "name": "REGEN FARMERS MUTUAL TRACEABILITY",
   "styles": {
-    "primaryColor": "rgb(35, 138, 186)",
+    "primaryColor": "#b5651d",
     "secondaryColor": "black",
     "tertiaryColor": "black"
   },
@@ -10,7 +10,7 @@
       "name": "General features",
       "type": "",
       "styles": {
-        "primaryColor": "rgb(35, 138, 186)",
+        "primaryColor": "#b5651d",
         "secondaryColor": "black",
         "tertiaryColor": "black"
       },
@@ -672,7 +672,7 @@
                           "Declaration"
                         ],
                         "assessmentDate": "2025-06-01",
-                        "id": "https://example-livestocksustainability.org/standards/2023.pdf#1-methane-emissions",
+                        "id": "http://localhost:3000/gs1/01/09359502777110/21/DCC_01",
                         "assessmentCriteria": [
                           {
                             "type": [
@@ -685,8 +685,8 @@
                         "conformance": true,
                         "conformityTopic": "environment.emissions",
                         "conformityEvidence": {
-                          "linkURL": "https://id.gs1.org/01/09359502777219/21/48001?linkType=gs1:certificationInfo",
-                          "linkName": "Sample Livestock GHG Certification",
+                          "linkURL": "http://localhost:3000/gs1/01/09359502777110/21/DCC_01?linkType=gs1:certificationInfo",
+                          "linkName": "Sample Livestock Farm GHG and Mass Balance Certification",
                           "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                           "hashDigest": "7891014",
                           "hashMethod": "SHA-256",
@@ -928,7 +928,7 @@
                           "Declaration"
                         ],
                         "assessmentDate": "2025-06-01",
-                        "id": "https://example-livestocksustainability.org/standards/2023.pdf#1-methane-emissions",
+                        "id": "http://localhost:3000/gs1/01/09359502777110/21/DCC_01",
                         "referenceStandard": {
                           "type": [
                             "Standard"
@@ -958,14 +958,14 @@
                               "Criterion"
                             ],
                             "id": "https://example-livestocksustainability.org/standards/2023.pdf#1-methane-emissions",
-                            "name": "Methane Emissions from Livestock Operations"
+                            "name": "Methane Emissions from Enteric Fermentation"
                           }
                         ],
                         "conformance": true,
                         "conformityTopic": "environment.emissions",
                         "conformityEvidence": {
-                          "linkURL": "http://localhost:3000/gs1/01/09359502777219/21/48001?linkType=gs1:certificationInfo",
-                          "linkName": "Sample Livestock GHG Certification",
+                          "linkURL": "http://localhost:3000/gs1/01/09359502777110/21/DCC_01?linkType=gs1:certificationInfo",
+                          "linkName": "Sample Livestock Farm GHG and Mass Balance Certification",
                           "linkType": "https://test.uncefact.org/vocabulary/untp/dcc/0.6.1/",
                           "hashDigest": "7891017",
                           "hashMethod": "SHA-256",
@@ -1007,8 +1007,8 @@
                             "type": [
                               "Criterion"
                             ],
-                            "id": "https://example-livestocksustainability.org/standards/2023.pdf#2-feed-sustainability",
-                            "name": "Sustainable Feed Sourcing for Livestock"
+                            "id": "https://example-livestocksustainability.org/standards/2023.pdf#1-methane-emissions",
+                            "name": "Methane Emissions from Enteric Fermentation"
                           }
                         ],
                         "conformance": true,
