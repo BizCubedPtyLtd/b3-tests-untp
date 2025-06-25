@@ -36,7 +36,7 @@ export const processDigitalIdentityAnchor: IService = async (
 
   const restOfVC: any = {
     id: `urn:uuid:${credentialId}`,
-    renderMethod: digitalIdentityAnchor.renderTemplate,
+    render: digitalIdentityAnchor.renderTemplate,
   };
 
   if (digitalIdentityAnchor.validUntil) {

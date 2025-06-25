@@ -46,7 +46,7 @@ describe('processDPP', () => {
             id: value.issuer,
           },
           credentialSubject: value.credentialSubject,
-          renderMethod: value.render,
+          render: value.render,
         };
 
         return Promise.resolve(expectVCResult);

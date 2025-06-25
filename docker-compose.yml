@@ -12,16 +12,16 @@ services:
       - ./documentation:/app
       - /app/node_modules
 
-  untp-playground:
-    build:
-      context: packages/untp-playground
-    ports:
-      - '4000:3000'
-    volumes:
-      - ./packages/untp-playground:/untp-playground
-      - /untp-playground/node_modules
-    environment:
-      - NODE_ENV=development
+  # untp-playground:
+  #   build:
+  #     context: packages/untp-playground
+  #   ports:
+  #     - '4000:3000'
+  #   volumes:
+  #     - ./packages/untp-playground:/untp-playground
+  #     - /untp-playground/node_modules
+  #   environment:
+  #     - NODE_ENV=development
 
   vckit-api:
     image: ghcr.io/uncefact/project-vckit:sha-325b7e3@sha256:3623cd45cdb971ba16c6016a1e3ba153fe6920c2053275cd430e76ab75d5a563

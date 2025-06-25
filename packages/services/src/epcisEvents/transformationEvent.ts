@@ -143,7 +143,7 @@ export const issueEpcisTransformationEvent = async (
 ) => {
   const restOfVC: any = {
     id: `urn:uuid:${transformationEventCredentialId}`,
-    renderMethod: epcisTransformationEvent.renderTemplate,
+    render: epcisTransformationEvent.renderTemplate,
   };
 
   if (epcisTransformationEvent.validUntil) {
@@ -211,7 +211,7 @@ export const issueDPP = async (
   dppId: string,
   transformationEventData: { vc: VerifiableCredential; linkResolver: string },
 ) => {
-  const restOfVC: any = { id: `urn:uuid:${dppId}`, renderMethod: dppContext.renderTemplate };
+  const restOfVC: any = { id: `urn:uuid:${dppId}`, render: dppContext.renderTemplate };
 
   if (dppContext.validUntil) {
     restOfVC.validUntil = dppContext.validUntil;

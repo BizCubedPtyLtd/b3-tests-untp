@@ -28,7 +28,7 @@ export const processTransactionEvent: IService = async (
 
   const restOfVC: any = {
     id: `urn:uuid:${credentialId}`,
-    renderMethod: traceabilityEvent.renderTemplate,
+    render: traceabilityEvent.renderTemplate,
   };
 
   if (traceabilityEvent.validUntil) {

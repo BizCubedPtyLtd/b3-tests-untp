@@ -19,7 +19,7 @@ describe('Json block content', () => {
       id: '',
     },
     credentialSubject: {},
-    renderMethod: [],
+    render: [],
     credentialStatus: {
       id: 'id',
       type: 'RevocationList2020Status',

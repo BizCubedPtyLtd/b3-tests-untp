@@ -119,13 +119,11 @@ describe('vckit.service', () => {
     it('should issue VC successfully when validUntil exist', async () => {
       const mockResponse = { verifiableCredential: mockVerifiableCredential };
       (privateAPI.post as jest.Mock).mockResolvedValue(mockResponse);
-      let validUntil = new Date();
-      validUntil.setDate(validUntil.getDate() + 1);
 
       await issueVC({
         ...defaultParams,
         restOfVC: {
-          validUntil: validUntil.toISOString(),
+          validUntil: '2025-01-01T00:00:00Z',
         },
       });
 
@@ -133,7 +131,7 @@ describe('vckit.service', () => {
         `${mockVcKitAPIUrl}/credentials/issue`,
         expect.objectContaining({
           credential: expect.objectContaining({
-            validUntil: validUntil.toISOString(),
+            validUntil: '2025-01-01T00:00:00Z',
             validFrom: expect.any(String),
           }),
         }),
