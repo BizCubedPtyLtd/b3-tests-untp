@@ -1,0 +1,555 @@
+{
+    "img": "/rmi_vc_map.png",
+    "title": "VC Map - RMI Supply Chain",
+    "appConfigName": "VC Map - RMI Supply Chain",
+    "areas": [
+        {
+            "alt": "DTE Transform - Copper (bcmine RI)",
+            "title": "DTE Transform - Copper (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DTE Transform - Copper",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-dte-transform-copper-concentrate",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DTE Transform - Copper (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-mine/issue-transformation-event",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000034/21/20001"
+                }
+            ],
+            "coords": "35,172,80,224",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "DPP - Copper Concentrate (bcmine RI)",
+            "title": "DPP - Copper Concentrate (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DPP - Copper Concentrate",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-dpp-copper-concentrate",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DPP - Copper Concentrate (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-mine/issue-dpp",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000034/21/10001?linkType=gs1:sustainabilityInfo"
+                }
+            ],
+            "coords": "95,172,140,224",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DPP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport"
+            }
+        },
+        {
+            "alt": "DTE Sale - Copper Concentrate (bcmine RI)",
+            "title": "DTE Sale - Copper Concentrate (bcmine RI)",
+            "links": [
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DTE Sale - Copper Concentrate (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-mine/move-to-next-facility",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/gtin/09359502000034/21/10001?linkType=gs1:traceability"
+                }
+            ],
+            "coords": "153,172,193,224",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "DCC - RRA (bcmine RI)",
+            "title": "DCC - RRA (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DCC - RRA",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-mine-dcc-coppermark",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DCC - RRA (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/coppermark/issue-mine-dcc",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000034/21/32001"
+                }
+            ],
+            "coords": "35,250,70,292",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DCC",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-conformity-credential"
+            }
+        },
+        {
+            "alt": "DCC - TSM (bcmine RI)",
+            "title": "DCC - TSM (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DCC - TSM",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-mine-dcc-tsm",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DCC - TSM (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/tsm/issue-mine-dcc",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000034/21/31001"
+                }
+            ],
+            "coords": "76,250,111,292",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DCC",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-conformity-credential"
+            }
+        },
+        {
+            "alt": "DFR - Mine (bcmine RI)",
+            "title": "DFR - Mine (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DFR - Mine",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-dfr-copper-mine",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DFR - Mine (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-mine/issue-dfr",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/414/9359502000034"
+                }
+            ],
+            "coords": "151,249,187,296",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DFR",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-facility-record"
+            }
+        },
+        {
+            "alt": "DTE Transform - Copper Cathode (bcmine RI)",
+            "title": "DTE Transform - Copper Cathode (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DTE Transform - Copper Cathode",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dte-transform-copper-cathode",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DTE Transform - Copper Cathode (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-smelter/transform-copper-concentrate",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000041/21/20001"
+                }
+            ],
+            "coords": "247,173,288,222",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "DPP - Copper Cathode (bcmine RI)",
+            "title": "DPP - Copper Cathode (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DPP - Copper Cathode",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dpp-copper-cathode",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DPP - Copper Cathode (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-smelter/issue-dpp",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000041/21/10001?linkType=gs1:sustainabilityInfo"
+                }
+            ],
+            "coords": "307,173,347,222",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DPP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport"
+            }
+        },
+        {
+            "alt": "DTE Sale - Copper Cathode (bcmine RI)",
+            "title": "DTE Sale - Copper Cathode (bcmine RI)",
+            "links": [
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DTE Sale - Copper Cathode (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-smelter/move-to-next-facility",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/gtin/09359502000041/21/10001?linkType=gs1:traceability"
+                }
+            ],
+            "coords": "363,173,403,222",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "DCC - RMAP - Smelter",
+            "title": "DCC - RMAP - Smelter",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DCC - RMAP - Smelter",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-rmic-copper-smelter",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "245,246,355,307",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DCC",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-conformity-credential/"
+            }
+        },
+        {
+            "alt": "DFR - Smelter - Copper Smelter (bcmine RI)",
+            "title": "DFR - Smelter - Copper Smelter (bcmine RI)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": true,
+                    "title": "DFR - Smelter - Copper Smelter",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dfr-copper-smelter",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": false,
+                    "title": "DFR - Smelter - Copper Smelter (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/copper-smelter/issue-dfr",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/414/9359502000041"
+                }
+            ],
+            "coords": "373,247,410,298",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DFR",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-facility-record"
+            }
+        },
+        {
+            "alt": "DTE Transform - Battery Passport",
+            "title": "DTE Transform - Battery Passport",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DTE Transform - Battery Passport",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-dte-transform-battery",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": true,
+                    "title": "DTE Transofrm - Battery Passport (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/battery-manufacturer/transform-copper-cathodes",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000058/21/20001"
+                }
+            ],
+            "coords": "480,172,525,224",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "Digital Battery Passport (DBP)",
+            "title": "Digital Battery Passport (DBP)",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "Digital Battery Passport (DBP)",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-dpp-battery-passport",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DPP - Laptop Screen",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-dpp-laptop-screen",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DPP - Laptop Keyboard",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-dpp-laptop-keyboard",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DPP - Laptop Casing",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-dpp-laptop-casing",
+                    "sample_credential": ""
+                },
+                {
+                    "type": "external",
+                    "disabled": true,
+                    "title": "Digital Battery Passport (DBP) (bcmine RI)",
+                    "href": "https://www.bcmine.pyx.io/battery-manufacturer/issue-dpp",
+                    "sample_credential": "https://idr.bcmine.pyx.io/gs1/01/09359502000058/21/10001"
+                }
+            ],
+            "coords": "555,172,595,225",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DBP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport/digital-battery-passport"
+            }
+        },
+        {
+            "alt": "DCC - RMAP - Battery Passport",
+            "title": "DCC - RMAP - Battery Passport",
+            "disabled": true,
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DCC - RMAP - Battery Passport",
+                    "href": "/vc-map-rmi-supply-chain/downstream-issue-rmic-battery-passport",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "470,271,580,333",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DCC",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-conformity-credential/"
+            }
+        },
+        {
+            "alt": "OEM - DTE Association - Electronic Goods",
+            "title": "OEM - DTE Association - Electronic Goods",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "OEM - DTE Association - Electronic Goods",
+                    "href": "/vc-map-rmi-supply-chain/downstream-oem-issue-dte-association-electronic-goods",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "652,172,697,225",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "OEM - Digital Electronic Good Passport",
+            "title": "OEM - Digital Electronic Good Passport",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "OEM - Digital Electronic Good Passport",
+                    "href": "/vc-map-rmi-supply-chain/downstream-oem-issue-digital-electronic-goods-passport",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "742,173,782,225",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DEGP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport/digital-electronic-goods-passport-overview"
+            }
+        },
+        {
+            "alt": "OEM - Digital Electronic Facility Record",
+            "title": "OEM - Digital Electronic Facility Record",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "OEM - Digital Electronic Facility Record",
+                    "href": "/vc-map-rmi-supply-chain/downstream-oem-issue-digital-electronic-facility-record",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "667,250,708,300",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DEFR",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-facility-record/digital-electronic-facility-record"
+            }
+        },
+        {
+            "alt": "Recycling - DTE Transform - Recycled Material",
+            "title": "Recycling - DTE Transform - Recycled Material",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "Recycling - DTE Transform - Recycled Material",
+                    "href": "/vc-map-rmi-supply-chain/recycling-issue-dte-transform-recycled-electronic-goods",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "908,284,952,337",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        },
+        {
+            "alt": "Recycling - DPP - Recycled Material",
+            "title": "Recycling - DPP - Recycled Material",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "Recycling - DPP - Recycled Material",
+                    "href": "/vc-map-rmi-supply-chain/recycling-issue-dpp-recycled-electronic-goods",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "910,372,950,423",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DPP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport"
+            }
+        },
+        {
+            "alt": "DPP - Cobalt Concentrate",
+            "title": "DPP - Cobalt Concentrate",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DPP - Cobalt Concentrate",
+                    "href": "/vc-map-rmi-supply-chain/upstream-issue-dpp-cobalt-concentrate",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "139,479,179,529",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DPP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport"
+            }
+        },
+        {
+            "alt": "DCC - RMAP - Cobalt Refinery",
+            "title": "DCC - RMAP - Cobalt Refinery",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DCC - RMAP - Cobalt Refinery",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-rmic-cobalt-refinery",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "260,375,295,415",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DCC",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-conformity-credential/"
+            }
+        },
+        {
+            "alt": "DFR - Cobalt Refinery",
+            "title": "DFR - Cobalt Refinery",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DFR - Cobalt Refinery",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dfr-cobalt-refinery",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "259,435,301,488",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DFR",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-facility-record"
+            }
+        },
+        {
+            "alt": "DPP - Refined Cobalt",
+            "title": "DPP - Refined Cobalt",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DPP - Refined Cobalt",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dpp-refined-cobalt",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "340,380,380,432",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DPP",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-product-passport"
+            }
+        },
+        {
+            "alt": "DTE Transform - Refined Cobalt",
+            "title": "DTE Transform - Refined Cobalt",
+            "links": [
+                {
+                    "type": "internal",
+                    "disabled": false,
+                    "title": "DTE Transform - Refined Cobalt",
+                    "href": "/vc-map-rmi-supply-chain/midstream-issue-dte-transform-refined-cobalt",
+                    "sample_credential": ""
+                }
+            ],
+            "coords": "337,476,382,530",
+            "shape": "rect",
+            "documentation": {
+                "title": "About DTE",
+                "link": "https://docs.rbtp.pyx.io/docs/credential-overviews/digital-traceability-event"
+            }
+        }
+    ]
+}
