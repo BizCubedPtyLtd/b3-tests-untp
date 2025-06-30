@@ -1,18 +1,26 @@
 import React, { Fragment } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import appConfig from '../../constants/app-config.json';
-import { Home, Scanning, Verify, Application, GenericPage } from '../../pages';
+import { Home, Scanning, Verify, Application, GenericPage, InteractiveVCMap } from '../../pages';
 import { convertStringToPath } from '../../utils';
 import { IFeature } from '../../types/common.types';
 
 const renderRoutes = (app: any) => {
+  // Return none if app is not enabled
+  if (app.enabled && !app.enabled) return [];
+
   const mainPath = `/${convertStringToPath(app.name)}`;
   const mainElement = <Application app={app} />;
 
   // Generate child routes for each feature of the app
   const childRoutes = app.features.map((feature: IFeature) => {
+    let vcMap = null
+    if (app.vcMap) {
+      vcMap = { title: feature.name, ...app.vcMap }
+    }
+
     const childPath = `/${convertStringToPath(feature.name)}`;
-    const childElement = <GenericPage componentsData={feature.components} services={feature.services} />;
+    const childElement = <GenericPage componentsData={feature.components} services={feature.services} vcMap={vcMap} />;
 
     // Create a React Router Route for the combined path, rendering the child element
     const combinePath = `${mainPath}${childPath}`;
@@ -20,12 +28,23 @@ const renderRoutes = (app: any) => {
   });
 
   // Create a React Router Route for the main path, rendering the main element and its child routes
-  return (
+  const elements = [
     <Fragment key={mainPath}>
       <Route key={mainPath} path={mainPath} element={mainElement} />
       {childRoutes}
     </Fragment>
-  );
+  ]
+
+  console.log(app.vcMap)
+
+  // Adding route for the Interactive VC Map pages if any
+  if (app.vcMap) {
+    elements.push(
+      <Route path={app.vcMap.urlPath} element={<InteractiveVCMap title={app.vcMap.name} jsonFileName={app.vcMap.jsonFileName} />} />,
+    )
+  }
+  
+  return elements;
 };
 
 function Router() {
