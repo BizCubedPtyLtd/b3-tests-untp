@@ -19,7 +19,7 @@
   ],
   "apps": [
     {
-      "name": "Regen",
+      "name": "Verifier",
       "type": "producer",
       "assets": {
         "logo": "Regen-logo.png",
@@ -203,9 +203,9 @@
                             "type": [
                               "Facility"
                             ],
-                            "id": "http://localhost:3000/gs1/414/09359502777110?linkType=gs1:locationInfo",
-                            "name": "Sample Livestock Farm",
-                            "registeredId": "09359502777110",
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
                             "idScheme": {
                               "type": [
                                 "IdentifierScheme"
@@ -277,9 +277,9 @@
                             "type": [
                               "Facility"
                             ],
-                            "id": "http://localhost:3000/gs1/414/09359502777110?linkType=gs1:locationInfo",
-                            "name": "Sample Livestock Farm",
-                            "registeredId": "09359502777110",
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
                             "idScheme": {
                               "type": [
                                 "IdentifierScheme"
@@ -351,9 +351,9 @@
                             "type": [
                               "Facility"
                             ],
-                            "id": "http://localhost:3000/gs1/414/09359502777110?linkType=gs1:locationInfo",
-                            "name": "Sample Livestock Farm",
-                            "registeredId": "09359502777110",
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
                             "idScheme": {
                               "type": [
                                 "IdentifierScheme"
@@ -425,9 +425,9 @@
                             "type": [
                               "Facility"
                             ],
-                            "id": "http://localhost:3000/gs1/414/09359502777110?linkType=gs1:locationInfo",
-                            "name": "Sample Livestock Farm",
-                            "registeredId": "09359502777110",
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
                             "idScheme": {
                               "type": [
                                 "IdentifierScheme"
@@ -577,9 +577,9 @@
                       "type": [
                         "Party"
                       ],
-                      "id": "http://localhost:3000/gs1/414/09359502777219",
-                      "name": "Sample Livestock Farm - Producer",
-                      "registeredId": "09359502777110",
+                      "id": "http://localhost:3000/gs1/01/09359502777219/21/DPP_01",
+                      "name": "DPP - Producer",
+                      "registeredId": "09359502777219",
                       "idScheme": {
                         "type": [
                           "IdentifierScheme"
@@ -722,6 +722,23 @@
                             "description": "A herd of 500 dairy cows located in Australia."
                           }
                         ],
+                         "assessedFacility": [
+                          {
+                            "type": [
+                              "Facility"
+                            ],
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
+                            "idScheme": {
+                              "type": [
+                                "IdentifierScheme"
+                              ],
+                              "id": "https://www.example-farmregistry.org/",
+                              "name": "Example Farm Registry"
+                            }
+                          }
+                        ],
                         "auditor": {
                           "type": [
                             "Party"
@@ -797,6 +814,23 @@
                             "description": "A herd of 500 dairy cows located in Australia."
                           }
                         ],
+                         "assessedFacility": [
+                          {
+                            "type": [
+                              "Facility"
+                            ],
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
+                            "idScheme": {
+                              "type": [
+                                "IdentifierScheme"
+                              ],
+                              "id": "https://www.example-farmregistry.org/",
+                              "name": "Example Farm Registry"
+                            }
+                          }
+                        ],
                         "auditor": {
                           "type": [
                             "Party"
@@ -870,6 +904,23 @@
                               "name": "Example Farm Registry"
                             },
                             "description": "A herd of 500 dairy cows located in Australia."
+                          }
+                        ],
+                         "assessedFacility": [
+                          {
+                            "type": [
+                              "Facility"
+                            ],
+                            "id": "http://localhost:3000/gs1/414/09359502777219?linkType=gs1:locationInfo",
+                            "name": "Sample Livestock Farm - Producer",
+                            "registeredId": "09359502777219",
+                            "idScheme": {
+                              "type": [
+                                "IdentifierScheme"
+                              ],
+                              "id": "https://www.example-farmregistry.org/",
+                              "name": "Example Farm Registry"
+                            }
                           }
                         ],
                         "auditor": {
@@ -1509,7 +1560,7 @@
                       "traceabilityEvent": [
                         {
                           "linkURL": "http://localhost:3000/gs1/01/09359502777219/21/20001?linkType=gs1:traceability",
-                          "linkName": "Livestock Processing Event",
+                          "linkName": "Sample Livestock Processing Event",
                           "linkType": "https://test.uncefact.org/vocabulary/untp/dte/0.6.1/",
                           "hashDigest": "7891019",
                           "hashMethod": "SHA-256",
@@ -1630,7 +1681,7 @@
       ]
     },
     {
-      "name": "Greenham",
+      "name": "Processor",
       "type": "producer",
       "assets": {
         "logo": "Greenham-logo.png",
@@ -2098,7 +2149,7 @@
       ]
     },
     {
-      "name": "Turosi",
+      "name": "Manufacturer",
       "type": "producer",
       "assets": {
         "logo": "Turosi-logo.png",
@@ -2549,7 +2600,7 @@
       ]
     },
     {
-      "name": "FMCG Franchise Business",
+      "name": "Food Retailer",
       "type": "producer",
       "assets": {
         "logo": "FMCG-logo.png",
