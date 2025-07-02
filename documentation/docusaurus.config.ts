@@ -52,7 +52,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: ({ versionDocsDirPath, docPath }) => `${editUrl}/${versionDocsDirPath}/${docPath}`,
+          editUrl: `${editUrl}/docs/`,
         },
         blog: false,
         theme: {
@@ -83,12 +83,12 @@ const config: Config = {
       items: [
         { to: '/docs/introduction', label: 'Introduction', position: 'right' },
         {
-          to: '/docs/mock-apps/',
+          to: '/docs/getting-started/',
           label: 'Getting started',
           position: 'right',
         },
         {
-          to: '/docs/mock-apps/',
+          to: '/docs/getting-started/',
           label: 'Tools and support',
           position: 'right',
         },
@@ -110,9 +110,7 @@ const config: Config = {
           className: 'navbar-github-link',
           position: 'right',
         },
-        {
-          type: 'docsVersionDropdown',
-        },
+        
       ],
     },
     footer: {
