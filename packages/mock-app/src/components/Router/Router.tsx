@@ -49,7 +49,7 @@ const renderRoutes = (app: any) => {
 
 function RedirectComponent() {
   useEffect(() => {
-    window.location.replace('https://docs.regen.pyx.io/getting-started');
+    window.location.replace('https://docs.regen.pyx.io/docs/getting-started');
   }, []);
 
   return null;
