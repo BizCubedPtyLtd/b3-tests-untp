@@ -21,5 +21,7 @@ EXPOSE ${DOCS_PORT}
 
 # Start the documentation site
 CMD yarn start --port ${DOCS_PORT} --host 0.0.0.0
+#CMD yarn start --port $PORT --host 0.0.0.0
+
 
 

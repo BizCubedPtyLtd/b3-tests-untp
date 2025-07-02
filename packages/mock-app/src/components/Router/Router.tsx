@@ -4,9 +4,10 @@ import appConfig from '../../constants/app-config.json';
 import { Home, Scanning, Verify, Application, GenericPage, InteractiveVCMap } from '../../pages';
 import { convertStringToPath } from '../../utils';
 import { IFeature } from '../../types/common.types';
+import { useEffect } from 'react';
 
 const renderRoutes = (app: any) => {
-    // Return none if app is not enabled
+  // Return none if app is not enabled
   if (app.enabled && !app.enabled) return [];
   const mainPath = `/${convertStringToPath(app.name)}`;
   const mainElement = <Application app={app} />;
@@ -19,8 +20,8 @@ const renderRoutes = (app: any) => {
     }
 
     const childPath = `/${convertStringToPath(feature.name)}`;
-const childElement = <GenericPage componentsData={feature.components} services={feature.services} vcMap={vcMap} />;
-    
+    const childElement = <GenericPage componentsData={feature.components} services={feature.services} vcMap={vcMap} />;
+
     // Create a React Router Route for the combined path, rendering the child element
     const combinePath = `${mainPath}${childPath}`;
     return <Route key={combinePath} path={combinePath} element={childElement} />;
@@ -42,17 +43,26 @@ const childElement = <GenericPage componentsData={feature.components} services={
       <Route path={app.vcMap.urlPath} element={<InteractiveVCMap title={app.vcMap.name} jsonFileName={app.vcMap.jsonFileName} />} />,
     )
   }
-  
+
   return elements;
+}
+
+function RedirectComponent() {
+  useEffect(() => {
+    window.location.replace('https://docs.regen.pyx.io/getting-started');
+  }, []);
+
+  return null;
 }
 
 function Router() {
   return (
     // Define the root routing container using React Router's Routes component
     <Routes>
-      {/* Default route for the home page, rendering the Home component */}
-      <Route path='/' element={<Home />} />,{/* Route for the Scanning page */}
-      <Route path='/scanning' element={<Scanning />} />,{/* Route for the Verify page */}
+      {/* Default route for the home page, redirecting to <your redirect page> */}
+      <Route path='/' element={<RedirectComponent />} />,
+      {/* Route for the Reference Implementation page, rendering the Home component */}
+      <Route path='/reference-implementation' element={<Home />} />,      <Route path='/scanning' element={<Scanning />} />,{/* Route for the Verify page */}
       <Route path='/verify' element={<Verify />} />,
       {/* Catch-all route for any unknown paths, redirecting to the 404 page */}
       <Route path='*' element={<Navigate to='/404' />} />,
