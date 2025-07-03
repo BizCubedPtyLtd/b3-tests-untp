@@ -1,7 +1,7 @@
 {
     "img": "/interactive_vc_map.png",
     "title": "Regen Farmers Interactive VC Map",
-    "appConfigName": "VC Map - Regen Farmers Supply Chain",
+    "appConfigName": "Regen Farmers - VC Map Supply Chain",
     "areas": [
         {
             "alt": "Issue DCC GHG calculation - Farm Level",
