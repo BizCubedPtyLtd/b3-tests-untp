@@ -15,7 +15,7 @@
                     "sample_credential": ""
                 }
             ],
-            "coords": "277,407,92,366",
+            "coords": "91,536,279,580",
             "shape": "rect",
             "documentation": {
                 "title": "Conformity Credential",
@@ -34,7 +34,7 @@
                     "sample_credential": ""
                 }
             ],
-            "coords": "91,536,279,580",
+            "coords": "277,407,92,366",
             "shape": "rect",
             "documentation": {
                 "title": "Conformity Credential",
