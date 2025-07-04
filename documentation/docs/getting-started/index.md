@@ -11,7 +11,7 @@ title: Getting Started
 
 The Australian Agriculture Transparency Protocol (AATP) helps track and prove sustainability claims as products move through the supply chain. It does this using **digital credentials**—secure, verifiable data records that tell the story of a product and who vouches for it.
 
-Here are the k¬ey types of credentials used:
+Here are the key types of credentials used:
 - **Digital Facility Record (DFR)** – Describes a physical site like a farm or processing facility, including who owns it and whether it meets certain standards.
 - **Digital Conformity Credential (DCC)** – A credential issued by a third party (such as a verifier) to confirm that specific claims (e.g. emissions, certifications) are backed by data.
 - **Digital Product Passport (DPP)** – A digital summary of the journey of an individual product or batch, including links to relevant DFRs and DCCs.
