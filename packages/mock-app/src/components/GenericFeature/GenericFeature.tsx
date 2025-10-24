@@ -101,7 +101,7 @@ export interface IServiceDefinition {
 export interface IGenericFeatureProps {
   components: IDynamicComponentRendererProps[];
   services: IServiceDefinition[];
-    vcMap: IVCMapDefinition;
+  vcMap: IVCMapDefinition;
 }
 
 export interface IVCMapDefinition {
@@ -112,7 +112,7 @@ export interface IVCMapDefinition {
   enable: boolean;
   showQRCode: boolean;
 }
-  
+
 
 const getService = (name: string) => {
   const serviceName = name as keyof typeof services;
@@ -175,13 +175,13 @@ export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, ser
 
   return (
     <div>
-          {vcMap && vcMap.enable ?
-        <InteractiveVCMap ID={{IDRLink: IDRLink, pathname:pathname}} title={vcMap.title} jsonFileName={vcMap.jsonFileName} />
+      {vcMap && vcMap.enable ?
+        <InteractiveVCMap ID={{ IDRLink: IDRLink, pathname: pathname }} title={vcMap.title} jsonFileName={vcMap.jsonFileName} />
         :
         <></>
       }
       {IDRLink && vcMap?.showQRCode && (
-        <div style={{marginTop: '10px', justifyItems: 'center'}}>
+        <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <QRCodeCanvas
             value={IDRLink}
             title={IDRLink}
@@ -201,7 +201,7 @@ export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, ser
               if (typeof maybeId === 'string' && maybeId.trim() !== '') {
                 setId(maybeId);
               }
-              
+
               setState((s) => {
                 s[index] = value;
                 return s;
