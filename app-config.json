@@ -60,7 +60,7 @@
                     },
                     "batchNumber": "67890",
                     "productImage": {
-                      "linkURL": "http://localhost:3000/top_steel_x.png",
+                      "linkURL": "http://localhost:3003/top_steel_x.png",
                       "linkName": "Steel Rods",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
@@ -327,7 +327,7 @@
                     "batchNumber": "54321",
                     "serialNumber": "445566",
                     "productImage": {
-                      "linkURL": "http://localhost:3000/quality_steel_y.png",
+                      "linkURL": "http://localhost:3003/quality_steel_y.png",
                       "linkName": "Steel Coils",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
@@ -588,7 +588,7 @@
                     "batchNumber": "725774099",
                     "serialNumber": "998877",
                     "productImage": {
-                      "linkURL": "http://localhost:3000/pile_cage.png",
+                      "linkURL": "http://localhost:3003/pile_cage.png",
                       "linkName": "Pile Cage",
                       "linkType": "https://vocabulary.uncefact.org/untp/dpp/0.5.0/"
                     },
