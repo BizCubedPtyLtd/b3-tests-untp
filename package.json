@@ -66,6 +66,7 @@
     "access": "public"
   },
   "resolutions": {
+    "@types/d3-dispatch": "3.0.3",
     "@types/eslint": "^8.4.6",
     "strip-ansi": "6.0.0",
     "string-width": "4.0.0"

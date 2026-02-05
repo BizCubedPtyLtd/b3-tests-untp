@@ -188,7 +188,7 @@ function Header() {
                 <Stack
                   data-testid='app-name'
                   component={Link}
-                  to='/'
+                  to='/reference-implementation'
                   sx={{
                     textDecoration: 'none',
                     textAlign: 'center',
