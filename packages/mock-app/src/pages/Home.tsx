@@ -6,9 +6,11 @@ import appConfig from '../constants/app-config.json';
 
 const Home = () => {
   const renderApps = () => {
-    const apps = appConfig.apps.map((configApp) => {
+    const apps = appConfig.apps.flatMap((configApp) => {
+      if (configApp.enabled && !configApp.enabled) return [];
+      
       const path = `/${convertStringToPath(configApp.name)}`;
-      return (
+      const elements = [
         <Button
           sx={{
             color: 'primary.typography',
@@ -23,7 +25,34 @@ const Home = () => {
         >
           {configApp.name}
         </Button>
-      );
+       ];
+
+      if (configApp.vcMap) {
+        elements.push(
+          <Button
+            sx={{
+              color: 'primary.typography',
+              backgroundColor: 'primary.button',
+              boxShadow: 'none',
+              borderRadius: 0,
+              textTransform: 'none',
+              '&:hover': {
+                // filter: 'brightness(0.9)',
+                backgroundColor: 'primary.main',
+                boxShadow: 'none',
+              },
+            }}
+            key={configApp.vcMap.urlPath}
+            variant='contained'
+            component={Link}
+            to={configApp.vcMap.urlPath}
+          >
+            {configApp.vcMap.name}
+          </Button>
+        );
+      }
+
+      return elements;
     });
 
     apps.push(

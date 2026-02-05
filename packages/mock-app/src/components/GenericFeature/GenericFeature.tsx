@@ -79,7 +79,7 @@
 *  }
 */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as services from '@mock-app/services';
 // import * as events from '@mock-app/events';
 import {
@@ -89,6 +89,9 @@ import {
   DynamicComponentRenderer,
   IDynamicComponentRendererProps,
 } from '@mock-app/components';
+import { QRCodeCanvas } from 'qrcode.react';
+import { InteractiveVCMap } from '../../pages';
+import { useLocation } from 'react-router-dom';
 
 export interface IServiceDefinition {
   name: string;
@@ -98,7 +101,18 @@ export interface IServiceDefinition {
 export interface IGenericFeatureProps {
   components: IDynamicComponentRendererProps[];
   services: IServiceDefinition[];
+  vcMap: IVCMapDefinition;
 }
+
+export interface IVCMapDefinition {
+  name: string;
+  title: string;
+  img: string;
+  jsonFileName: string;
+  enable: boolean;
+  showQRCode: boolean;
+}
+
 
 const getService = (name: string) => {
   const serviceName = name as keyof typeof services;
@@ -112,15 +126,33 @@ const getService = (name: string) => {
   throw new Error(`Service or event ${name} not found`);
 };
 
+const getLinkType = (schemaURL: string) => {
+  if (schemaURL) {
+    const formattedSchemaURL = schemaURL.toLowerCase();
+    if (formattedSchemaURL.includes('product')) return services.LinkType.sustainabilityInfo;
+    if (formattedSchemaURL.includes('facility')) return services.LinkType.locationInfo;
+    if (formattedSchemaURL.includes('conformity')) return services.LinkType.certificationLinkType;
+    if (formattedSchemaURL.includes('traceability')) return services.LinkType.traceability;
+    if (formattedSchemaURL.includes('identity')) return services.LinkType.registryEntry;
+  } else {
+    return '';
+  }
+}
+
 /**
  *
  * @param param0
  * @returns
  */
-export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, services }: IGenericFeatureProps) => {
+export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, services, vcMap }: IGenericFeatureProps) => {
+  const location = useLocation();
+  const pathname = location.pathname;
   const [state, setState] = React.useState<any[]>([]);
   const [result, setResult] = React.useState<any>();
   const props: Record<string, any> = {};
+
+  const [id, setId] = React.useState<string>('');
+  const [IDRLink, setIDRLink] = React.useState<string>('');
 
   const executeServices = async (services: IServiceDefinition[], parameters: any[]) => {
     const [result] = await services.reduce(async (previousResult: any[] | Promise<any[]>, currentService) => {
@@ -133,14 +165,43 @@ export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, ser
     return result;
   };
 
+  useEffect(() => {
+    const entryData = components.find((c) => c.type === ComponentType.EntryData)
+    const linkType = getLinkType(entryData?.props?.schema?.url ?? entryData?.props?.nestedComponents[0]?.props?.schema?.url)
+    if (id && linkType) {
+      setIDRLink(`${id}?linkType=gs1:${linkType}`)
+    }
+  }, [id, components])
+
   return (
     <div>
+      {vcMap && vcMap.enable ?
+        <InteractiveVCMap ID={{ IDRLink: IDRLink, pathname: pathname }} title={vcMap.title} jsonFileName={vcMap.jsonFileName} />
+        :
+        <></>
+      }
+      {IDRLink && vcMap?.showQRCode && (
+        <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <QRCodeCanvas
+            value={IDRLink}
+            title={IDRLink}
+          />
+          <div>IDR Link: <a href={IDRLink} target='_blank'>{IDRLink}</a></div>
+        </div>
+      )}
+
       {components.map((component, index) => {
         const type = component.type;
         switch (type) {
           case ComponentType.EntryData:
             // unknown is used to flexibilize the type of the value, since it can be any type
             props.onChange = (value: unknown) => {
+              // Check for value.data.id and setId if valid
+              const maybeId = (value as any)?.data?.id;
+              if (typeof maybeId === 'string' && maybeId.trim() !== '') {
+                setId(maybeId);
+              }
+
               setState((s) => {
                 s[index] = value;
                 return s;
@@ -154,10 +215,11 @@ export const GenericFeature: React.FC<IGenericFeatureProps> = ({ components, ser
 
                 handler(result);
                 setResult(result);
-                toastMessage({ status: Status.success, message: 'Action Successful' });
+                console.log("result:", state[0]["data"]["id"])
+                toastMessage({ status: Status.success, message: 'Action Successful.', linkURL: state[0]["data"]["id"] });
               } catch (error: any) {
                 console.log(error.message);
-                toastMessage({ status: Status.error, message: 'Something went wrong' });
+                toastMessage({ status: Status.error, message: 'Something went wrong', linkURL: '' });
               }
             };
             break;
