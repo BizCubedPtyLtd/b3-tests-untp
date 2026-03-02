@@ -139,26 +139,25 @@ function Header() {
   };
 
   useEffect(() => {
-    const path = location.pathname;
-    const nameLink = convertPathToString(path ?? '');
+    const path = location.pathname.split('/')[1];
+    const nameLink = convertStringToPath(path ?? '');
+    console.log(nameLink)
     const subAppStyles =
-      appConfig.apps.find((app) => app.name.toLocaleLowerCase() === nameLink.toLocaleLowerCase()) ??
-      appConfig.generalFeatures.find((app) => app.name.toLocaleLowerCase() === nameLink.toLocaleLowerCase());
-
+      appConfig.apps.find((app) => convertStringToPath(app.name).toLocaleLowerCase() === nameLink.toLocaleLowerCase()) ??
+      appConfig.generalFeatures.find((app) => convertStringToPath(app.name).toLocaleLowerCase() === nameLink.toLocaleLowerCase());
+      console.log(subAppStyles)
     setHeaderBrandInfo({
-      name: convertPathToString(path ?? ''),
+      name: subAppStyles?.name ?? '',
       assets: {
         logo: subAppStyles && 'assets' in subAppStyles ? subAppStyles?.assets?.logo : '',
       },
     });
-
     if (subAppStyles?.styles) {
       theme.setSelectedTheme(subAppStyles?.styles);
     } else {
       theme.setSelectedTheme(appConfig.styles);
       setHeaderBrandInfo(initialHeaderBrandInfo);
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
