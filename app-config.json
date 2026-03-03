@@ -231,7 +231,7 @@
                     }
                   },
                   "dpp": {
-                    "validUntil": "2025-11-28T04:47:15.136Z",
+                    "validUntil": "2035-11-28T04:47:15.136Z",
                     "context": [
                       "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/"
                     ],
@@ -492,7 +492,7 @@
                     }
                   },
                   "dpp": {
-                    "validUntil": "2025-11-28T04:47:15.136Z",
+                    "validUntil": "2035-11-28T04:47:15.136Z",
                     "context": [
                       "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/"
                     ],
@@ -759,7 +759,7 @@
                     }
                   },
                   "dpp": {
-                    "validUntil": "2025-11-28T04:47:15.136Z",
+                    "validUntil": "2035-11-28T04:47:15.136Z",
                     "context": [
                       "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/"
                     ],
