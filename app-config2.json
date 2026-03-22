@@ -1,5 +1,5 @@
 {
-  "name": "MATILDA VENEERS TRACEABILITY",
+  "name": "MATILDA VENEER TRACEABILITY",
   "styles": {
     "primaryColor": "rgb(35, 138, 186)",
     "secondaryColor": "black",
@@ -2750,7 +2750,7 @@
                   "description": "Bill of Lading for Container Export from China",
                   "issuedToParty": {
                     "id": "https://abr.business.gov.au/ABN/View?abn=97011044054",
-                    "name": "Matilda Veneers",
+                    "name": "Matilda Veneer",
                     "registeredId": "97011044054"
                   },
                   "authorisation": [
@@ -2898,7 +2898,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111150/10/EVP1811",
-                  "processType": "Slicing Logs into veneers",
+                  "processType": "Slicing Logs into veneer",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -2911,7 +2911,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111150/10/MAT19001?linkType=gs1:traceability",
-                      "name": "Sliced Veneers Bundles"
+                      "name": "Sliced Veneer Bundles"
                     }
                   ],
                   "inputEPCList": [
@@ -3012,7 +3012,7 @@
           ]
         },
         {
-          "name": "Sliced Veneers Bundles DTE",
+          "name": "Sliced Veneer Bundles DTE",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -3028,7 +3028,7 @@
                     "Event"
                   ],
                   "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111150/10/MAT19001",
-                  "processType": "Bundling Veneers",
+                  "processType": "Bundling Veneer",
                   "eventTime": "2024-09-01T12:00:00",
                   "action": "observe",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
@@ -3379,12 +3379,12 @@
                   ],
                   "traceabilityInformation": [
                     {
-                      "valueChainProcess": "Sliced Veneers Bundles",
+                      "valueChainProcess": "Sliced Veneer Bundles",
                       "verifiedRatio": 1,
                       "traceabilityEvent": [
                         {
                           "linkURL": "http://localhost:3000/api/1.0.0/gs1/01/09359502111150/10/MAT19001?linkType=gs1:traceability",
-                          "linkName": "Sliced Veneers Bundles",
+                          "linkName": "Sliced Veneer Bundles",
                           "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                           "hashDigest": "6239119",
                           "hashMethod": "SHA-256",
@@ -3483,11 +3483,11 @@
       ]
     },
     {
-      "name": "Matilda Veneers",
+      "name": "Matilda Veneer",
       "type": "producer",
       "assets": {
         "logo": "Export-Yard-logo.webp",
-        "brandTitle": "Matilda Veneers"
+        "brandTitle": "Matilda Veneer"
       },
       "styles": {
         "primaryColor": "#b5651d",
@@ -3519,7 +3519,7 @@
                   "description": "DAFF Commonwealth license for importing timber products ",
                   "issuedToParty": {
                     "id": "https://abr.business.gov.au/ABN/View?abn=97011044054",
-                    "name": "Matilda Veneers",
+                    "name": "Matilda Veneer",
                     "registeredId": "97011044054"
                   },
                   "authorisation": [
@@ -3734,7 +3734,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "Matilda Veneers"
+                      "name": "Matilda Veneer"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -3813,7 +3813,7 @@
                       "linkURL": "http://localhost:3003/sliced_veneers.png",
                       "linkName": "Sliced Veneers Image"
                     },
-                    "description": "Description of Sliced Matilda Veneers",
+                    "description": "Description of Sliced Matilda Veneer",
                     "productCategory": [
                       {
                         "type": [
@@ -4019,7 +4019,7 @@
                             "Criterion"
                           ],
                           "id": "http://localhost:3003/rw_certificate_mv.pdf",
-                          "name": "Matilda Veneers Responsible Wood Chain of Custody Certificate",
+                          "name": "Matilda Veneer Responsible Wood Chain of Custody Certificate",
                           "description": "",
                           "conformityTopic": "environment.emissions",
                           "status": "active",
@@ -4032,7 +4032,7 @@
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
                         "linkURL": "http://localhost:3003/rw_certificate_mv.pdf",
-                        "linkName": "Matilda Veneers Responsible Wood Chain of Custody Certificate",
+                        "linkName": "Matilda Veneer Responsible Wood Chain of Custody Certificate",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -4137,7 +4137,7 @@
                     "type": [
                       "DigitalProductPassport"
                     ],
-                    "dlrLinkTitle": "Matilda Veneers Product Passport",
+                    "dlrLinkTitle": "Matilda Veneer Product Passport",
                     "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
@@ -4202,7 +4202,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111174/10/001?linkType=gs1:traceability",
-                      "name": "Construction of New Performing Arts Center"
+                      "name": "Construction of New Building"
                     }
                   ],
                   "inputEPCList": [
@@ -4303,7 +4303,7 @@
           ]
         },
         {
-          "name": "Selling Veneers to Finishing Plant",
+          "name": "Selling Veneer to Finishing Plant",
           "id": "issue_transformation_event",
           "components": [
             {
@@ -4386,7 +4386,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "QLD Performing Arts Center"
+                      "name": "Matilda Veneer"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
@@ -4486,7 +4486,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111143/10/004?linkType=gs1:traceability",
-                      "name": "Selling Veneers to Finishing Plant"
+                      "name": "Selling Veneer to Finishing Plant"
                     }
                   ]
                 },
@@ -4610,7 +4610,7 @@
                       "linkURL": "http://localhost:3003/laminated_veneer.png",
                       "linkName": "Finished Veneer"
                     },
-                    "description": "Description of Finished Matilda Veneers",
+                    "description": "Description of Finished Matilda Veneer",
                     "productCategory": [
                       {
                         "type": [
@@ -4692,7 +4692,7 @@
                             "Criterion"
                           ],
                           "id": "http://localhost:3003/rw_certificate_mv.pdf",
-                          "name": "Matilda Veneers Responsible Wood Chain of Custody Certificate",
+                          "name": "Matilda Veneer Responsible Wood Chain of Custody Certificate",
                           "description": "",
                           "conformityTopic": "environment.emissions",
                           "status": "active",
@@ -4705,7 +4705,7 @@
                       "conformityTopic": "governance.compliance",
                       "conformityEvidence": {
                         "linkURL": "http://localhost:3003/rw_certificate_mv.pdf",
-                        "linkName": "Matilda Veneers Responsible Wood Chain of Custody Certificate",
+                        "linkName": "Matilda Veneer Responsible Wood Chain of Custody Certificate",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "hashDigest": "6239119",
                         "hashMethod": "SHA-256",
@@ -4810,7 +4810,7 @@
                     "type": [
                       "DigitalProductPassport"
                     ],
-                    "dlrLinkTitle": "Matilda Veneers Product Passport",
+                    "dlrLinkTitle": "Matilda Veneer Product Passport",
                     "dlrVerificationPage": "http://localhost:3003/verify"
                   },
                   "dlr": {
@@ -4875,7 +4875,7 @@
                         "Item"
                       ],
                       "id": "http://localhost:3000/api/1.0.0/gs1/01/09359502111174/10/001?linkType=gs1:traceability",
-                      "name": "Construction of New Performing Arts Center"
+                      "name": "Construction of New Building"
                     }
                   ],
                   "inputEPCList": [
@@ -5065,7 +5065,7 @@
                     "vckitAPIUrl": "http://localhost:3332/v2",
                     "issuer": {
                       "id": "did:web:uncefact.github.io:project-vckit:test-and-development",
-                      "name": "QLD Performing Arts Center"
+                      "name": "QLD Construction P/L"
                     },
                     "headers": {
                       "Authorization": "Bearer test123"
